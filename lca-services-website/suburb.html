@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Professional Cleaning Services | LCA Services NZ</title>
+  <meta id="page-desc" name="description" content="Professional cleaning services by LCA Services NZ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:   #101828;
+      --navy2:  #1d2939;
+      --teal:   #3AB5D9;
+      --teal-dark: #2a9cbd;
+      --gray:   #475467;
+      --gray2:  #667085;
+      --light:  #f9fafb;
+      --white:  #ffffff;
+      --border: #e4e7ec;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--navy); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    .topbar { background: var(--navy); color: rgba(255,255,255,0.75); font-size: 13px; padding: 8px 0; text-align: center; }
+    .topbar a { color: var(--white); font-weight: 600; }
+
+    nav { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-size: 22px; font-weight: 800; color: var(--navy); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+    .logo-sub { display: flex; flex-direction: column; font-size: 9px; font-weight: 700; color: var(--teal); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.5px; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a { display: flex; align-items: center; gap: 4px; padding: 8px 14px; font-size: 14px; font-weight: 500; color: var(--gray); border-radius: 6px; transition: all 0.15s; }
+    .nav-links > li > a:hover { color: var(--navy); background: var(--light); }
+    .chevron { font-size: 10px; transition: transform 0.2s; }
+    .dropdown { position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 8px 32px rgba(0,0,0,0.12); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: all 0.2s; z-index: 100; }
+    .nav-links > li:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-links > li:hover .chevron { transform: rotate(180deg); }
+    .dropdown a { display: block; padding: 10px 16px; font-size: 14px; color: var(--gray); transition: all 0.15s; }
+    .dropdown a:hover { background: var(--light); color: var(--teal); padding-left: 20px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: var(--teal); color: var(--white); }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+
+    /* HERO */
+    .suburb-hero {
+      position: relative;
+      min-height: 280px;
+      display: flex;
+      align-items: flex-end;
+      background: linear-gradient(135deg, #1a2a3a 0%, #243447 50%, #1a3040 100%);
+      overflow: hidden;
+    }
+    .suburb-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(58,181,217,0.12) 0%, transparent 60%);
+    }
+    .suburb-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(16,24,40,0.5) 0%, rgba(16,24,40,0.75) 100%);
+    }
+    .suburb-hero-inner {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+      width: 100%;
+    }
+    .hero-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 16px;
+    }
+    .hero-breadcrumb a { color: rgba(255,255,255,0.6); transition: color 0.15s; }
+    .hero-breadcrumb a:hover { color: var(--teal); }
+    .hero-breadcrumb span { color: rgba(255,255,255,0.35); }
+    .suburb-hero h1 {
+      font-size: clamp(28px, 4.5vw, 52px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .suburb-hero-sub {
+      font-size: 17px;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+    }
+
+    /* MAIN CONTENT */
+    .suburb-body { max-width: 1200px; margin: 0 auto; padding: 64px 24px 80px; }
+    .suburb-layout { display: grid; grid-template-columns: 1fr 380px; gap: 48px; align-items: start; }
+    @media (max-width: 900px) { .suburb-layout { grid-template-columns: 1fr; } }
+
+    /* LEFT — Service Info */
+    .service-info h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .service-info hr {
+      border: none;
+      border-top: 2px solid var(--border);
+      margin-bottom: 28px;
+    }
+    .service-info p {
+      font-size: 16px;
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .service-info .highlight {
+      color: var(--teal);
+      font-weight: 600;
+    }
+    .service-note {
+      font-size: 14px;
+      color: var(--gray2);
+      background: var(--light);
+      border-left: 3px solid var(--teal);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 8px;
+    }
+
+    /* Service links grid */
+    .service-links-section { margin-top: 40px; }
+    .service-links-section h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .service-links-grid { display: flex; flex-direction: column; gap: 12px; }
+    .service-link-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .service-link-row:hover {
+      border-color: var(--teal);
+      box-shadow: 0 4px 16px rgba(58,181,217,0.12);
+      transform: translateX(4px);
+    }
+    .service-link-left { display: flex; align-items: center; gap: 14px; }
+    .service-link-icon {
+      width: 44px; height: 44px;
+      background: rgba(58,181,217,0.1);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .service-link-text { }
+    .service-link-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .service-link-desc {
+      font-size: 13px;
+      color: var(--gray2);
+      margin-top: 2px;
+    }
+    .service-link-arrow {
+      color: var(--teal);
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    /* RIGHT — Pricing Card */
+    .pricing-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      position: sticky;
+      top: 90px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+    .pricing-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+    .pricing-table { width: 100%; border-collapse: collapse; }
+    .pricing-table th {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--gray2);
+      padding: 0 0 10px 0;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .pricing-table th:not(:first-child) { text-align: right; }
+    .pricing-table td {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--light);
+      font-size: 15px;
+      color: var(--navy);
+    }
+    .pricing-table td:first-child { font-weight: 700; }
+    .pricing-table td:not(:first-child) { text-align: right; color: var(--gray); }
+    .pricing-table tr:last-child td { border-bottom: none; }
+    .pricing-note {
+      font-size: 12px;
+      color: var(--gray2);
+      margin-top: 16px;
+      line-height: 1.6;
+    }
+    .pricing-note + .pricing-note { margin-top: 6px; }
+    .pricing-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      background: var(--teal);
+      color: var(--white);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+    .pricing-cta:hover { background: var(--teal-dark); }
+
+    /* Contact info card */
+    .contact-card {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+    .contact-card-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 12px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      padding: 6px 0;
+      color: rgba(255,255,255,0.85);
+    }
+    .contact-item .ci-icon { color: var(--teal); font-size: 16px; }
+    .call-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px;
+      margin-top: 14px;
+      background: var(--teal);
+      color: var(--white);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .call-btn:hover { background: var(--teal-dark); }
+
+    /* CTA Section */
+    .cta-section { background: var(--teal); padding: 72px 24px; text-align: center; color: var(--white); }
+    .cta-section h2 { font-size: clamp(24px, 3vw, 38px); font-weight: 800; margin-bottom: 14px; }
+    .cta-section p { font-size: 16px; color: rgba(255,255,255,0.85); margin-bottom: 32px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: var(--white); color: var(--teal); display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; }
+    .btn-white:hover { background: #f0fcff; }
+    .btn-outline-white { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 15px; }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+
+    /* Footer */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 64px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 20px; margin-top: 16px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+    .footer-contact a { color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-contact a:hover { color: var(--white); }
+    .footer-col h4 { color: var(--white); font-size: 14px; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; }
+
+    /* Mobile menu */
+    .mobile-menu { display: none; position: fixed; inset: 0; background: var(--white); z-index: 2000; padding: 24px; overflow-y: auto; flex-direction: column; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+    .mobile-close { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+    .mobile-nav { display: flex; flex-direction: column; gap: 4px; }
+    .mobile-nav a { display: block; padding: 14px 16px; font-size: 16px; font-weight: 500; color: var(--gray); border-radius: 8px; }
+    .mobile-nav a:hover { background: var(--light); color: var(--teal); }
+    .mobile-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray2); padding: 12px 16px 4px; }
+    .mobile-cta { margin-top: 24px; }
+    .btn-teal { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: var(--white); padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; }
+
+    @media (max-width: 900px) { .nav-links, nav .btn { display: none; } .hamburger { display: flex; } }
+    @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; text-align: center; } }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Call us for a free quote — <a href="tel:0224871791">022 487 1791</a> &nbsp;|&nbsp; Mon–Sat 8am–5pm
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Services <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="airbnb-cleaning.html">🏠 Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html">🔑 End of Tenancy Cleaning</a>
+          <a href="builders-clean.html">🏗️ Builders Cleans</a>
+          <a href="commercial-cleaning.html">🏢 Commercial Cleaning</a>
+        </div>
+      </li>
+      <li>
+        <a href="service-areas.html">Locations <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="service-areas.html#auckland">📍 Auckland</a>
+          <a href="service-areas.html#waiheke">📍 Waiheke Island</a>
+          <a href="service-areas.html#waikato">📍 Waikato</a>
+          <a href="service-areas.html#hamilton">📍 Hamilton</a>
+          <a href="service-areas.html#tauranga">📍 Tauranga</a>
+          <a href="service-areas.html#waihi">📍 Waihi</a>
+        </div>
+      </li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+    <div class="hamburger" onclick="openMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></span>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <div class="mobile-section-title">Services</div>
+    <a href="airbnb-cleaning.html" onclick="closeMenu()">🏠 Airbnb Cleaning</a>
+    <a href="end-of-tenancy-cleaning.html" onclick="closeMenu()">🔑 End of Tenancy Cleaning</a>
+    <a href="builders-clean.html" onclick="closeMenu()">🏗️ Builders Cleans</a>
+    <a href="commercial-cleaning.html" onclick="closeMenu()">🏢 Commercial Cleaning</a>
+    <div class="mobile-section-title">Locations</div>
+    <a href="service-areas.html" onclick="closeMenu()">📍 All Service Areas</a>
+    <a href="service-areas.html#auckland" onclick="closeMenu()">Auckland</a>
+    <a href="service-areas.html#waiheke" onclick="closeMenu()">Waiheke Island</a>
+    <a href="service-areas.html#waikato" onclick="closeMenu()">Waikato</a>
+    <a href="service-areas.html#hamilton" onclick="closeMenu()">Hamilton</a>
+    <a href="service-areas.html#tauranga" onclick="closeMenu()">Tauranga</a>
+    <a href="service-areas.html#waihi" onclick="closeMenu()">Waihi</a>
+    <div class="mobile-section-title">Company</div>
+    <a href="faq.html" onclick="closeMenu()">FAQ</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-cta">
+    <a href="contact.html" class="btn-teal" style="width:100%;justify-content:center;display:flex" onclick="closeMenu()">Get a Free Quote</a>
+  </div>
+</div>
+
+<!-- HERO (populated by JS) -->
+<section class="suburb-hero">
+  <div class="suburb-hero-overlay"></div>
+  <div class="suburb-hero-inner">
+    <div class="hero-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <a href="service-areas.html">Locations</a>
+      <span>›</span>
+      <a href="service-areas.html" id="breadcrumb-city">Auckland</a>
+      <span>›</span>
+      <span id="breadcrumb-suburb" style="color:rgba(255,255,255,0.85)">Suburb</span>
+    </div>
+    <h1 id="hero-title">Professional Cleaning Services</h1>
+    <p class="suburb-hero-sub" id="hero-sub">Expert cleaning available across this area and surrounds.</p>
+  </div>
+</section>
+
+<!-- MAIN BODY -->
+<div class="suburb-body">
+  <div class="suburb-layout">
+
+    <!-- LEFT: Service Information -->
+    <div class="service-info">
+      <h2>Service Information</h2>
+      <hr>
+      <p id="info-para-1"></p>
+      <p id="info-para-2"></p>
+      <p class="service-note" id="info-note"></p>
+
+      <div class="service-links-section">
+        <h3 id="service-links-heading">Our Services in This Area</h3>
+        <div class="service-links-grid" id="service-links-grid">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Pricing + Contact -->
+    <div>
+      <div class="pricing-card">
+        <h3>Prices Starting From</h3>
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>SERVICE</th>
+              <th>1–2 BED</th>
+              <th>3 BED</th>
+              <th>4+ BED</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Airbnb Turnover</td>
+              <td>$89</td>
+              <td>$149</td>
+              <td>$199+</td>
+            </tr>
+            <tr>
+              <td>End of Tenancy</td>
+              <td>$249</td>
+              <td>$379</td>
+              <td>$499+</td>
+            </tr>
+            <tr>
+              <td>Builders Clean</td>
+              <td>$299</td>
+              <td>$449</td>
+              <td>$599+</td>
+            </tr>
+            <tr>
+              <td>Commercial</td>
+              <td colspan="3" style="text-align:right;color:var(--teal);font-weight:600">Custom Quote</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="pricing-note">No lock-in contracts. Cancel anytime.</p>
+        <p class="pricing-note">*Prices vary by property size, condition, and location. Final quote provided after assessment.</p>
+        <a href="contact.html" class="pricing-cta">✉ Get My Free Quote</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-title">Get In Touch</div>
+        <div class="contact-item"><span class="ci-icon">📞</span> <a href="tel:0224871791" style="color:rgba(255,255,255,0.85)">022 487 1791</a></div>
+        <div class="contact-item"><span class="ci-icon">✉</span> <a href="mailto:lca.services.nz@gmail.com" style="color:rgba(255,255,255,0.85)">lca.services.nz@gmail.com</a></div>
+        <div class="contact-item"><span class="ci-icon">🕐</span> Mon–Sat 8am–5pm</div>
+        <a href="tel:0224871791" class="call-btn">📞 Call Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 id="cta-title">Ready for a Spotless Clean?</h2>
+  <p id="cta-sub">Get a free, no-obligation quote for your property today.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-white"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Get a Free Quote</a>
+    <a href="tel:0224871791" class="btn-outline-white"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></div>
+        <p>Professional cleaning services across New Zealand. Reliable, thorough, and always guaranteed.</p>
+        <div class="footer-contact">
+          <span>📞 <a href="tel:0224871791">022 487 1791</a></span>
+          <span>✉ <a href="mailto:lca.services.nz@gmail.com">lca.services.nz@gmail.com</a></span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
+          <li><a href="end-of-tenancy-cleaning.html">End of Tenancy</a></li>
+          <li><a href="builders-clean.html">Builders Clean</a></li>
+          <li><a href="commercial-cleaning.html">Commercial Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul class="footer-links">
+          <li><a href="service-areas.html#auckland">Auckland</a></li>
+          <li><a href="service-areas.html#waiheke">Waiheke Island</a></li>
+          <li><a href="service-areas.html#waikato">Waikato</a></li>
+          <li><a href="service-areas.html#hamilton">Hamilton</a></li>
+          <li><a href="service-areas.html#tauranga">Tauranga</a></li>
+          <li><a href="service-areas.html#waihi">Waihi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 LCA Services NZ. All rights reserved.</span>
+      <span>Professional Cleaning · New Zealand</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ═══════════════════════════════════════════
+     SUBURB DATA — all content lives here
+  ═══════════════════════════════════════════ */
+  const SERVICE_DEFS = {
+    airbnb:     { icon: '🏠', title: 'Airbnb Cleaning',          desc: 'Fast, thorough guest-ready turnovers between stays.',        url: 'airbnb-cleaning.html' },
+    tenancy:    { icon: '🔑', title: 'End of Tenancy Cleaning',   desc: 'Bond-back standard cleans meeting NZ tenancy requirements.', url: 'end-of-tenancy-cleaning.html' },
+    builders:   { icon: '🏗️', title: 'Builders Clean',            desc: 'Post-construction cleans for new builds & renovations.',    url: 'builders-clean.html' },
+    commercial: { icon: '🏢', title: 'Commercial Cleaning',       desc: 'Regular or one-off cleaning for offices & businesses.',     url: 'commercial-cleaning.html' },
+  };
+
+  const SUBURBS = {
+    /* ── AUCKLAND CENTRAL ── */
+    'mount-eden': {
+      name: 'Mount Eden', city: 'Auckland', cityAnchor: 'auckland', region: 'Central Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'Mount Eden households and Airbnb hosts trust LCA Services for reliable, meticulous cleaning. Leafy and character-filled, Mount Eden is home to charming villas and bungalows with a strong community feel — and the high standards of these properties demand professional cleaning every time.',
+      p2: 'Whether you need a thorough end of tenancy clean to secure your bond, or a same-day Airbnb turnover to welcome your next guests, our experienced team arrives fully equipped with premium products and gets to work immediately.',
+      note: 'We service Mount Eden and all surrounding streets. Same-week bookings available — call 022 487 1791.',
+    },
+    'remuera': {
+      name: 'Remuera', city: 'Auckland', cityAnchor: 'auckland', region: 'Central Auckland',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'One of Auckland\'s most prestigious suburbs, Remuera\'s heritage homes and quiet tree-lined streets demand meticulous professional cleaning. LCA Services understands the premium standard that Remuera properties require — from grand heritage villas to modern new builds nearing handover.',
+      p2: 'Our cleaning teams are discreet, fully equipped, and trained to work to the highest standard. We offer Airbnb turnovers, end of tenancy cleans, and post-construction builders cleans across Remuera and surrounds.',
+      note: 'We supply all products and equipment. No hidden fees — your quote is your price.',
+    },
+    'parnell': {
+      name: 'Parnell', city: 'Auckland', cityAnchor: 'auckland', region: 'Central Auckland',
+      services: ['airbnb','tenancy','commercial'],
+      p1: 'Auckland\'s oldest suburb features Victorian architecture, restored heritage properties, and a thriving café scene. Professional Airbnb cleaning is in high demand in Parnell, where short-stay guests expect immaculate properties and five-star cleanliness.',
+      p2: 'LCA Services provides fast, reliable Airbnb turnover cleaning and end of tenancy cleans across Parnell. We also offer commercial cleaning for the suburb\'s many cafés, boutique shops, and office spaces.',
+      note: 'Flexible scheduling including weekends. Contact us to set up regular cleaning for your Parnell property.',
+    },
+    'newmarket': {
+      name: 'Newmarket', city: 'Auckland', cityAnchor: 'auckland', region: 'Central Auckland',
+      services: ['tenancy','builders','commercial'],
+      p1: 'Auckland\'s premier retail and commercial hub combines vibrant shopping precincts with apartments, offices, and new developments. Newmarket is a key area for commercial cleaning, end of tenancy cleans, and post-construction builders cleans as the suburb continues to grow.',
+      p2: 'LCA Services keeps Newmarket offices and commercial spaces spotless. We work after-hours and on weekends to minimise disruption to your business. End of tenancy cleaning is available for residential apartments throughout the area.',
+      note: 'Commercial contracts available. We work around your business hours for zero disruption.',
+    },
+    'orakei': {
+      name: 'Orakei', city: 'Auckland', cityAnchor: 'auckland', region: 'Central Auckland',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'An exclusive, high-value suburb among Auckland\'s most expensive addresses. The luxury homes and premium finishes in Orakei demand the very highest standard of professional cleaning — and that\'s exactly what LCA Services delivers, every time.',
+      p2: 'From post-construction builders cleans on new Orakei builds to meticulous Airbnb turnovers and thorough end of tenancy cleans, our team treats every Orakei property with the premium care it deserves.',
+      note: 'We bring all professional-grade equipment and products. 100% satisfaction guaranteed.',
+    },
+    'epsom': {
+      name: 'Epsom', city: 'Auckland', cityAnchor: 'auckland', region: 'Central Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'A sought-after central suburb known for its excellent school zones and established residential character. Popular with families and professional tenants, Epsom has consistent demand for thorough move-out cleans and Airbnb turnovers.',
+      p2: 'LCA Services provides bond-back standard end of tenancy cleans throughout Epsom, covering every room to the exact standard required for rental inspections. Our Airbnb cleaning service keeps your short-stay property guest-ready year-round.',
+      note: 'Bond-back guarantee available. Contact us to discuss your end of tenancy requirements.',
+    },
+    /* ── AUCKLAND NORTH SHORE ── */
+    'takapuna': {
+      name: 'Takapuna', city: 'Auckland', cityAnchor: 'auckland', region: 'North Shore',
+      services: ['airbnb','tenancy','commercial'],
+      p1: 'The North Shore\'s premier beach destination features Auckland\'s Golden Mile of coastal properties alongside a vibrant town centre. Takapuna\'s high concentration of beachfront Airbnb and holiday rental properties means professional turnover cleaning is in constant demand here.',
+      p2: 'LCA Services handles Airbnb turnover cleaning, end of tenancy cleans, and commercial cleaning for businesses throughout Takapuna. Our team is experienced with the premium standard that beachfront properties require.',
+      note: 'Same-day Airbnb turnovers available in Takapuna. Call 022 487 1791 to check availability.',
+    },
+    'devonport': {
+      name: 'Devonport', city: 'Auckland', cityAnchor: 'auckland', region: 'North Shore',
+      services: ['airbnb','tenancy'],
+      p1: 'A historic harbourside suburb with charming Victorian properties and a thriving café culture. Devonport\'s short-stay market is one of Auckland\'s most active — with ferry-accessible charm that draws guests year-round, professional Airbnb cleaning is essential between every stay.',
+      p2: 'LCA Services provides reliable, photo-verified Airbnb turnover cleaning and end of tenancy cleans across Devonport. Our team works efficiently to meet even tight guest check-in windows.',
+      note: 'We accommodate Devonport\'s ferry-schedule-driven tight turnaround windows. Contact us to arrange.',
+    },
+    'milford': {
+      name: 'Milford', city: 'Auckland', cityAnchor: 'auckland', region: 'North Shore',
+      services: ['airbnb','tenancy'],
+      p1: 'Nestled between Takapuna and Castor Bay, Milford offers a relaxed village atmosphere with beach access and excellent schools. A popular family suburb with consistent demand for residential and Airbnb cleaning throughout the year.',
+      p2: 'LCA Services provides thorough Airbnb cleaning and bond-back standard end of tenancy cleans across Milford. We supply all products and equipment — you don\'t need to lift a finger.',
+      note: 'Flexible scheduling including early morning and weekend appointments available in Milford.',
+    },
+    'albany': {
+      name: 'Albany', city: 'Auckland', cityAnchor: 'auckland', region: 'North Shore',
+      services: ['tenancy','builders','commercial'],
+      p1: 'One of the North Shore\'s fastest-growing areas featuring modern developments, shopping centres, and educational facilities. Albany\'s new builds and commercial developments regularly require professional post-construction cleans before handover.',
+      p2: 'LCA Services handles builders cleans, end of tenancy cleans, and commercial cleaning throughout Albany. We understand the handover deadlines that builders and developers face — our team delivers consistently on time.',
+      note: 'We work to builder and developer handover schedules. Contact us early to secure your date.',
+    },
+    'birkenhead': {
+      name: 'Birkenhead', city: 'Auckland', cityAnchor: 'auckland', region: 'North Shore',
+      services: ['tenancy','commercial'],
+      p1: 'One of Auckland\'s first boroughs, Birkenhead features established residential areas with historic character and a strong community spirit. Regular end of tenancy cleaning is popular in this well-connected suburb with its large rental market.',
+      p2: 'LCA Services provides thorough end of tenancy cleans and commercial cleaning across Birkenhead. Our bond-back standard cleaning covers every room to the exact requirements of your tenancy agreement.',
+      note: 'We photograph every cleaned room for your bond claim documentation. Ask us about this service.',
+    },
+    'northcote': {
+      name: 'Northcote', city: 'Auckland', cityAnchor: 'auckland', region: 'North Shore',
+      services: ['tenancy','builders'],
+      p1: 'Undergoing significant urban regeneration with new housing developments, Northcote is a growing suburb where builders cleans and new-build property cleans are in strong demand. LCA Services is experienced with the post-construction cleaning requirements of the area\'s many new builds.',
+      p2: 'From freshly completed new builds requiring a thorough builders clean to rental properties needing bond-back standard end of tenancy cleans, LCA Services covers Northcote and all surrounding streets.',
+      note: 'We work with builders, developers, and private owners throughout Northcote\'s regeneration areas.',
+    },
+    /* ── AUCKLAND EAST ── */
+    'mission-bay': {
+      name: 'Mission Bay', city: 'Auckland', cityAnchor: 'auckland', region: 'East Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'A vibrant seaside suburb with Auckland\'s most popular resort beach on iconic Tamaki Drive. Mission Bay is one of Auckland\'s top Airbnb destinations — professional turnover cleaning between guests keeps your listing\'s reviews five-star and your booking rate high.',
+      p2: 'LCA Services provides reliable, same-day Airbnb turnover cleaning throughout Mission Bay. Our end of tenancy cleaning service also helps tenants in the area recover their full bond at the end of their tenancy.',
+      note: 'Mission Bay Airbnb turnovers are available 7 days. We work around your check-in and check-out times.',
+    },
+    'saint-heliers': {
+      name: 'Saint Heliers', city: 'Auckland', cityAnchor: 'auckland', region: 'East Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'A charming seaside village with stunning Hauraki Gulf views and beautiful beaches. Short-stay holiday properties in Saint Heliers benefit greatly from professional Airbnb cleaning between every guest — maintaining the premium feel that commands top nightly rates.',
+      p2: 'LCA Services handles Airbnb turnovers and end of tenancy cleans across Saint Heliers. Our team is thorough, professional, and always on time.',
+      note: 'We can manage linen changeovers alongside Airbnb cleaning. Ask us about add-on services.',
+    },
+    'kohimarama': {
+      name: 'Kohimarama', city: 'Auckland', cityAnchor: 'auckland', region: 'East Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'A quieter coastal suburb with a scenic boardwalk and peaceful beach lifestyle between Mission Bay and Saint Heliers. Popular with families and professionals seeking beachside living, Kohimarama has a steady mix of Airbnb properties and long-term rentals.',
+      p2: 'LCA Services provides professional Airbnb cleaning and end of tenancy cleans throughout Kohimarama. Our fully equipped teams arrive on time and leave your property spotless every single visit.',
+      note: 'Recurring Airbnb cleaning contracts available in Kohimarama. Lock in your regular slot today.',
+    },
+    'howick': {
+      name: 'Howick', city: 'Auckland', cityAnchor: 'auckland', region: 'East Auckland',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'A rapidly developed, affluent commuter suburb featuring quality residential properties with coastal reserves. End of tenancy and Airbnb cleaning are consistently in demand across Howick, alongside builders cleans for the suburb\'s many new residential developments.',
+      p2: 'LCA Services is your local cleaning partner across Howick and the surrounding East Auckland area. We service both residential and new-build properties with the same high standard and professional approach.',
+      note: 'We service Howick and surrounding suburbs including Pakuranga, Botany, and Flat Bush.',
+    },
+    'bucklands-beach': {
+      name: 'Bucklands Beach', city: 'Auckland', cityAnchor: 'auckland', region: 'East Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'An affluent seaside suburb 13km east of the Auckland CBD, offering excellent beaches and coastal living. Properties here attract Airbnb guests year-round, making reliable professional cleaning between stays essential for maintaining top reviews.',
+      p2: 'LCA Services provides Airbnb turnover cleaning and end of tenancy cleans across Bucklands Beach and the Eastern Bays. Our team is experienced, efficient, and fully equipped for every clean.',
+      note: 'Bucklands Beach and Eastern Bays covered. Ask about our multi-property Airbnb cleaning rates.',
+    },
+    /* ── AUCKLAND WEST ── */
+    'ponsonby': {
+      name: 'Ponsonby', city: 'Auckland', cityAnchor: 'auckland', region: 'West Auckland',
+      services: ['airbnb','tenancy','commercial'],
+      p1: 'An iconic inner-west suburb of character villas and a vibrant dining and hospitality scene. Ponsonby\'s high concentration of short-stay properties makes it one of Auckland\'s busiest areas for Airbnb cleaning. Its restaurants, cafés, and boutiques also generate strong commercial cleaning demand.',
+      p2: 'LCA Services provides fast, reliable Airbnb turnover cleaning, end of tenancy cleans, and commercial cleaning throughout Ponsonby and the inner west. Our team understands the high standards that Ponsonby properties require.',
+      note: 'We service Ponsonby, Freemans Bay, and the wider inner-city west. Same-week bookings welcome.',
+    },
+    'herne-bay': {
+      name: 'Herne Bay', city: 'Auckland', cityAnchor: 'auckland', region: 'West Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'An affluent harbourside suburb of grand Victorian residences and immaculately restored properties. The premium homes in Herne Bay require the attention to detail and professional standard that LCA Services consistently delivers — visit after visit.',
+      p2: 'Our cleaning teams treat every Herne Bay property with the care and respect it deserves. From Airbnb turnovers to thorough end of tenancy cleans, we work to the exact standard your property requires.',
+      note: 'Premium properties welcome. We are experienced with the cleaning requirements of heritage and character homes.',
+    },
+    'grey-lynn': {
+      name: 'Grey Lynn', city: 'Auckland', cityAnchor: 'auckland', region: 'West Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'A leafy, bohemian suburb of early twentieth-century villas and bungalows with strong character and a vibrant community. Grey Lynn is one of Auckland\'s most popular rental suburbs — and high tenant turnover means end of tenancy cleaning is consistently in demand throughout the area.',
+      p2: 'LCA Services provides bond-back standard end of tenancy cleans and reliable Airbnb turnover cleaning across Grey Lynn. We cover every room to the exact standard required by your property manager or letting agent.',
+      note: 'We work with Grey Lynn\'s most trusted property managers. Contact us to arrange consistent cleaning.',
+    },
+    'kingsland': {
+      name: 'Kingsland', city: 'Auckland', cityAnchor: 'auckland', region: 'West Auckland',
+      services: ['tenancy','commercial'],
+      p1: 'An Edwardian-era suburb with strong village character, trendy cafés, and a younger demographic. High tenant turnover in this popular Auckland suburb means regular end of tenancy cleaning is essential — and LCA Services is ready to deliver.',
+      p2: 'We also provide commercial cleaning for Kingsland\'s many cafés, bars, and retail businesses. Our teams work after hours and on weekends to keep your business premises spotless without disrupting your trade.',
+      note: 'Commercial cleaning contracts available for Kingsland businesses. Competitive rates for regular bookings.',
+    },
+    'mount-albert': {
+      name: 'Mount Albert', city: 'Auckland', cityAnchor: 'auckland', region: 'West Auckland',
+      services: ['airbnb','tenancy'],
+      p1: 'A community-focused suburb with excellent transport links and established residential character. A diverse mix of properties makes Mount Albert a busy area for both end of tenancy cleaning and Airbnb turnovers throughout the year.',
+      p2: 'LCA Services provides thorough, reliable cleaning throughout Mount Albert. Our bond-back standard end of tenancy cleans cover every room and surface to the requirements of your tenancy agreement.',
+      note: 'We service Mount Albert and surrounding suburbs. Flexible scheduling including weekend appointments.',
+    },
+    /* ── AUCKLAND SOUTH ── */
+    'manurewa': {
+      name: 'Manurewa', city: 'Auckland', cityAnchor: 'auckland', region: 'South Auckland',
+      services: ['tenancy','commercial'],
+      p1: 'A multicultural suburb featuring diverse communities and the spectacular Auckland Botanic Gardens. A large residential base with consistent demand for professional end of tenancy cleaning — LCA Services provides reliable, thorough cleans at competitive rates throughout Manurewa.',
+      p2: 'Our end of tenancy cleaning meets the bond-back standard required for rental inspections throughout Manurewa. We also offer commercial cleaning for businesses in the area, working around your operating hours.',
+      note: 'We service Manurewa and surrounds including Clendon, Wattle Downs, and Randwick Park.',
+    },
+    'papakura': {
+      name: 'Papakura', city: 'Auckland', cityAnchor: 'auckland', region: 'South Auckland',
+      services: ['tenancy','builders'],
+      p1: 'The gateway to rural Auckland\'s south, Papakura features diverse residential and rural lifestyle properties. Growing development in the area drives strong demand for both residential end of tenancy cleaning and post-construction builders cleans.',
+      p2: 'LCA Services handles end of tenancy cleans and builders cleans throughout Papakura and the surrounding south Auckland rural areas. We work to tight handover deadlines and arrive fully equipped for every clean.',
+      note: 'We service Papakura town centre and surrounding rural lifestyle blocks. Ask about our rural property rates.',
+    },
+    'pukekohe': {
+      name: 'Pukekohe', city: 'Auckland', cityAnchor: 'auckland', region: 'South Auckland',
+      services: ['tenancy','builders'],
+      p1: 'A rural-edge suburb in Auckland\'s south featuring a mix of residential and lifestyle properties set among rolling farmland. New subdivisions here regularly call for professional post-construction cleans, and a growing rental market drives consistent end of tenancy cleaning demand.',
+      p2: 'LCA Services provides builders cleans and end of tenancy cleans throughout Pukekohe and the wider Franklin district. Our experienced teams deliver consistent, high-quality results on every job.',
+      note: 'We service Pukekohe and surrounding Franklin townships. Contact us for rural lifestyle block cleaning.',
+    },
+    /* ── WAIHEKE ISLAND ── */
+    'oneroa': {
+      name: 'Oneroa', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','tenancy','commercial'],
+      p1: 'Waiheke\'s main village and commercial hub, with vibrant cafés, restaurants, and boutique shops. The highest concentration of short-stay properties on the island means professional Airbnb cleaning is in constant demand here — and LCA Services is your trusted local partner.',
+      p2: 'We provide reliable Airbnb turnover cleaning, end of tenancy cleans, and commercial cleaning throughout Oneroa. Our team is experienced with the island\'s tight turnaround windows and accommodation standards.',
+      note: 'We coordinate with ferry schedules to ensure timely cleaning around your guests\' check-in and check-out times.',
+    },
+    'ostend': {
+      name: 'Ostend', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','tenancy'],
+      p1: 'The island\'s main service hub featuring supermarkets, medical facilities, and retail businesses. A mix of permanent residences and holiday homes creates steady demand for both end of tenancy and Airbnb cleans throughout Ostend.',
+      p2: 'LCA Services provides professional cleaning across Ostend for both permanent and holiday rental properties. We understand the unique cleaning requirements of island properties and deliver consistently thorough results.',
+      note: 'Ostend and surrounding Waiheke areas serviced. Contact us to arrange regular cleaning for your island property.',
+    },
+    'onetangi': {
+      name: 'Onetangi', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','tenancy'],
+      p1: 'Home to one of Waiheke\'s longest and most stunning beaches, Onetangi is a favourite for summer visitors and holiday makers. Holiday properties along Onetangi Beach benefit from reliable professional Airbnb cleaning between every guest stay.',
+      p2: 'LCA Services keeps Onetangi holiday properties guest-ready year-round. Our thorough Airbnb turnovers cover every room and outdoor area, ensuring your property maintains its five-star rating visit after visit.',
+      note: 'We handle Onetangi Beach holiday homes including linen changeovers and outdoor area cleaning.',
+    },
+    'palm-beach': {
+      name: 'Palm Beach', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','tenancy'],
+      p1: 'A family-favourite beach with gentle surf and safe swimming, backed by residential properties and holiday homes. Consistent Airbnb traffic through summer and beyond means regular turnover cleans are essential for Palm Beach property owners.',
+      p2: 'LCA Services provides Airbnb cleaning and end of tenancy cleans across Palm Beach and the surrounding bays. Our team delivers thoroughly, professionally, and on time for every booking.',
+      note: 'Palm Beach bookings can be combined with nearby bays — ask about our multi-property rates.',
+    },
+    'surfdale': {
+      name: 'Surfdale', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','tenancy'],
+      p1: 'A south-facing beach community popular for water sports and connected to Blackpool Beach via scenic walking tracks. A relaxed residential area with a steady holiday rental market — LCA Services keeps Surfdale holiday properties spotless.',
+      p2: 'Our Airbnb cleaning service covers Surfdale holiday homes and bach properties. We also provide end of tenancy cleaning for permanent residential properties throughout the area.',
+      note: 'We service Surfdale and nearby Blackpool in a single visit. Ask about combined suburb rates.',
+    },
+    'blackpool': {
+      name: 'Blackpool', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','tenancy'],
+      p1: 'A peaceful south-facing bay just a 10-minute walk from Oneroa village, popular for kayaking and windsurfing. A mix of permanent homes and holiday properties in a quiet, natural setting that demands thorough, attentive cleaning.',
+      p2: 'LCA Services provides Airbnb turnover cleaning and end of tenancy cleans across Blackpool. Our team treats every island property with the same professional standard, regardless of size or location.',
+      note: 'Blackpool and surrounding Waiheke bays serviced. Flexible scheduling around ferry timetables.',
+    },
+    'rocky-bay': {
+      name: 'Rocky Bay', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','builders'],
+      p1: 'A scenic and secluded bay on Waiheke\'s eastern side, offering dramatic coastal character and natural beauty. Boutique holiday properties in Rocky Bay call for thorough professional cleaning after every guest stay — maintaining the premium feel that commands premium rates.',
+      p2: 'LCA Services handles Airbnb cleaning and post-construction builders cleans for new builds across Rocky Bay. Our experienced team delivers consistent, high-quality results in even the most remote island locations.',
+      note: 'Rocky Bay and eastern Waiheke properties serviced. Contact us early for scheduling in this area.',
+    },
+    'church-bay': {
+      name: 'Church Bay', city: 'Waiheke Island', cityAnchor: 'waiheke', region: 'Waiheke Island',
+      services: ['airbnb','tenancy'],
+      p1: 'One of Waiheke\'s quieter bays offering a secluded beach experience away from the main tourist areas. Ideal for private holiday homes that benefit from discreet, reliable professional cleaning between every stay.',
+      p2: 'LCA Services provides Airbnb cleaning and end of tenancy cleans across Church Bay. Our team is experienced with the privacy and professional discretion that private island retreats require.',
+      note: 'Church Bay and surrounding quiet bays serviced. Discreet, professional cleaning for exclusive island properties.',
+    },
+    /* ── WAIKATO ── */
+    'cambridge': {
+      name: 'Cambridge', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'A picturesque semi-rural town renowned for Victorian architecture and tree-lined streets. With premium lifestyle living and a strong equestrian community, Cambridge properties regularly require professional end of tenancy and Airbnb cleans to maintain their high standards.',
+      p2: 'LCA Services provides Airbnb cleaning, end of tenancy cleans, and post-construction builders cleans throughout Cambridge. Our team delivers the premium standard that Cambridge properties require.',
+      note: 'We service Cambridge township and surrounding rural lifestyle properties. Ask about lifestyle block cleaning.',
+    },
+    'te-awamutu': {
+      name: 'Te Awamutu', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['tenancy','commercial'],
+      p1: 'Known as New Zealand\'s "Rose Town," Te Awamutu is a thriving service centre for the surrounding farming community. Residential and commercial cleaning services are consistently in demand across the town for both residential rentals and commercial premises.',
+      p2: 'LCA Services provides end of tenancy cleans and commercial cleaning throughout Te Awamutu. Our reliable, professional service supports both the local business community and residential rental market.',
+      note: 'We service Te Awamutu and surrounding Waikato towns. Contact us for regional coverage information.',
+    },
+    'raglan': {
+      name: 'Raglan', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['airbnb','tenancy'],
+      p1: 'A bohemian surf town on the Waikato\'s west coast, famous for one of New Zealand\'s finest left-hand breaks. Raglan\'s thriving Airbnb and surf retreat market makes professional turnover cleaning essential — guests expect pristine properties after long days on the water.',
+      p2: 'LCA Services provides Airbnb cleaning and end of tenancy cleans across Raglan. Our team understands the specific requirements of surf property cleaning, including sandy floors, wetsuit-rinsed bathrooms, and outdoor equipment areas.',
+      note: 'Raglan beach properties and surf retreats welcome. We handle sand, salt, and surf-related cleaning challenges.',
+    },
+    'matamata': {
+      name: 'Matamata', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['airbnb','tenancy'],
+      p1: 'World-renowned for Thoroughbred horse breeding and the Hobbiton Movie Set, Matamata draws international visitors year-round. Airbnb and short-stay cleaning is in growing demand as tourism continues to rise, with guests expecting five-star cleanliness.',
+      p2: 'LCA Services provides reliable Airbnb turnover cleaning and end of tenancy cleans throughout Matamata. We help local hosts maintain the immaculate standards that attract five-star reviews from international guests.',
+      note: 'We service Matamata and surrounding rural Waikato. Contact us for rural property and lifestyle block cleaning.',
+    },
+    'morrinsville': {
+      name: 'Morrinsville', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['tenancy','commercial'],
+      p1: 'A prosperous dairy farming service town with a strong agricultural community. Commercial and residential cleaning services support both the local business community and residential rental market throughout Morrinsville.',
+      p2: 'LCA Services provides end of tenancy cleans and commercial cleaning across Morrinsville. Our professional service is reliable, thorough, and competitively priced for Waikato rural towns.',
+      note: 'We service Morrinsville and surrounding rural Waikato communities. Same-week bookings available.',
+    },
+    'te-kauwhata': {
+      name: 'Te Kauwhata', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['tenancy','builders'],
+      p1: 'One of Waikato\'s fastest-growing rural towns, strategically located near State Highway 1 between Hamilton and Auckland. New builds and lifestyle blocks here regularly need professional builders cleans as the area continues to develop.',
+      p2: 'LCA Services provides end of tenancy cleans and post-construction builders cleans throughout Te Kauwhata. We work to handover deadlines and bring all equipment and products to your property.',
+      note: 'Te Kauwhata and surrounding rural lifestyle block areas serviced. Ask about new build handover cleaning.',
+    },
+    'huntly': {
+      name: 'Huntly', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['tenancy','commercial'],
+      p1: 'A historic Waikato town 34km from Hamilton with strong community roots and easy motorway access. Residential and commercial cleaning services are available throughout Huntly and surrounds — reliable, professional, and competitively priced.',
+      p2: 'LCA Services provides end of tenancy cleans and commercial cleaning across Huntly. Our team delivers consistent, thorough results for both residential rental properties and local businesses.',
+      note: 'Huntly and surrounding Waikato River corridor towns serviced. Contact us for regional scheduling.',
+    },
+    'tokoroa': {
+      name: 'Tokoroa', city: 'Waikato', cityAnchor: 'waikato', region: 'Waikato',
+      services: ['tenancy','commercial'],
+      p1: 'The largest settlement in South Waikato, surrounded by green rolling hills and plantation forests. A multicultural community with a solid rental market and consistent demand for professional end of tenancy cleaning.',
+      p2: 'LCA Services provides end of tenancy cleans and commercial cleaning throughout Tokoroa and South Waikato. Our reliable, professional team delivers bond-back standard results every time.',
+      note: 'We service Tokoroa and surrounding South Waikato townships. Ask about multi-property rates.',
+    },
+    /* ── HAMILTON ── */
+    'flagstaff': {
+      name: 'Flagstaff', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['tenancy','builders'],
+      p1: 'A prestigious northern suburb with upscale residential architecture and luxury homes on scenic gully and riverbank sections. New builds in Flagstaff consistently require thorough professional builders cleans before handover — and LCA Services delivers the premium standard these properties require.',
+      p2: 'We provide post-construction builders cleans and end of tenancy cleans throughout Flagstaff. Our team is experienced with the high-specification finishes that Flagstaff\'s prestige properties require.',
+      note: 'Flagstaff prestige new builds welcome. We are experienced with spec home cleaning and handover standards.',
+    },
+    'rototuna': {
+      name: 'Rototuna', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'One of Hamilton\'s fastest-growing suburbs with modern subdivisions and contemporary family homes. Rapid development drives strong demand for post-construction cleaning across Rototuna\'s many new builds — LCA Services is ready to deliver on tight handover schedules.',
+      p2: 'We provide builders cleans, end of tenancy cleans, and Airbnb cleaning throughout Rototuna. Our team works efficiently and professionally for builders, developers, landlords, and homeowners across the suburb.',
+      note: 'Rototuna\'s newest subdivisions serviced. We work to builder handover deadlines — contact us early to book.',
+    },
+    'hamilton-east': {
+      name: 'Hamilton East', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['airbnb','tenancy','commercial'],
+      p1: 'One of Hamilton\'s oldest and most charming neighbourhoods, home to the iconic Hamilton Gardens, parks, and classic villas. A popular rental area with students and young professionals, Hamilton East has high demand for professional end of tenancy cleaning.',
+      p2: 'LCA Services provides end of tenancy cleans, Airbnb cleaning, and commercial cleaning throughout Hamilton East. Our bond-back standard cleaning covers every room to the exact requirements of your property manager.',
+      note: 'We work with Hamilton East\'s property managers and landlords. Contact us to arrange consistent cleaning.',
+    },
+    'chartwell': {
+      name: 'Chartwell', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['tenancy','commercial'],
+      p1: 'A northeastern suburb featuring one of Hamilton\'s major shopping malls and a busy commercial and residential hub. Commercial cleaning for offices and retail premises is consistently in demand throughout Chartwell, alongside residential end of tenancy cleans.',
+      p2: 'LCA Services provides commercial cleaning and end of tenancy cleans throughout Chartwell. Our commercial teams work after hours and on weekends to keep your business premises spotless without disrupting your operations.',
+      note: 'Chartwell commercial cleaning available after hours and on weekends. Contact us for a tailored cleaning schedule.',
+    },
+    'dinsdale': {
+      name: 'Dinsdale', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['airbnb','tenancy'],
+      p1: 'A residential suburb popular with families, featuring hillside homes with city views and easy access to schools, supermarkets, and medical centres. A strong rental market generates regular end of tenancy cleaning demand throughout Dinsdale.',
+      p2: 'LCA Services provides thorough end of tenancy cleans and Airbnb cleaning throughout Dinsdale. Our bond-back standard cleaning ensures your rental property is ready for inspection the day you need it.',
+      note: 'Dinsdale and surrounding western Hamilton suburbs serviced. Same-week booking often available.',
+    },
+    'pukete': {
+      name: 'Pukete', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['tenancy','builders'],
+      p1: 'A charming riverside suburb in northwestern Hamilton with mountain bike tracks and scenic walkways. Family-friendly living with a stable residential base and consistent need for professional cleaning services throughout the area.',
+      p2: 'LCA Services provides end of tenancy cleans and builders cleans throughout Pukete. Our reliable, professional team delivers consistent, thorough results for both landlords and new build developers.',
+      note: 'Pukete and surrounding River Road corridor serviced. Contact us for Hamilton-wide coverage.',
+    },
+    'forest-lake': {
+      name: 'Forest Lake', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['tenancy','commercial'],
+      p1: 'A pleasant residential suburb offering family-friendly living with good amenities and community facilities. Close proximity to key Hamilton services makes it a popular choice for long-term tenants, generating consistent end of tenancy cleaning demand.',
+      p2: 'LCA Services provides professional end of tenancy cleans and commercial cleaning throughout Forest Lake. Our thorough approach ensures properties are ready for inspection to the bond-back standard every time.',
+      note: 'Forest Lake and western Hamilton suburbs serviced. Flexible scheduling for landlords and property managers.',
+    },
+    'nawton': {
+      name: 'Nawton', city: 'Hamilton', cityAnchor: 'hamilton', region: 'Hamilton',
+      services: ['tenancy','commercial'],
+      p1: 'An established Hamilton suburb offering affordable family homes and a diverse community. A busy rental market means end of tenancy cleaning is consistently in demand throughout Nawton — and LCA Services delivers reliable, bond-back standard cleaning at competitive rates.',
+      p2: 'We provide end of tenancy cleans and commercial cleaning across Nawton. Our professional team covers every room and surface to the exact requirements of your tenancy agreement.',
+      note: 'Nawton and surrounding Hamilton West suburbs serviced. Ask about our multi-property landlord rates.',
+    },
+    /* ── TAURANGA ── */
+    'mount-maunganui': {
+      name: 'Mount Maunganui', city: 'Tauranga', cityAnchor: 'tauranga', region: 'Tauranga',
+      services: ['airbnb','tenancy','commercial'],
+      p1: 'Home to the iconic Mount and some of New Zealand\'s best surf beaches. "The Mount" is one of the country\'s top Airbnb destinations — professional turnover cleaning is essential to maintaining five-star guest reviews and the premium nightly rates that Mount Maunganui properties command.',
+      p2: 'LCA Services handles Airbnb turnover cleaning, end of tenancy cleans, and commercial cleaning throughout Mount Maunganui. Our team works around your check-in and check-out windows to deliver spotless results every time.',
+      note: 'Mount Maunganui Airbnb turnovers available 7 days. We accommodate tight guest turnaround windows.',
+    },
+    'papamoa-beach': {
+      name: 'Papamoa Beach', city: 'Tauranga', cityAnchor: 'tauranga', region: 'Tauranga',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'Currently one of New Zealand\'s fastest-growing suburbs, with 16km of white sandy beach and rapid new development. Post-construction builders cleans and new Airbnb property setups are in constant demand along this stunning coastline as development continues.',
+      p2: 'LCA Services provides Airbnb cleaning, end of tenancy cleans, and builders cleans throughout Papamoa Beach. We work with developers, builders, and property owners to deliver timely, professional results.',
+      note: 'Papamoa Beach and Te Tumu areas serviced. We work to builder handover schedules across the growing beachside development.',
+    },
+    'greerton': {
+      name: 'Greerton', city: 'Tauranga', cityAnchor: 'tauranga', region: 'Tauranga',
+      services: ['tenancy','commercial'],
+      p1: 'A major southern suburb blending character homes with newer developments and a charming village shopping precinct. A popular family and professional area with steady demand for residential cleaning services and commercial cleaning for the village\'s many businesses.',
+      p2: 'LCA Services provides end of tenancy cleans and commercial cleaning throughout Greerton. Our professional teams are thorough, reliable, and always on time.',
+      note: 'Greerton and surrounding southern Tauranga suburbs serviced. Ask about our commercial cleaning contracts.',
+    },
+    'tauranga-central': {
+      name: 'Tauranga Central', city: 'Tauranga', cityAnchor: 'tauranga', region: 'Tauranga',
+      services: ['tenancy','builders','commercial'],
+      p1: 'The city\'s commercial heart with retail, dining, and office spaces alongside growing urban residential development. Commercial cleaning for offices and hospitality venues is consistently in demand throughout the Tauranga CBD, along with builders cleans for new urban developments.',
+      p2: 'LCA Services keeps Tauranga CBD offices and commercial spaces spotless. We work after-hours and on weekends to minimise disruption. Builders cleans and end of tenancy cleaning are also available across the central city area.',
+      note: 'Tauranga CBD commercial cleaning available after hours. Flexible contracts to suit your business requirements.',
+    },
+    'arataki': {
+      name: 'Arataki', city: 'Tauranga', cityAnchor: 'tauranga', region: 'Tauranga',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'A residential suburb bordering Mount Maunganui and Papamoa with excellent access to beaches and the Bayfair Shopping Centre. Growing apartment and townhouse development creates regular demand for builders cleans and tenancy cleans across Arataki.',
+      p2: 'LCA Services provides Airbnb cleaning, end of tenancy cleans, and builders cleans throughout Arataki. Our team is experienced with the Bay of Plenty\'s coastal property cleaning requirements.',
+      note: 'Arataki and Bayfair area serviced. We cover both new builds and established properties across the suburb.',
+    },
+    'bethlehem': {
+      name: 'Bethlehem', city: 'Tauranga', cityAnchor: 'tauranga', region: 'Tauranga',
+      services: ['tenancy','builders','commercial'],
+      p1: 'A leafy, upmarket suburb in western Tauranga popular with families for its excellent schools and newer housing developments. Post-construction cleans for new builds are in high demand as Bethlehem continues to grow with quality residential development.',
+      p2: 'LCA Services provides builders cleans, end of tenancy cleans, and commercial cleaning throughout Bethlehem. Our team delivers the premium standard that Bethlehem\'s newer quality properties require.',
+      note: 'Bethlehem and surrounding western Tauranga suburbs serviced. We work with Bethlehem\'s active building community.',
+    },
+    /* ── WAIHI ── */
+    'waihi-town': {
+      name: 'Waihi Town', city: 'Waihi', cityAnchor: 'waihi', region: 'Waihi',
+      services: ['tenancy','builders','commercial'],
+      p1: 'A charming historic gold mining town featuring the iconic Martha Mine and a strong heritage identity. A mix of permanent residents and visitors passing through the Coromandel creates demand for both residential and commercial cleaning services throughout Waihi.',
+      p2: 'LCA Services provides end of tenancy cleans, builders cleans, and commercial cleaning throughout Waihi township. Our reliable, professional team delivers consistent results for businesses and homeowners alike.',
+      note: 'We service Waihi township and surrounds. Contact us for Coromandel Peninsula coverage information.',
+    },
+    'waihi-beach': {
+      name: 'Waihi Beach', city: 'Waihi', cityAnchor: 'waihi', region: 'Waihi',
+      services: ['airbnb','tenancy','builders'],
+      p1: 'A beloved coastal holiday destination with a 10km main beach backed by a growing residential community. Holiday homes and Airbnb properties here see heavy summer traffic — reliable professional cleaning between guests is essential for maintaining five-star reviews and repeat bookings.',
+      p2: 'LCA Services provides Airbnb turnover cleaning, end of tenancy cleans, and builders cleans throughout Waihi Beach. Our team is experienced with the specific requirements of beach holiday property cleaning.',
+      note: 'Waihi Beach holiday home cleaning available year-round, including summer peak season. Book early for December–February.',
+    },
+    'athenree': {
+      name: 'Athenree', city: 'Waihi', cityAnchor: 'waihi', region: 'Waihi',
+      services: ['airbnb','tenancy'],
+      p1: 'A peaceful rural locality near the Athenree Hot Springs and the shores of Tauranga Harbour. Lifestyle properties and holiday homes in this beautiful area benefit from professional cleaning services — LCA Services brings the full professional standard to this quiet coastal location.',
+      p2: 'We provide Airbnb cleaning and end of tenancy cleans across Athenree and the surrounding rural area. Our team brings all equipment and products — no need for you to supply anything.',
+      note: 'Athenree and Katikati area serviced. Ask about combined visits for nearby rural properties.',
+    },
+    'waikino': {
+      name: 'Waikino', city: 'Waihi', cityAnchor: 'waihi', region: 'Waihi',
+      services: ['tenancy','builders'],
+      p1: 'A scenic rural locality in the Coromandel foothills near the historic Waikino Station. A tranquil countryside setting popular with those seeking a quieter lifestyle — LCA Services provides end of tenancy and builders clean services to this picturesque rural area.',
+      p2: 'We provide end of tenancy cleans and post-construction builders cleans throughout Waikino and the surrounding Coromandel foothills. Our team travels to rural locations and brings all necessary equipment.',
+      note: 'Waikino and Karangahake Gorge area serviced. Contact us for rural and lifestyle property cleaning.',
+    },
+  };
+
+  /* ═══════════════════════════════════════════
+     PAGE INIT
+  ═══════════════════════════════════════════ */
+  /* ═══════════════════════════════════════════
+     SERVICE-SPECIFIC CONTENT TEMPLATES
+  ═══════════════════════════════════════════ */
+  function getServiceContent(serviceKey, suburb) {
+    const n = suburb.name;
+    const templates = {
+      airbnb: {
+        heroTitle: `Airbnb Cleaning in ${n}`,
+        heroSub: `Professional Airbnb turnover cleaning for ${n} hosts — guest-ready results, every time.`,
+        p1: `LCA Services provides fast, reliable Airbnb cleaning in ${n}. Whether you need a same-day turnover or a deep clean between longer stays, our experienced team arrives fully equipped and gets your ${n} property guest-ready to five-star standard — every single visit.`,
+        p2: `Our ${n} Airbnb cleaning covers everything guests notice: stripped and remade beds with fresh linen, fully sanitised bathrooms, sparkling kitchen surfaces and appliances, vacuumed and mopped floors, dusted surfaces, clean mirrors, and restocked amenity items. We photograph every room after cleaning so you have full documentation.`,
+        note: `We service ${n} Airbnb properties 7 days a week. Same-day turnovers available — call 022 487 1791 to check availability.`,
+        pricingRow: 'airbnb',
+      },
+      tenancy: {
+        heroTitle: `End of Tenancy Cleaning in ${n}`,
+        heroSub: `Bond-back standard end of tenancy cleaning in ${n} — meet NZ tenancy inspection requirements.`,
+        p1: `LCA Services provides comprehensive end of tenancy cleaning in ${n} to the standard required by the NZ Residential Tenancies Act. Our thorough clean covers every room to the exact requirements of your property manager or landlord's inspection checklist — helping you recover your full bond.`,
+        p2: `Our ${n} end of tenancy clean includes: full kitchen deep clean (oven, rangehood, stovetop, cupboards), bathroom and toilet sanitisation, bedroom and living area cleaning, window sill and track cleaning, wall marks spot-cleaned, skirting boards wiped, and full floor vacuum and mop. We photograph every room for your bond documentation.`,
+        note: `Bond-back standard guaranteed. We work to ${n} property managers' inspection requirements — contact us to discuss your specific tenancy agreement conditions.`,
+        pricingRow: 'tenancy',
+      },
+      builders: {
+        heroTitle: `Builders Clean in ${n}`,
+        heroSub: `Professional post-construction cleaning in ${n} — handover-ready results, on schedule.`,
+        p1: `LCA Services provides thorough post-construction builders cleans in ${n} for new builds, renovations, and commercial fit-outs. Our three-phase approach (rough clean, main clean, final polish) ensures every surface is spotless and your ${n} property is ready for client handover or new occupants.`,
+        p2: `Our ${n} builders clean covers: removal of all construction dust and plaster debris, window cleaning inside and out, kitchen and bathroom deep clean, floor cleaning and polishing, fixture and fitting cleaning (removing stickers and manufacturer labels), and a final inspection walk-through. We bring professional-grade HEPA vacuums and industrial floor machines.`,
+        note: `We work to ${n} builder and developer handover schedules. Contact us early to secure your post-construction cleaning date — slots fill quickly in active building areas.`,
+        pricingRow: 'builders',
+      },
+      commercial: {
+        heroTitle: `Commercial Cleaning in ${n}`,
+        heroSub: `Professional commercial cleaning for ${n} businesses — consistent, reliable, and fully insured.`,
+        p1: `LCA Services provides professional commercial cleaning for offices, retail premises, and hospitality venues throughout ${n}. Our commercial cleaning team is fully trained, insured, and experienced with the consistent standards that ${n} businesses require — delivering the same high result every visit.`,
+        p2: `Our ${n} commercial cleaning covers: reception and common areas, office desks and workstations, bathroom and kitchen/breakroom deep clean, floor vacuuming and mopping, glass and window surfaces, and bin emptying with liner replacement. We work after hours and on weekends so your business operations are never disrupted.`,
+        note: `Commercial contracts available for ${n} businesses with weekly, fortnightly, and monthly options. We work around your operating hours — contact us for a tailored schedule and quote.`,
+        pricingRow: 'commercial',
+      },
+    };
+    return templates[serviceKey] || null;
+  }
+
+  /* ═══════════════════════════════════════════
+     PRICING TABLE — highlight active service
+  ═══════════════════════════════════════════ */
+  const PRICING_ROWS = {
+    airbnb:     ['Airbnb Turnover',   '$89',  '$149', '$199+'],
+    tenancy:    ['End of Tenancy',    '$249', '$379', '$499+'],
+    builders:   ['Builders Clean',   '$299', '$449', '$599+'],
+    commercial: ['Commercial',        null,   null,   null  ],
+  };
+
+  function renderPricingTable(activeKey) {
+    const rows = Object.entries(PRICING_ROWS).map(([key, cols]) => {
+      const isActive = key === activeKey;
+      const style = isActive ? 'background:rgba(58,181,217,0.06);font-weight:700;' : '';
+      if (cols[1] === null) {
+        return `<tr style="${style}"><td>${cols[0]}</td><td colspan="3" style="text-align:right;color:var(--teal);font-weight:600">Custom Quote</td></tr>`;
+      }
+      return `<tr style="${style}"><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
+    }).join('');
+    document.querySelector('.pricing-table tbody').innerHTML = rows;
+  }
+
+  /* ═══════════════════════════════════════════
+     PAGE INIT
+  ═══════════════════════════════════════════ */
+  function initPage() {
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get('s');
+    const serviceKey = params.get('service');
+    const data = SUBURBS[slug];
+
+    if (!data) {
+      document.getElementById('hero-title').textContent = 'Professional Cleaning Services';
+      document.getElementById('hero-sub').textContent = 'Expert cleaning available across New Zealand.';
+      document.getElementById('info-para-1').textContent = 'LCA Services provides professional Airbnb, end of tenancy, builders, and commercial cleaning across Auckland, Waiheke Island, Waikato, Hamilton, Tauranga, and Waihi.';
+      document.getElementById('info-para-2').textContent = 'Contact us today for a free, no-obligation quote for your property.';
+      document.getElementById('info-note').textContent = 'Call 022 487 1791 or visit our service areas page to find your suburb.';
+      document.getElementById('service-links-heading').textContent = 'Our Cleaning Services';
+      renderServiceLinks(['airbnb','tenancy','builders','commercial'], 'Your Area', null);
+      renderPricingTable(null);
+      return;
+    }
+
+    // Breadcrumb
+    document.getElementById('breadcrumb-city').textContent = data.city;
+    document.getElementById('breadcrumb-city').href = `service-areas.html#${data.cityAnchor}`;
+    document.getElementById('breadcrumb-suburb').textContent = data.name;
+
+    const svcContent = serviceKey ? getServiceContent(serviceKey, data) : null;
+
+    if (svcContent) {
+      // ── SERVICE-SPECIFIC PAGE ──
+      document.getElementById('page-title').textContent = `${svcContent.heroTitle} | LCA Services NZ`;
+      document.getElementById('page-desc').setAttribute('content', `${svcContent.heroTitle} by LCA Services NZ. ${svcContent.p1.substring(0, 120)}...`);
+
+      // Add service breadcrumb step
+      const bc = document.getElementById('breadcrumb-suburb');
+      bc.insertAdjacentHTML('beforebegin', `<span style="color:rgba(255,255,255,0.35)">›</span> <a href="suburb.html?s=${slug}" style="color:rgba(255,255,255,0.6)">${data.name}</a> <span style="color:rgba(255,255,255,0.35)">›</span> `);
+      bc.textContent = SERVICE_DEFS[serviceKey].title;
+
+      document.getElementById('hero-title').textContent = svcContent.heroTitle;
+      document.getElementById('hero-sub').textContent = svcContent.heroSub;
+      document.getElementById('info-para-1').textContent = svcContent.p1;
+      document.getElementById('info-para-2').textContent = svcContent.p2;
+      document.getElementById('info-note').innerHTML = `<span style="color:var(--teal);font-weight:600">Please note:</span> ${svcContent.note}`;
+      document.getElementById('service-links-heading').textContent = `Other Services in ${data.name}`;
+      // Show other services (not current)
+      const otherServices = data.services.filter(s => s !== serviceKey);
+      if (otherServices.length > 0) {
+        renderServiceLinks(otherServices, data.name, slug);
+      } else {
+        document.querySelector('.service-links-section').style.display = 'none';
+      }
+      renderPricingTable(serviceKey);
+
+      document.getElementById('cta-title').textContent = `Ready for ${SERVICE_DEFS[serviceKey].title} in ${data.name}?`;
+      document.getElementById('cta-sub').textContent = `Get a free, no-obligation quote today. We service ${data.name} and all surrounding areas.`;
+
+    } else {
+      // ── SUBURB OVERVIEW PAGE ──
+      document.getElementById('page-title').textContent = `Cleaning Services in ${data.name} | LCA Services NZ`;
+      document.getElementById('page-desc').setAttribute('content', `Professional Airbnb, end of tenancy, builders, and commercial cleaning in ${data.name}, ${data.city}. Get a free quote from LCA Services NZ today.`);
+
+      document.getElementById('hero-title').textContent = `Cleaning Services in ${data.name}`;
+      document.getElementById('hero-sub').textContent = `Professional ${data.services.map(s => SERVICE_DEFS[s].title).join(', ')} available in ${data.name}, ${data.region}.`;
+      document.getElementById('info-para-1').textContent = data.p1;
+      document.getElementById('info-para-2').textContent = data.p2;
+      document.getElementById('info-note').innerHTML = `<span style="color:var(--teal);font-weight:600">Please note:</span> ${data.note}`;
+      document.getElementById('service-links-heading').textContent = `Our Services in ${data.name}`;
+      renderServiceLinks(data.services, data.name, slug);
+      renderPricingTable(null);
+
+      document.getElementById('cta-title').textContent = `Ready for a Spotless Clean in ${data.name}?`;
+      document.getElementById('cta-sub').textContent = `Get a free, no-obligation quote for your ${data.name} property today.`;
+    }
+  }
+
+  function renderServiceLinks(services, suburbName, slug) {
+    const grid = document.getElementById('service-links-grid');
+    grid.innerHTML = services.map(key => {
+      const s = SERVICE_DEFS[key];
+      // If slug exists, link to service-specific page; otherwise link to service page
+      const href = slug ? `suburb.html?s=${slug}&service=${key}` : s.url;
+      return `
+        <a href="${href}" class="service-link-row">
+          <div class="service-link-left">
+            <div class="service-link-icon">${s.icon}</div>
+            <div class="service-link-text">
+              <div class="service-link-title">${s.title} in ${suburbName}</div>
+              <div class="service-link-desc">${s.desc}</div>
+            </div>
+          </div>
+          <span class="service-link-arrow">›</span>
+        </a>`;
+    }).join('');
+  }
+
+  /* Mobile menu */
+  function openMenu() { document.getElementById('mobileMenu').classList.add('open'); }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  document.addEventListener('DOMContentLoaded', initPage);
+</script>
+</body>
+</html>

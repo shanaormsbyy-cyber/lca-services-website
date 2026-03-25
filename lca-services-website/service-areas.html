@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleaning Service Areas — Auckland, Hamilton & Tauranga | LCA Services</title>
+  <meta name="description" content="LCA Services covers Auckland, Waiheke Island, Hamilton, Waikato, Tauranga & Waihi. Airbnb, bond, builders & commercial cleaning across NZ. Check your suburb." />
+  <link rel="canonical" href="https://www.lcaservices.nz/service-areas.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LCA Services" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:title" content="Cleaning Service Areas — Auckland, Hamilton & Tauranga | LCA Services" />
+  <meta property="og:description" content="LCA Services covers Auckland, Waiheke Island, Hamilton, Waikato, Tauranga & Waihi. Airbnb, bond, builders & commercial cleaning across NZ. Check your suburb." />
+  <meta property="og:url" content="https://www.lcaservices.nz/service-areas.html" />
+  <meta property="og:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cleaning Service Areas — Auckland, Hamilton & Tauranga | LCA Services" />
+  <meta name="twitter:description" content="LCA Services covers Auckland, Waiheke Island, Hamilton, Waikato, Tauranga & Waihi. Airbnb, bond, builders & commercial cleaning across NZ. Check your suburb." />
+  <meta name="twitter:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:      #101828;
+      --navy2:     #1d2939;
+      --teal:      #3AB5D9;
+      --teal-dark: #2a9cbd;
+      --gray:      #475467;
+      --gray2:     #667085;
+      --light:     #f9fafb;
+      --white:     #ffffff;
+      --border:    #e4e7ec;
+      --radius:    12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #f3f4f6; color: var(--navy); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ─── TOPBAR ─── */
+    .topbar { background: var(--navy); color: rgba(255,255,255,0.75); font-size: 13px; padding: 8px 0; text-align: center; }
+    .topbar a { color: var(--white); font-weight: 600; }
+
+    /* ─── NAV ─── */
+    nav { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-size: 22px; font-weight: 800; color: var(--navy); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+    .logo-sub { display: flex; flex-direction: column; font-size: 9px; font-weight: 700; color: var(--teal); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.5px; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a { display: flex; align-items: center; gap: 4px; padding: 8px 14px; font-size: 14px; font-weight: 500; color: var(--gray); border-radius: 6px; transition: all 0.15s; }
+    .nav-links > li > a:hover { color: var(--navy); background: var(--light); }
+    .nav-chevron { font-size: 10px; transition: transform 0.2s; }
+    .dropdown { position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 8px 32px rgba(0,0,0,0.12); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: all 0.2s; z-index: 100; }
+    .nav-links > li:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-links > li:hover .nav-chevron { transform: rotate(180deg); }
+    .dropdown a { display: block; padding: 10px 16px; font-size: 14px; color: var(--gray); transition: all 0.15s; }
+    .dropdown a:hover { background: var(--light); color: var(--teal); padding-left: 20px; }
+    .btn-nav { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 14px; cursor: pointer; border: none; background: var(--teal); color: var(--white); transition: all 0.2s; white-space: nowrap; }
+    .btn-nav:hover { background: var(--teal-dark); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+    @media (max-width: 900px) { .nav-links, .btn-nav { display: none; } .hamburger { display: flex; } }
+
+    /* ─── MOBILE MENU ─── */
+    .mobile-menu { display: none; position: fixed; inset: 0; background: var(--white); z-index: 2000; padding: 24px; overflow-y: auto; flex-direction: column; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+    .mobile-close { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+    .mobile-nav { display: flex; flex-direction: column; gap: 4px; }
+    .mobile-nav a { display: block; padding: 14px 16px; font-size: 16px; font-weight: 500; color: var(--gray); border-radius: 8px; }
+    .mobile-nav a:hover { background: var(--light); color: var(--teal); }
+    .mobile-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray2); padding: 12px 16px 4px; }
+    .mobile-cta { margin-top: 24px; }
+    .btn-teal-full { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; background: var(--teal); color: var(--white); border-radius: 8px; font-weight: 700; font-size: 15px; }
+
+    /* ─── PAGE HERO ─── */
+    .page-hero { background: var(--white); border-bottom: 1px solid var(--border); padding: 40px 24px 36px; }
+    .page-hero-inner { max-width: 960px; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--gray2); margin-bottom: 16px; }
+    .breadcrumb a { color: var(--teal); }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .page-hero h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .page-hero p { font-size: 16px; color: var(--gray); max-width: 580px; }
+
+    /* ─── POSTCODE CHECKER ─── */
+    .checker-wrap { background: #f3f4f6; padding: 32px 24px 0; }
+    .checker-inner { max-width: 960px; margin: 0 auto; }
+    .checker-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .checker-card h2 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .checker-card p { font-size: 14px; color: var(--gray2); margin-bottom: 20px; }
+    .checker-input-row { display: flex; gap: 10px; align-items: stretch; flex-wrap: wrap; }
+    .postcode-field { position: relative; flex: 1; min-width: 220px; }
+    #postcodeInput { width: 100%; padding: 13px 16px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 15px; font-family: inherit; color: var(--navy); outline: none; transition: border-color 0.15s; }
+    #postcodeInput:focus { border-color: var(--teal); }
+    #postcodeSuggestions { position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: var(--white); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); z-index: 50; display: none; max-height: 220px; overflow-y: auto; }
+    .pc-suggestion { padding: 11px 16px; font-size: 14px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--navy); transition: background 0.1s; }
+    .pc-suggestion:hover { background: var(--light); color: var(--teal); }
+    .pc-suggestion .pc-postcode { font-size: 12px; color: var(--gray2); font-weight: 500; }
+    #postcodeBtn { padding: 13px 28px; background: var(--teal); color: var(--white); border: none; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: inherit; transition: background 0.2s; white-space: nowrap; }
+    #postcodeBtn:hover { background: var(--teal-dark); }
+    #postcodeResult { margin-top: 16px; display: none; }
+    .pc-result-inner { display: flex; align-items: flex-start; gap: 14px; padding: 16px 20px; border-radius: 10px; }
+    .pc-result-inner.success { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .pc-result-inner.fail { background: #fef2f2; border: 1px solid #fecaca; }
+    .pc-result-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+    .pc-result-title { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+    .pc-result-inner.success .pc-result-title { color: #065f46; }
+    .pc-result-inner.fail .pc-result-title { color: #991b1b; }
+    .pc-result-desc { font-size: 13px; color: var(--gray); }
+    .pc-result-services { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .pc-svc-link { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; background: var(--white); border: 1px solid #bbf7d0; border-radius: 6px; font-size: 12px; font-weight: 600; color: #065f46; transition: all 0.15s; }
+    .pc-svc-link:hover { background: var(--teal); color: var(--white); border-color: var(--teal); }
+
+    /* ─── AREAS SECTION ─── */
+    .areas-section { padding: 28px 24px 80px; background: #f3f4f6; }
+    .areas-inner { max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    .section-intro { font-size: 14px; color: var(--gray2); padding: 8px 0 4px; }
+
+    /* ─── CITY CARD ─── */
+    .city-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; overflow: visible; transition: box-shadow 0.2s; }
+    .city-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .city-card-header { display: flex; align-items: center; justify-content: space-between; padding: 22px 28px; gap: 16px; }
+    .city-card-left { display: flex; align-items: center; gap: 16px; }
+    .city-icon-wrap { width: 52px; height: 52px; background: rgba(58,181,217,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+    .city-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--teal); margin-bottom: 3px; }
+    .city-card-name { font-size: 20px; font-weight: 800; color: var(--navy); }
+    .view-suburbs-btn { display: flex; align-items: center; gap: 8px; padding: 9px 18px; border: 1.5px solid var(--border); border-radius: 8px; background: var(--white); font-size: 13px; font-weight: 600; color: var(--teal); cursor: pointer; white-space: nowrap; transition: all 0.15s; flex-shrink: 0; font-family: inherit; }
+    .view-suburbs-btn:hover { border-color: var(--teal); background: rgba(58,181,217,0.05); }
+    .vsb-arrow { transition: transform 0.25s; display: inline-block; }
+    .view-suburbs-btn.open .vsb-arrow { transform: rotate(180deg); }
+
+    /* ─── CITY BODY ─── */
+    .city-body { border-top: 1px solid var(--border); padding: 0 28px 20px; display: none; }
+    .city-body.open { display: block; animation: fadeSlide 0.2s ease; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Services strip */
+    .city-services { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 18px 0 14px; border-bottom: 1px solid var(--border); }
+    .cs-label { font-size: 12px; font-weight: 600; color: var(--gray2); text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px; }
+    .svc-pill { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; background: var(--light); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; font-weight: 600; color: var(--navy); transition: all 0.15s; }
+    .svc-pill:hover { border-color: var(--teal); color: var(--teal); background: rgba(58,181,217,0.05); }
+
+    /* Sub-region tabs */
+    .sr-tabs { display: flex; gap: 8px; flex-wrap: wrap; padding: 16px 0 14px; }
+    .sr-tab { padding: 7px 16px; border-radius: 8px; border: 1.5px solid var(--border); background: var(--white); font-size: 13px; font-weight: 600; color: var(--gray); cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .sr-tab:hover { border-color: var(--teal); color: var(--teal); }
+    .sr-tab.active { background: var(--teal); color: var(--white); border-color: var(--teal); }
+
+    /* ─── SUBURB 2-COLUMN GRID ─── */
+    .suburb-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: visible;
+      margin-top: 16px;
+    }
+
+    .suburb-item {
+      position: relative;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      transition: background 0.12s;
+    }
+    .suburb-item:nth-child(2n)   { border-right: none; }
+    .suburb-item.hidden          { display: none; }
+
+    /* Trigger row */
+    .suburb-trigger {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 18px; cursor: default; user-select: none;
+    }
+    .suburb-item:hover .suburb-trigger { background: #f0f9ff; }
+
+    .sub-dot { color: var(--teal); font-size: 8px; flex-shrink: 0; }
+    .sub-name { flex: 1; font-size: 15px; font-weight: 500; color: var(--navy); }
+    .sub-chevron {
+      color: var(--gray2); font-size: 15px; flex-shrink: 0;
+      transition: color 0.15s; line-height: 1;
+    }
+    .suburb-item:hover .sub-chevron { color: var(--teal); }
+
+    /* Hover popup — services panel */
+    .suburb-services {
+      display: none;
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 0;
+      min-width: 270px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--teal);
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+      z-index: 200;
+    }
+    .suburb-item:hover .suburb-services { display: block; }
+    /* Right column: align popup to right so it doesn't go off-screen */
+    .suburb-item:nth-child(2n) .suburb-services { left: auto; right: 0; }
+
+    .sub-svc-link {
+      display: flex; align-items: center; gap: 14px;
+      padding: 12px 16px;
+      font-size: 14px; color: var(--navy);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.12s, color 0.12s;
+      cursor: pointer;
+    }
+    .sub-svc-link:last-child { border-bottom: none; }
+    .sub-svc-link:hover { background: #f0f9ff; color: var(--teal); }
+    .sub-svc-link:hover .svc-icon-wrap { background: var(--teal); color: var(--white); }
+
+    .svc-icon-wrap {
+      width: 30px; height: 30px; border-radius: 7px;
+      background: rgba(58,181,217,0.1); color: var(--teal);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background 0.12s, color 0.12s;
+    }
+    .sub-svc-text { font-size: 14px; font-weight: 500; }
+
+    /* Mobile: collapse to single column, disable hover, use click */
+    @media (max-width: 600px) {
+      .suburb-list { grid-template-columns: 1fr; }
+      .suburb-item:nth-child(2n) { border-right: none; }
+      .suburb-services { display: none; position: static; box-shadow: none; border: none; border-top: 1px solid #e8f7fd; border-radius: 0; min-width: unset; }
+      .suburb-item.open .suburb-services { display: block; }
+      .suburb-item:hover .suburb-services { display: none; }
+      .suburb-item.open .suburb-trigger { background: #e8f7fd; }
+      .suburb-trigger { cursor: pointer; }
+      .suburb-item.open .sub-chevron { color: var(--teal); transform: rotate(90deg); }
+    }
+
+    /* ─── QUOTE BANNER ─── */
+    .quote-banner { background: var(--navy); color: var(--white); padding: 56px 24px; text-align: center; }
+    .quote-banner h2 { font-size: clamp(22px, 3vw, 34px); font-weight: 800; margin-bottom: 12px; }
+    .quote-banner p { font-size: 15px; color: rgba(255,255,255,0.75); margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .qb-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-teal { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: var(--teal); color: var(--white); border-radius: 8px; font-weight: 700; font-size: 15px; transition: background 0.2s; }
+    .btn-teal:hover { background: var(--teal-dark); }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border: 2px solid rgba(255,255,255,0.3); color: var(--white); border-radius: 8px; font-weight: 600; font-size: 15px; transition: all 0.2s; }
+    .btn-ghost:hover { background: rgba(255,255,255,0.1); }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--navy2); color: rgba(255,255,255,0.65); padding: 56px 24px 28px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin: 14px 0 16px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+    .footer-contact a { color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-contact a:hover { color: var(--white); }
+    .footer-col h4 { color: var(--white); font-size: 13px; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 13px; }
+    @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; } }
+    @media (max-width: 460px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; text-align: center; } }
+  
+    /* ── Inline SVG icons ── */
+    .svc-icon { display:inline-block; vertical-align:middle; margin-right:5px; flex-shrink:0; }
+    .faq-svg-icon { display:block; color:var(--teal); flex-shrink:0; transition:transform 0.2s; }
+    .faq-item.open .faq-svg-icon { transform:rotate(45deg); }
+    .tick-svg { flex-shrink:0; margin-top:1px; }
+    .dot-svg { flex-shrink:0; }
+    </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Call us for a free quote — <a href="tel:0224871791">022 487 1791</a> &nbsp;|&nbsp; Mon–Sat 8am–5pm
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Services <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="airbnb-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+          <a href="builders-clean.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+          <a href="commercial-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+        </div>
+      </li>
+            <li>
+        <a href="#">About <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+          <a href="team.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+          <a href="service-areas.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+          <a href="faq.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+          <a href="guarantee.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+          <a href="policy.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+        </div>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary nav-cta">Get a Free Quote</a>
+
+    <div class="hamburger" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></span>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <div class="mobile-section-title">Services</div>
+    <a href="airbnb-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+    <a href="end-of-tenancy-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+    <a href="builders-clean.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+    <a href="commercial-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+    <div class="mobile-section-title">About</div>
+    <a href="about.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+    <a href="team.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+    <a href="service-areas.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+    <a href="faq.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+    <a href="guarantee.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+    <a href="policy.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-cta">
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary" style="width:100%;justify-content:center" onclick="closeMenu()">Get a Free Quote</a>
+  </div>
+</div>
+
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Service Areas</span>
+    </div>
+    <h1>Cleaning Service Areas — Auckland, Waiheke Island, Hamilton, Tauranga &amp; Waihi</h1>
+    <p>Professional cleaning services across Auckland, Waiheke Island, Waikato, Hamilton, Tauranga, Waihi, and all surrounding suburbs.</p>
+  </div>
+</div>
+
+<!-- POSTCODE CHECKER -->
+<div class="checker-wrap">
+  <div class="checker-inner">
+    <div class="checker-card">
+      <h2>Check if we service your area</h2>
+      <p>Enter your suburb name or NZ postcode to find out instantly.</p>
+      <div class="checker-input-row">
+        <div class="postcode-field">
+          <input id="postcodeInput" type="text" placeholder="e.g. Grey Lynn, Mount Eden, 1021…" autocomplete="off" />
+          <div id="postcodeSuggestions"></div>
+        </div>
+        <button id="postcodeBtn" onclick="checkPostcode()">Check</button>
+      </div>
+      <div id="postcodeResult"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CITY ACCORDION CARDS -->
+<section class="areas-section">
+  <div class="areas-inner">
+    <p class="section-intro">Select a region below. Hover over any suburb to see available services.</p>
+
+    <!-- ══ AUCKLAND ══ -->
+    <div class="city-card" id="auckland">
+      <div class="city-card-header">
+        <div class="city-card-left">
+          <div class="city-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="city-label">AUCKLAND METRO</div>
+            <div class="city-card-name">Auckland &amp; Surrounds</div>
+          </div>
+        </div>
+        <button class="view-suburbs-btn" id="btn-auckland" onclick="toggleCity('auckland')">
+          View suburbs <span class="vsb-arrow">∧</span>
+        </button>
+      </div>
+      <div class="city-body" id="body-auckland">
+        <div class="city-services">
+          <span class="cs-label">Services:</span>
+          <a href="airbnb-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy</a>
+          <a href="builders-clean.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean</a>
+          <a href="commercial-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial</a>
+        </div>
+        <div class="sr-tabs">
+          <button class="sr-tab active" onclick="filterRegion('auckland','all',this)">All</button>
+          <button class="sr-tab" onclick="filterRegion('auckland','central',this)">Central</button>
+          <button class="sr-tab" onclick="filterRegion('auckland','north',this)">North Shore</button>
+          <button class="sr-tab" onclick="filterRegion('auckland','east',this)">East</button>
+          <button class="sr-tab" onclick="filterRegion('auckland','west',this)">West</button>
+          <button class="sr-tab" onclick="filterRegion('auckland','south',this)">South</button>
+        </div>
+        <div class="suburb-list" id="list-auckland">
+          <div class="suburb-item" data-region="central" data-slug="mount-eden" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Mount Eden</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="central" data-slug="remuera" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Remuera</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="central" data-slug="parnell" data-services="airbnb,tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Parnell</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="central" data-slug="newmarket" data-services="tenancy,builders,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Newmarket</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="central" data-slug="orakei" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Orakei</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="central" data-slug="epsom" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Epsom</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="north" data-slug="takapuna" data-services="airbnb,tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Takapuna</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="north" data-slug="devonport" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Devonport</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="north" data-slug="milford" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Milford</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="north" data-slug="albany" data-services="tenancy,builders,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Albany</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="north" data-slug="birkenhead" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Birkenhead</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="north" data-slug="northcote" data-services="tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Northcote</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="east" data-slug="mission-bay" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Mission Bay</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="east" data-slug="saint-heliers" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Saint Heliers</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="east" data-slug="kohimarama" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Kohimarama</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="east" data-slug="howick" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Howick</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="east" data-slug="bucklands-beach" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Bucklands Beach</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="west" data-slug="ponsonby" data-services="airbnb,tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Ponsonby</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="west" data-slug="herne-bay" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Herne Bay</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="west" data-slug="grey-lynn" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Grey Lynn</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="west" data-slug="kingsland" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Kingsland</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="west" data-slug="mount-albert" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Mount Albert</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="south" data-slug="manurewa" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Manurewa</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="south" data-slug="papakura" data-services="tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Papakura</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-region="south" data-slug="pukekohe" data-services="tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Pukekohe</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ WAIHEKE ══ -->
+    <div class="city-card" id="waiheke">
+      <div class="city-card-header">
+        <div class="city-card-left">
+          <div class="city-icon-wrap">🏝</div>
+          <div>
+            <div class="city-label">HAURAKI GULF</div>
+            <div class="city-card-name">Waiheke Island</div>
+          </div>
+        </div>
+        <button class="view-suburbs-btn" id="btn-waiheke" onclick="toggleCity('waiheke')">
+          View suburbs <span class="vsb-arrow">∧</span>
+        </button>
+      </div>
+      <div class="city-body" id="body-waiheke">
+        <div class="city-services">
+          <span class="cs-label">Services:</span>
+          <a href="airbnb-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy</a>
+          <a href="builders-clean.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean</a>
+        </div>
+        <div class="suburb-list" style="margin-top:16px">
+          <div class="suburb-item" data-slug="oneroa" data-services="airbnb,tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Oneroa</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="ostend" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Ostend</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="onetangi" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Onetangi</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="palm-beach" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Palm Beach</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="surfdale" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Surfdale</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="blackpool" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Blackpool</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="rocky-bay" data-services="airbnb,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Rocky Bay</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="church-bay" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Church Bay</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ WAIKATO ══ -->
+    <div class="city-card" id="waikato">
+      <div class="city-card-header">
+        <div class="city-card-left">
+          <div class="city-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="city-label">WAIKATO REGION</div>
+            <div class="city-card-name">Waikato &amp; Surrounds</div>
+          </div>
+        </div>
+        <button class="view-suburbs-btn" id="btn-waikato" onclick="toggleCity('waikato')">
+          View suburbs <span class="vsb-arrow">∧</span>
+        </button>
+      </div>
+      <div class="city-body" id="body-waikato">
+        <div class="city-services">
+          <span class="cs-label">Services:</span>
+          <a href="airbnb-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy</a>
+          <a href="builders-clean.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean</a>
+          <a href="commercial-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial</a>
+        </div>
+        <div class="suburb-list" style="margin-top:16px">
+          <div class="suburb-item" data-slug="cambridge" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Cambridge</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="te-awamutu" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Te Awamutu</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="raglan" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Raglan</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="matamata" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Matamata</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="morrinsville" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Morrinsville</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="te-kauwhata" data-services="tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Te Kauwhata</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="huntly" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Huntly</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="tokoroa" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Tokoroa</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ HAMILTON ══ -->
+    <div class="city-card" id="hamilton">
+      <div class="city-card-header">
+        <div class="city-card-left">
+          <div class="city-icon-wrap">🏙</div>
+          <div>
+            <div class="city-label">HAMILTON CITY</div>
+            <div class="city-card-name">Hamilton &amp; Suburbs</div>
+          </div>
+        </div>
+        <button class="view-suburbs-btn" id="btn-hamilton" onclick="toggleCity('hamilton')">
+          View suburbs <span class="vsb-arrow">∧</span>
+        </button>
+      </div>
+      <div class="city-body" id="body-hamilton">
+        <div class="city-services">
+          <span class="cs-label">Services:</span>
+          <a href="airbnb-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy</a>
+          <a href="builders-clean.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean</a>
+          <a href="commercial-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial</a>
+        </div>
+        <div class="suburb-list" style="margin-top:16px">
+          <div class="suburb-item" data-slug="flagstaff" data-services="tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Flagstaff</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="rototuna" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Rototuna</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="hamilton-east" data-services="airbnb,tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Hamilton East</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="chartwell" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Chartwell</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="dinsdale" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Dinsdale</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="pukete" data-services="tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Pukete</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="forest-lake" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Forest Lake</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="nawton" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Nawton</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ TAURANGA ══ -->
+    <div class="city-card" id="tauranga">
+      <div class="city-card-header">
+        <div class="city-card-left">
+          <div class="city-icon-wrap">🌊</div>
+          <div>
+            <div class="city-label">BAY OF PLENTY</div>
+            <div class="city-card-name">Tauranga &amp; Mount Maunganui</div>
+          </div>
+        </div>
+        <button class="view-suburbs-btn" id="btn-tauranga" onclick="toggleCity('tauranga')">
+          View suburbs <span class="vsb-arrow">∧</span>
+        </button>
+      </div>
+      <div class="city-body" id="body-tauranga">
+        <div class="city-services">
+          <span class="cs-label">Services:</span>
+          <a href="airbnb-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy</a>
+          <a href="builders-clean.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean</a>
+          <a href="commercial-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial</a>
+        </div>
+        <div class="suburb-list" style="margin-top:16px">
+          <div class="suburb-item" data-slug="mount-maunganui" data-services="airbnb,tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Mount Maunganui</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="papamoa-beach" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Papamoa Beach</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="greerton" data-services="tenancy,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Greerton</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="tauranga-central" data-services="tenancy,builders,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Tauranga Central</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="arataki" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Arataki</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="bethlehem" data-services="tenancy,builders,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Bethlehem</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ WAIHI ══ -->
+    <div class="city-card" id="waihi">
+      <div class="city-card-header">
+        <div class="city-card-left">
+          <div class="city-icon-wrap">⛏</div>
+          <div>
+            <div class="city-label">COROMANDEL GATEWAY</div>
+            <div class="city-card-name">Waihi &amp; Waihi Beach</div>
+          </div>
+        </div>
+        <button class="view-suburbs-btn" id="btn-waihi" onclick="toggleCity('waihi')">
+          View suburbs <span class="vsb-arrow">∧</span>
+        </button>
+      </div>
+      <div class="city-body" id="body-waihi">
+        <div class="city-services">
+          <span class="cs-label">Services:</span>
+          <a href="airbnb-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy</a>
+          <a href="builders-clean.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean</a>
+          <a href="commercial-cleaning.html" class="svc-pill"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial</a>
+        </div>
+        <div class="suburb-list" style="margin-top:16px">
+          <div class="suburb-item" data-slug="waihi-town" data-services="tenancy,builders,commercial"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Waihi Town</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="waihi-beach" data-services="airbnb,tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Waihi Beach</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="athenree" data-services="airbnb,tenancy"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Athenree</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+          <div class="suburb-item" data-slug="waikino" data-services="tenancy,builders"><div class="suburb-trigger" ><span class="sub-dot">●</span><span class="sub-name">Waikino</span><span class="sub-chevron">›</span></div><div class="suburb-services"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- QUOTE BANNER -->
+<section class="quote-banner">
+  <h2>Don't see your suburb?</h2>
+  <p>We're always expanding our coverage. Get in touch — we likely service your area already.</p>
+  <div class="qb-btns">
+    <a href="contact.html" class="btn-teal"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Get a Free Quote</a>
+    <a href="tel:0224871791" class="btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></div>
+        <p>Professional cleaning services across New Zealand. Reliable, thorough, and always guaranteed.</p>
+        <address class="footer-contact" style="font-style:normal;display:flex;flex-direction:column;gap:8px">
+          <a href="tel:0224871791"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+          <a href="mailto:lca.services.nz@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> lca.services.nz@gmail.com</a>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Monday – Saturday, 8am – 5pm</span>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
+          <li><a href="end-of-tenancy-cleaning.html">End of Tenancy</a></li>
+          <li><a href="builders-clean.html">Builders Cleans</a></li>
+          <li><a href="commercial-cleaning.html">Commercial Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul class="footer-links">
+          <li><a href="service-areas.html">All Service Areas</a></li>
+          <li><a href="service-areas.html#auckland">Auckland</a></li>
+          <li><a href="service-areas.html#waiheke">Waiheke Island</a></li>
+          <li><a href="service-areas.html#tauranga">Tauranga</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 LCA Services NZ. All rights reserved.</span>
+      <span>Professional Cleaning · New Zealand</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════
+   SERVICE DEFINITIONS
+═══════════════════════════════════════ */
+const SVCS = {
+  airbnb:     { icon: '<svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> ', label: 'Airbnb Cleaning' },
+  tenancy:    { icon: '<svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> ', label: 'End of Tenancy Cleaning' },
+  builders:   { icon: '<svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> ', label: 'Builders Clean' },
+  commercial: { icon: '<svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> ', label: 'Commercial Cleaning' },
+};
+
+/* ═══════════════════════════════════════
+   INIT — build service links into every suburb-item
+═══════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.suburb-item').forEach(item => {
+    const slug     = item.dataset.slug;
+    const services = (item.dataset.services || '').split(',').map(s => s.trim()).filter(Boolean);
+    const nameEl   = item.querySelector('.sub-name');
+    const name     = nameEl ? nameEl.textContent.trim() : slug;
+    const svcBox   = item.querySelector('.suburb-services');
+
+    svcBox.innerHTML = services.map(key => {
+      const s = SVCS[key];
+      if (!s) return '';
+      return `<a href="suburb.html?s=${slug}&service=${key}" class="sub-svc-link">
+        <span class="svc-icon-wrap">${s.icon}</span>
+        <span class="sub-svc-text">${s.label} in ${name}</span>
+      </a>`;
+    }).join('');
+  });
+
+  // Handle hash deep-link
+  const hash = window.location.hash.replace('#','');
+  const valid = ['auckland','waiheke','waikato','hamilton','tauranga','waihi'];
+  if (hash && valid.includes(hash)) {
+    openCity(hash);
+    setTimeout(() => document.getElementById(hash).scrollIntoView({ behavior:'smooth', block:'start' }), 150);
+  }
+});
+
+/* ═══════════════════════════════════════
+   SUBURB ACCORDION TOGGLE
+═══════════════════════════════════════ */
+function toggleSuburb(triggerEl) {
+  const item = triggerEl.closest('.suburb-item');
+  item.classList.toggle('open');
+}
+
+/* ═══════════════════════════════════════
+   CITY PANEL TOGGLE
+═══════════════════════════════════════ */
+function toggleCity(id) {
+  const body = document.getElementById('body-' + id);
+  const btn  = document.getElementById('btn-' + id);
+  const open = body.classList.contains('open');
+  body.classList.toggle('open', !open);
+  btn.classList.toggle('open', !open);
+}
+
+function openCity(id) {
+  const body = document.getElementById('body-' + id);
+  const btn  = document.getElementById('btn-' + id);
+  if (body && !body.classList.contains('open')) {
+    body.classList.add('open');
+    btn.classList.add('open');
+  }
+}
+
+/* ═══════════════════════════════════════
+   SUB-REGION FILTER
+═══════════════════════════════════════ */
+function filterRegion(city, region, clickedBtn) {
+  clickedBtn.closest('.sr-tabs').querySelectorAll('.sr-tab').forEach(b => b.classList.remove('active'));
+  clickedBtn.classList.add('active');
+  document.querySelectorAll(`#list-${city} .suburb-item`).forEach(item => {
+    const show = region === 'all' || item.dataset.region === region;
+    item.classList.toggle('hidden', !show);
+    if (!show && item.classList.contains('open')) item.classList.remove('open');
+  });
+}
+
+/* ═══════════════════════════════════════
+   POSTCODE CHECKER
+═══════════════════════════════════════ */
+const SUBURB_DB = [
+  { name:'Mount Eden',       postcode:'1024', slug:'mount-eden',       city:'Auckland'       },
+  { name:'Remuera',          postcode:'1050', slug:'remuera',          city:'Auckland'       },
+  { name:'Parnell',          postcode:'1010', slug:'parnell',          city:'Auckland'       },
+  { name:'Newmarket',        postcode:'1023', slug:'newmarket',        city:'Auckland'       },
+  { name:'Orakei',           postcode:'1071', slug:'orakei',           city:'Auckland'       },
+  { name:'Epsom',            postcode:'1051', slug:'epsom',            city:'Auckland'       },
+  { name:'Takapuna',         postcode:'0622', slug:'takapuna',         city:'Auckland'       },
+  { name:'Devonport',        postcode:'0624', slug:'devonport',        city:'Auckland'       },
+  { name:'Milford',          postcode:'0620', slug:'milford',          city:'Auckland'       },
+  { name:'Albany',           postcode:'0632', slug:'albany',           city:'Auckland'       },
+  { name:'Birkenhead',       postcode:'0626', slug:'birkenhead',       city:'Auckland'       },
+  { name:'Northcote',        postcode:'0627', slug:'northcote',        city:'Auckland'       },
+  { name:'Glenfield',        postcode:'0629', slug:null,               city:'Auckland'       },
+  { name:'Browns Bay',       postcode:'0630', slug:null,               city:'Auckland'       },
+  { name:'Mission Bay',      postcode:'1071', slug:'mission-bay',      city:'Auckland'       },
+  { name:'Saint Heliers',    postcode:'1071', slug:'saint-heliers',    city:'Auckland'       },
+  { name:'Kohimarama',       postcode:'1071', slug:'kohimarama',       city:'Auckland'       },
+  { name:'Howick',           postcode:'2014', slug:'howick',           city:'Auckland'       },
+  { name:'Bucklands Beach',  postcode:'2012', slug:'bucklands-beach',  city:'Auckland'       },
+  { name:'Pakuranga',        postcode:'2010', slug:null,               city:'Auckland'       },
+  { name:'Botany Downs',     postcode:'2010', slug:null,               city:'Auckland'       },
+  { name:'Ponsonby',         postcode:'1011', slug:'ponsonby',         city:'Auckland'       },
+  { name:'Herne Bay',        postcode:'1011', slug:'herne-bay',        city:'Auckland'       },
+  { name:'Grey Lynn',        postcode:'1021', slug:'grey-lynn',        city:'Auckland'       },
+  { name:'Kingsland',        postcode:'1021', slug:'kingsland',        city:'Auckland'       },
+  { name:'Mount Albert',     postcode:'1025', slug:'mount-albert',     city:'Auckland'       },
+  { name:'New Lynn',         postcode:'0600', slug:null,               city:'Auckland'       },
+  { name:'Henderson',        postcode:'0612', slug:null,               city:'Auckland'       },
+  { name:'Manurewa',         postcode:'2102', slug:'manurewa',         city:'Auckland'       },
+  { name:'Papakura',         postcode:'2110', slug:'papakura',         city:'Auckland'       },
+  { name:'Pukekohe',         postcode:'2120', slug:'pukekohe',         city:'Auckland'       },
+  { name:'Manukau',          postcode:'2104', slug:null,               city:'Auckland'       },
+  { name:'Oneroa',           postcode:'1081', slug:'oneroa',           city:'Waiheke Island' },
+  { name:'Ostend',           postcode:'1081', slug:'ostend',           city:'Waiheke Island' },
+  { name:'Onetangi',         postcode:'1081', slug:'onetangi',         city:'Waiheke Island' },
+  { name:'Palm Beach',       postcode:'1081', slug:'palm-beach',       city:'Waiheke Island' },
+  { name:'Surfdale',         postcode:'1081', slug:'surfdale',         city:'Waiheke Island' },
+  { name:'Blackpool',        postcode:'1081', slug:'blackpool',        city:'Waiheke Island' },
+  { name:'Rocky Bay',        postcode:'1081', slug:'rocky-bay',        city:'Waiheke Island' },
+  { name:'Church Bay',       postcode:'1081', slug:'church-bay',       city:'Waiheke Island' },
+  { name:'Cambridge',        postcode:'3434', slug:'cambridge',        city:'Waikato'        },
+  { name:'Te Awamutu',       postcode:'3800', slug:'te-awamutu',       city:'Waikato'        },
+  { name:'Raglan',           postcode:'3225', slug:'raglan',           city:'Waikato'        },
+  { name:'Matamata',         postcode:'3400', slug:'matamata',         city:'Waikato'        },
+  { name:'Morrinsville',     postcode:'3300', slug:'morrinsville',     city:'Waikato'        },
+  { name:'Te Kauwhata',      postcode:'3741', slug:'te-kauwhata',      city:'Waikato'        },
+  { name:'Huntly',           postcode:'3700', slug:'huntly',           city:'Waikato'        },
+  { name:'Tokoroa',          postcode:'3420', slug:'tokoroa',          city:'Waikato'        },
+  { name:'Flagstaff',        postcode:'3210', slug:'flagstaff',        city:'Hamilton'       },
+  { name:'Rototuna',         postcode:'3210', slug:'rototuna',         city:'Hamilton'       },
+  { name:'Hamilton East',    postcode:'3216', slug:'hamilton-east',    city:'Hamilton'       },
+  { name:'Chartwell',        postcode:'3210', slug:'chartwell',        city:'Hamilton'       },
+  { name:'Dinsdale',         postcode:'3204', slug:'dinsdale',         city:'Hamilton'       },
+  { name:'Pukete',           postcode:'3200', slug:'pukete',           city:'Hamilton'       },
+  { name:'Forest Lake',      postcode:'3204', slug:'forest-lake',      city:'Hamilton'       },
+  { name:'Nawton',           postcode:'3200', slug:'nawton',           city:'Hamilton'       },
+  { name:'Hamilton Central', postcode:'3204', slug:null,               city:'Hamilton'       },
+  { name:'Te Rapa',          postcode:'3200', slug:null,               city:'Hamilton'       },
+  { name:'Mount Maunganui',  postcode:'3116', slug:'mount-maunganui',  city:'Tauranga'       },
+  { name:'Papamoa Beach',    postcode:'3118', slug:'papamoa-beach',    city:'Tauranga'       },
+  { name:'Greerton',         postcode:'3112', slug:'greerton',         city:'Tauranga'       },
+  { name:'Tauranga Central', postcode:'3110', slug:'tauranga-central', city:'Tauranga'       },
+  { name:'Arataki',          postcode:'3116', slug:'arataki',          city:'Tauranga'       },
+  { name:'Bethlehem',        postcode:'3110', slug:'bethlehem',        city:'Tauranga'       },
+  { name:'Otumoetai',        postcode:'3110', slug:null,               city:'Tauranga'       },
+  { name:'Welcome Bay',      postcode:'3112', slug:null,               city:'Tauranga'       },
+  { name:'Waihi',            postcode:'3610', slug:'waihi-town',       city:'Waihi'          },
+  { name:'Waihi Beach',      postcode:'3611', slug:'waihi-beach',      city:'Waihi'          },
+  { name:'Athenree',         postcode:'3189', slug:'athenree',         city:'Waihi'          },
+  { name:'Waikino',          postcode:'3610', slug:'waikino',          city:'Waihi'          },
+];
+
+const SERVICED_POSTCODES = new Set(SUBURB_DB.map(s => s.postcode));
+
+const pcInput = document.getElementById('postcodeInput');
+const suggBox  = document.getElementById('postcodeSuggestions');
+const resultBox = document.getElementById('postcodeResult');
+
+pcInput.addEventListener('input', function() {
+  const val = this.value.trim().toLowerCase();
+  if (val.length < 2) { suggBox.style.display = 'none'; return; }
+  const hits = SUBURB_DB.filter(s => s.name.toLowerCase().includes(val) || s.postcode.includes(val)).slice(0,8);
+  if (!hits.length) { suggBox.style.display = 'none'; return; }
+  suggBox.innerHTML = hits.map(s =>
+    `<div class="pc-suggestion" onclick="selectSuggestion('${s.name}','${s.postcode}')">
+      <span>${s.name}</span>
+      <span class="pc-postcode">${s.postcode} · ${s.city}</span>
+    </div>`
+  ).join('');
+  suggBox.style.display = 'block';
+});
+
+pcInput.addEventListener('keydown', e => { if (e.key === 'Enter') { suggBox.style.display='none'; checkPostcode(); } });
+document.addEventListener('click', e => { if (!e.target.closest('.postcode-field')) suggBox.style.display='none'; });
+
+function selectSuggestion(name, postcode) {
+  pcInput.value = name;
+  suggBox.style.display = 'none';
+  resolveAndShow(name, postcode);
+}
+
+function checkPostcode() {
+  const val = pcInput.value.trim();
+  if (!val) return;
+  const exact = SUBURB_DB.find(s => s.postcode === val);
+  if (exact) { resolveAndShow(exact.name, exact.postcode); return; }
+  const byName = SUBURB_DB.find(s => s.name.toLowerCase() === val.toLowerCase())
+    || SUBURB_DB.find(s => s.name.toLowerCase().startsWith(val.toLowerCase()));
+  if (byName) { resolveAndShow(byName.name, byName.postcode); return; }
+  showResult(false, val, null, null);
+}
+
+function resolveAndShow(name, postcode) {
+  const data = SUBURB_DB.find(s => s.postcode === postcode && s.name.toLowerCase() === name.toLowerCase())
+    || SUBURB_DB.find(s => s.postcode === postcode);
+  showResult(SERVICED_POSTCODES.has(postcode), name, postcode, data);
+}
+
+function showResult(ok, name, postcode, data) {
+  resultBox.style.display = 'block';
+  if (ok && data) {
+    const slug = data.slug;
+    const servicesHtml = slug
+      ? `<div class="pc-result-services">
+          <a href="suburb.html?s=${slug}&service=airbnb"    class="pc-svc-link"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning in ${name}</a>
+          <a href="suburb.html?s=${slug}&service=tenancy"   class="pc-svc-link"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy in ${name}</a>
+          <a href="suburb.html?s=${slug}&service=builders"  class="pc-svc-link"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean in ${name}</a>
+          <a href="suburb.html?s=${slug}&service=commercial"class="pc-svc-link"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial in ${name}</a>
+        </div>`
+      : `<div style="margin-top:10px"><a href="contact.html" class="pc-svc-link"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Get a Free Quote</a></div>`;
+    resultBox.innerHTML = `<div class="pc-result-inner success">
+      <span class="pc-result-icon">✅</span>
+      <div>
+        <div class="pc-result-title">Great news — we service ${name}!</div>
+        <div class="pc-result-desc">LCA Services operates in ${name}, ${data.city} (${postcode}). Choose a service:</div>
+        ${servicesHtml}
+      </div>
+    </div>`;
+  } else {
+    resultBox.innerHTML = `<div class="pc-result-inner fail">
+      <span class="pc-result-icon">❌</span>
+      <div>
+        <div class="pc-result-title">We don't currently service ${name || 'that area'}</div>
+        <div class="pc-result-desc">We're expanding constantly — contact us and we may still be able to help.</div>
+        <div style="margin-top:10px"><a href="contact.html" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;font-size:12px;font-weight:600;color:#991b1b">✉ Contact Us Anyway</a></div>
+      </div>
+    </div>`;
+  }
+}
+
+function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.lcaservices.nz/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Service Areas",
+      "item": "https://www.lcaservices.nz/service-areas.html"
+    }
+  ]
+}
+</script>
+</body>
+</html>

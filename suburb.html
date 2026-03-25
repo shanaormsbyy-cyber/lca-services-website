@@ -449,31 +449,35 @@
               <th>SERVICE</th>
               <th>1–2 BED</th>
               <th>3 BED</th>
-              <th>4+ BED</th>
+              <th>4 BED</th>
+              <th>5+ BED</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Airbnb Turnover</td>
-              <td>$89</td>
-              <td>$149</td>
-              <td>$199+</td>
+              <td>$100</td>
+              <td>$145</td>
+              <td>$200</td>
+              <td style="color:var(--teal);font-weight:600">Enquire</td>
             </tr>
             <tr>
               <td>End of Tenancy</td>
-              <td>$249</td>
-              <td>$379</td>
-              <td>$499+</td>
+              <td>$450</td>
+              <td>$600</td>
+              <td>$800</td>
+              <td style="color:var(--teal);font-weight:600">Enquire</td>
             </tr>
             <tr>
               <td>Builders Clean</td>
               <td>$299</td>
               <td>$449</td>
-              <td>$599+</td>
+              <td>$599</td>
+              <td style="color:var(--teal);font-weight:600">Enquire</td>
             </tr>
             <tr>
               <td>Commercial</td>
-              <td colspan="3" style="text-align:right;color:var(--teal);font-weight:600">Custom Quote</td>
+              <td colspan="4" style="text-align:right;color:var(--teal);font-weight:600">Custom Quote</td>
             </tr>
           </tbody>
         </table>
@@ -1039,10 +1043,10 @@
      PRICING TABLE — highlight active service
   ═══════════════════════════════════════════ */
   const PRICING_ROWS = {
-    airbnb:     ['Airbnb Turnover',   '$89',  '$149', '$199+'],
-    tenancy:    ['End of Tenancy',    '$249', '$379', '$499+'],
-    builders:   ['Builders Clean',   '$299', '$449', '$599+'],
-    commercial: ['Commercial',        null,   null,   null  ],
+    airbnb:     ['Airbnb Turnover',   '$100', '$145', '$200', '<span style="color:var(--teal);font-weight:600">Enquire</span>'],
+    tenancy:    ['End of Tenancy',    '$450', '$600', '$800', '<span style="color:var(--teal);font-weight:600">Enquire</span>'],
+    builders:   ['Builders Clean',   '$299', '$449', '$599', '<span style="color:var(--teal);font-weight:600">Enquire</span>'],
+    commercial: ['Commercial',        null,   null,   null,   null],
   };
 
   function renderPricingTable(activeKey) {
@@ -1050,9 +1054,9 @@
       const isActive = key === activeKey;
       const style = isActive ? 'background:rgba(58,181,217,0.06);font-weight:700;' : '';
       if (cols[1] === null) {
-        return `<tr style="${style}"><td>${cols[0]}</td><td colspan="3" style="text-align:right;color:var(--teal);font-weight:600">Custom Quote</td></tr>`;
+        return `<tr style="${style}"><td>${cols[0]}</td><td colspan="4" style="text-align:right;color:var(--teal);font-weight:600">Custom Quote</td></tr>`;
       }
-      return `<tr style="${style}"><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
+      return `<tr style="${style}"><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td><td>${cols[4]}</td></tr>`;
     }).join('');
     document.querySelector('.pricing-table tbody').innerHTML = rows;
   }

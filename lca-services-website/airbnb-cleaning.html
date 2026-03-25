@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airbnb Cleaning New Zealand — Bach & Holiday Home Turnovers | LCA Services</title>
+  <meta name="description" content="Professional Airbnb & bach cleaning across Auckland, Waiheke Island, Hamilton & Tauranga. Same-day turnovers, linen hire & photo documentation. Free quote." />
+  <link rel="canonical" href="https://www.lcaservices.nz/airbnb-cleaning.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LCA Services" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:title" content="Airbnb Cleaning New Zealand — Bach & Holiday Home Turnovers | LCA Services" />
+  <meta property="og:description" content="Professional Airbnb & bach cleaning across Auckland, Waiheke Island, Hamilton & Tauranga. Same-day turnovers, linen hire & photo documentation. Free quote." />
+  <meta property="og:url" content="https://www.lcaservices.nz/airbnb-cleaning.html" />
+  <meta property="og:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Airbnb Cleaning New Zealand — Bach & Holiday Home Turnovers | LCA Services" />
+  <meta name="twitter:description" content="Professional Airbnb & bach cleaning across Auckland, Waiheke Island, Hamilton & Tauranga. Same-day turnovers, linen hire & photo documentation. Free quote." />
+  <meta name="twitter:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:   #101828;
+      --navy2:  #1d2939;
+      --teal:   #3AB5D9;
+      --teal-dark: #2a9cbd;
+      --gray:   #475467;
+      --gray2:  #667085;
+      --light:  #f9fafb;
+      --white:  #ffffff;
+      --border: #e4e7ec;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--navy); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── TOPBAR ── */
+    .topbar { background: var(--navy); color: rgba(255,255,255,0.75); font-size: 13px; padding: 8px 0; text-align: center; }
+    .topbar a { color: var(--white); font-weight: 600; }
+
+    /* ── NAV ── */
+    nav { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-size: 22px; font-weight: 800; color: var(--navy); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+    .logo-sub { display: flex; flex-direction: column; font-size: 9px; font-weight: 700; color: var(--teal); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.5px; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a { display: flex; align-items: center; gap: 4px; padding: 8px 14px; font-size: 14px; font-weight: 500; color: var(--gray); border-radius: 6px; transition: all 0.15s; }
+    .nav-links > li > a:hover { color: var(--navy); background: var(--light); }
+    .chevron { font-size: 10px; transition: transform 0.2s; }
+    .dropdown { position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 8px 32px rgba(0,0,0,0.12); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: all 0.2s; z-index: 100; }
+    .nav-links > li:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-links > li:hover .chevron { transform: rotate(180deg); }
+    .dropdown a { display: block; padding: 10px 16px; font-size: 14px; color: var(--gray); transition: all 0.15s; }
+    .dropdown a:hover { background: var(--light); color: var(--teal); padding-left: 20px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: var(--teal); color: var(--white); }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .btn-outline-dark { background: transparent; color: var(--navy); border: 2px solid var(--border); }
+    .btn-outline-dark:hover { border-color: var(--teal); color: var(--teal); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+
+    /* ── HERO ── */
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #1e2d5a 100%); color: var(--white); padding: 80px 24px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(58,181,217,0.18) 0%, transparent 60%); }
+    .hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; position: relative; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(58,181,217,0.15); border: 1px solid rgba(58,181,217,0.4); color: #7dd8ef; font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(32px, 4vw, 52px); font-weight: 800; line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.5px; }
+    .hero h1 span { color: #7dd8ef; }
+    .hero p { font-size: 17px; color: rgba(255,255,255,0.75); margin-bottom: 32px; line-height: 1.7; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-teal { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: var(--white); padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; transition: background 0.2s; }
+    .btn-teal:hover { background: var(--teal-dark); }
+    .btn-ghost-white { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); color: var(--white); border: 1px solid rgba(255,255,255,0.25); padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 15px; transition: background 0.2s; }
+    .btn-ghost-white:hover { background: rgba(255,255,255,0.18); }
+    .hero-trust { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 32px; }
+    .hero-trust-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(255,255,255,0.65); }
+    .hero-trust-item .dot { color: var(--teal); font-size: 16px; }
+
+    /* Hero right: checklist card */
+    .hero-card { background: rgba(255,255,255,0.07); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 28px; }
+    .hero-card h3 { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .check-list li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.8); }
+    .check-list li::before { content: '✓'; color: var(--teal); font-weight: 700; font-size: 14px; min-width: 16px; }
+
+    /* ── SECTIONS ── */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { font-size: 13px; font-weight: 600; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .section-title { font-size: clamp(28px, 3.5vw, 40px); font-weight: 800; color: var(--navy); line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.3px; }
+    .section-sub { font-size: 16px; color: var(--gray); max-width: 560px; margin-bottom: 48px; line-height: 1.7; }
+    .centered { text-align: center; }
+    .centered .section-sub { margin-left: auto; margin-right: auto; }
+
+    /* ── WHAT'S INCLUDED ── */
+    .included { background: var(--light); }
+    .tabs-wrapper { display: flex; gap: 32px; align-items: flex-start; }
+    .tab-buttons { display: flex; flex-direction: column; gap: 6px; min-width: 180px; flex-shrink: 0; }
+    .tab-btn {
+      display: flex; align-items: center; gap: 10px;
+      padding: 13px 16px; border-radius: 10px; border: 1px solid var(--border);
+      background: var(--white); font-size: 14px; font-weight: 600; color: var(--gray);
+      cursor: pointer; transition: all 0.2s; text-align: left; width: 100%;
+    }
+    .tab-btn:hover { border-color: var(--teal); color: var(--teal); background: rgba(58,181,217,0.04); }
+    .tab-btn.active { background: var(--teal); color: var(--white); border-color: var(--teal); box-shadow: 0 4px 14px rgba(58,181,217,0.3); }
+    .tab-btn .tab-icon { display:flex; align-items:center; } .tab-svg { flex-shrink:0; }
+    .tab-panels { flex: 1; }
+    .tab-panel { display: none; background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+    .tab-panel.active { display: block; animation: fadeIn 0.2s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    .tab-panel h3 { font-size: 20px; font-weight: 800; color: var(--navy); margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+    .tab-panel .panel-sub { font-size: 14px; color: var(--gray2); margin-bottom: 24px; }
+    .checklist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .checklist-item { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--gray); line-height: 1.5; padding: 10px 12px; background: var(--light); border-radius: 8px; }
+    .checklist-item .tick { color: var(--teal); font-weight: 700; font-size: 13px; margin-top: 1px; flex-shrink: 0; }
+    @media (max-width: 800px) {
+      .tabs-wrapper { flex-direction: column; }
+      .tab-buttons { flex-direction: row; flex-wrap: wrap; min-width: unset; width: 100%; }
+      .tab-btn { flex: 1; min-width: 120px; justify-content: center; }
+      .checklist-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── SUPPLIES ── */
+    .supplies { background: var(--white); }
+    .supplies-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .supplies-list { display: flex; flex-direction: column; gap: 16px; }
+    .supply-item { display: flex; align-items: flex-start; gap: 14px; padding: 20px; background: var(--light); border-radius: var(--radius); border: 1px solid var(--border); }
+    .supply-icon { width: 44px; height: 44px; min-width: 44px; background: rgba(58,181,217,0.12); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+    .supply-item h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .supply-item p { font-size: 13px; color: var(--gray); line-height: 1.5; }
+    .supplies-right { background: linear-gradient(135deg, var(--navy), #1e2d5a); border-radius: 20px; padding: 40px; color: var(--white); }
+    .supplies-right h3 { font-size: 22px; font-weight: 800; margin-bottom: 12px; }
+    .supplies-right p { font-size: 14px; color: rgba(255,255,255,0.7); margin-bottom: 28px; line-height: 1.7; }
+    .quality-points { display: flex; flex-direction: column; gap: 12px; }
+    .quality-point { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.85); }
+    .quality-point .tick { color: var(--teal); font-size: 16px; font-weight: 700; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner { background: var(--teal); padding: 72px 24px; text-align: center; color: var(--white); }
+    .cta-banner h2 { font-size: clamp(26px, 3.5vw, 40px); font-weight: 800; margin-bottom: 16px; }
+    .cta-banner p { font-size: 17px; color: rgba(255,255,255,0.85); margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: var(--white); color: var(--teal); display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; transition: background 0.2s; }
+    .btn-white:hover { background: #f0fcff; }
+    .btn-outline-white { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 15px; transition: all 0.2s; }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+
+    /* ── OUR WORK ── */
+    .our-work { background: var(--white); }
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .work-item {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: #e2e8f0;
+      cursor: pointer;
+    }
+    .work-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .work-item:hover img { transform: scale(1.06); }
+    .work-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(16,24,40,0.7) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+    .work-item:hover .work-overlay { opacity: 1; }
+    .work-overlay span {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .work-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #e8f4f8, #d1ecf5);
+      color: var(--gray2);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .work-placeholder .ph-icon { font-size: 32px; opacity: 0.5; }
+    @media (max-width: 700px) {
+      .work-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 440px) {
+      .work-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── OTHER SERVICES ── */
+    .other-services { background: var(--light); }
+    .services-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .service-pill { display: flex; align-items: center; gap: 12px; padding: 18px 20px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); font-weight: 600; font-size: 14px; color: var(--navy); transition: all 0.2s; cursor: pointer; }
+    .service-pill:hover { border-color: var(--teal); color: var(--teal); box-shadow: 0 4px 12px rgba(58,181,217,0.12); }
+    .service-pill .pill-icon { font-size: 20px; }
+    .service-pill .arrow { margin-left: auto; color: var(--gray2); font-size: 14px; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 64px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 20px; margin-top: 16px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+    .footer-contact a { color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-contact a:hover { color: var(--white); }
+    .footer-col h4 { color: var(--white); font-size: 14px; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; }
+    .footer-bottom a { color: rgba(255,255,255,0.5); transition: color 0.15s; }
+    .footer-bottom a:hover { color: var(--white); }
+
+    /* ── MOBILE MENU ── */
+    .mobile-menu { display: none; position: fixed; inset: 0; background: var(--white); z-index: 2000; padding: 24px; overflow-y: auto; flex-direction: column; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+    .mobile-close { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+    .mobile-nav { display: flex; flex-direction: column; gap: 4px; }
+    .mobile-nav a { display: block; padding: 14px 16px; font-size: 16px; font-weight: 500; color: var(--gray); border-radius: 8px; transition: all 0.15s; }
+    .mobile-nav a:hover { background: var(--light); color: var(--teal); }
+    .mobile-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray2); padding: 12px 16px 4px; }
+    .mobile-cta { margin-top: 24px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav-links, nav .btn { display: none; }
+      .hamburger { display: flex; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .supplies-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 60px 16px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    /* ─── LOCATIONS MEGA-MENU ─── */
+    .locations-mega {
+      position: absolute; top: calc(100% + 8px); left: 0;
+      width: 700px; background: var(--white);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+      opacity: 0; visibility: hidden; transform: translateY(-8px);
+      transition: all 0.2s; z-index: 200;
+      padding: 20px 20px 16px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 16px;
+    }
+    .nav-links > li:hover .locations-mega { opacity: 1; visibility: visible; transform: translateY(0); }
+    .loc-city-block { display: flex; flex-direction: column; }
+    .loc-city-head {
+      font-size: 10px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--teal);
+      padding: 0 8px 8px; border-bottom: 1px solid var(--border); margin-bottom: 2px;
+    }
+    .loc-suburb { position: relative; }
+    .loc-suburb-trigger {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 7px 8px; font-size: 13px; color: var(--gray);
+      border-radius: 6px; cursor: pointer; transition: all 0.12s; user-select: none;
+    }
+    .loc-suburb:hover .loc-suburb-trigger { background: rgba(58,181,217,0.08); color: var(--navy); }
+    .loc-arrow { font-size: 12px; color: var(--gray2); transition: transform 0.18s; }
+    .loc-suburb:hover .loc-arrow { transform: rotate(90deg); color: var(--teal); }
+    .loc-fly-services { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+    .loc-suburb:hover .loc-fly-services { max-height: 220px; }
+    .loc-svc-link {
+      display: flex; align-items: center; gap: 7px;
+      padding: 7px 8px 7px 18px; font-size: 12px; color: var(--gray);
+      border-radius: 5px; transition: color 0.1s, background 0.1s;
+    }
+    .loc-svc-link:hover { color: var(--teal); background: var(--light); }
+    .loc-view-all {
+      display: block; font-size: 11px; font-weight: 600; color: var(--teal);
+      padding: 7px 8px 2px; margin-top: 2px; border-top: 1px solid var(--border);
+    }
+    .loc-view-all:hover { text-decoration: underline; }
+    .loc-sub-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; color: var(--gray2);
+      padding: 8px 8px 3px; margin-top: 4px;
+    }
+  
+    /* ── Inline SVG icons ── */
+    .svc-icon { display:inline-block; vertical-align:middle; margin-right:5px; flex-shrink:0; }
+    .faq-svg-icon { display:block; color:var(--teal); flex-shrink:0; transition:transform 0.2s; }
+    .faq-item.open .faq-svg-icon { transform:rotate(45deg); }
+    .tick-svg { flex-shrink:0; margin-top:1px; }
+    .dot-svg { flex-shrink:0; }
+    </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Call us for a free quote — <a href="tel:0224871791">022 487 1791</a> &nbsp;|&nbsp; Mon–Sat 8am–5pm
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Services <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="airbnb-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+          <a href="builders-clean.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+          <a href="commercial-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+        </div>
+      </li>
+            <li>
+        <a href="#">About <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+          <a href="team.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+          <a href="service-areas.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+          <a href="faq.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+          <a href="guarantee.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+          <a href="policy.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+        </div>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary nav-cta">Get a Free Quote</a>
+
+    <div class="hamburger" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></span>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <div class="mobile-section-title">Services</div>
+    <a href="airbnb-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+    <a href="end-of-tenancy-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+    <a href="builders-clean.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+    <a href="commercial-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+    <div class="mobile-section-title">About</div>
+    <a href="about.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+    <a href="team.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+    <a href="service-areas.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+    <a href="faq.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+    <a href="guarantee.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+    <a href="policy.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-cta">
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary" style="width:100%;justify-content:center" onclick="closeMenu()">Get a Free Quote</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</div>
+      <h1>Airbnb &amp; Bach Cleaning New Zealand<br>Hosts <span>Trust.</span></h1>
+      <p>Spotless, hotel-quality results every single time. We ensure your property is guest-ready for every check-in — so you can focus on hosting.</p>
+      <div class="hero-btns">
+        <a href="mailto:lca.services.nz@gmail.com" class="btn-teal">Book a Quote Now</a>
+        <a href="tel:0224871791" class="btn-ghost-white"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><span class="dot"><svg class="dot-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Police Checked</div>
+        <div class="hero-trust-item"><span class="dot"><svg class="dot-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Fully Insured</div>
+        <div class="hero-trust-item"><span class="dot"><svg class="dot-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> 5-Star Rated</div>
+        <div class="hero-trust-item"><span class="dot"><svg class="dot-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Same-Day Available</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Every clean includes:</h3>
+      <ul class="check-list">
+        <li>Full bedroom refresh &amp; bed making</li>
+        <li>Bathroom deep clean &amp; restocking</li>
+        <li>Kitchen sanitisation &amp; appliance wipe-down</li>
+        <li>Living area dusting &amp; vacuuming</li>
+        <li>All supplies &amp; equipment provided</li>
+        <li>Photo documentation on request</li>
+        <li>Linen hire service available</li>
+        <li>Mold removal where applicable</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="included" id="included">
+  <div class="section-inner">
+    <div class="centered" style="margin-bottom:40px">
+      <div class="section-label">Full Scope of Work</div>
+      <h2 class="section-title">What's Included in Every Clean</h2>
+      <p class="section-sub">Click a room to see exactly what we take care of — nothing gets missed.</p>
+    </div>
+
+    <div class="tabs-wrapper">
+
+      <!-- Tab Buttons -->
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab('bedrooms')"><span class="tab-icon"><svg class="tab-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9V6a1 1 0 011-1h16a1 1 0 011 1v3"/><path d="M3 9h18v8H3z"/><path d="M3 13h18"/></svg></span> Bedrooms</button>
+        <button class="tab-btn" onclick="switchTab('bathrooms')"><span class="tab-icon"><svg class="tab-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 018-8"/><path d="M4 12v6a2 2 0 002 2h12a2 2 0 002-2v-6"/><circle cx="16" cy="4" r="2"/><line x1="16" y1="6" x2="16" y2="10"/></svg></span> Bathrooms</button>
+        <button class="tab-btn" onclick="switchTab('kitchen')"><span class="tab-icon"><svg class="tab-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l-1 9H7L6 3z"/><path d="M4 3h16"/><path d="M9 21v-6h6v6"/></svg></span> Kitchen</button>
+        <button class="tab-btn" onclick="switchTab('living')"><span class="tab-icon"><svg class="tab-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 9V6a2 2 0 00-2-2H6a2 2 0 00-2 2v3"/><path d="M2 11a2 2 0 012 2v2h16v-2a2 2 0 012-2H2z"/><path d="M4 15v4M20 15v4"/></svg></span> Living Areas</button>
+        <button class="tab-btn" onclick="switchTab('laundry')"><span class="tab-icon"><svg class="tab-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="13" r="4"/><line x1="8" y1="7" x2="8" y2="7"/><line x1="12" y1="7" x2="12" y2="7"/></svg></span> Laundry / Garage</button>
+        <button class="tab-btn" onclick="switchTab('outdoor')"><span class="tab-icon"><svg class="tab-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Outdoor</button>
+        <button class="tab-btn" onclick="switchTab('other')"><span class="tab-icon"><svg class="tab-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.64 5.64l2.12 2.12M16.24 16.24l2.12 2.12M5.64 18.36l2.12-2.12M16.24 7.76l2.12-2.12"/></svg></span> Other</button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="tab-panels">
+
+        <div class="tab-panel active" id="panel-bedrooms">
+          <h3>Bedrooms</h3>
+          <p class="panel-sub">Full bedroom refresh ensuring every guest feels at home from the moment they arrive.</p>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Beds made using 3 sheet fold or duvet covers</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Furniture dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Ceiling fans dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Window sills dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Lamps dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Door handles &amp; key touch points disinfected</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Bedside tables cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Mirrors cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Wall hangings dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> General straighten-up</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Skirting boards dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Doors spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Door frames dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cobwebs removed</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Walls spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Floors vacuumed &amp; mopped</div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-bathrooms">
+          <h3>Bathrooms</h3>
+          <p class="panel-sub">Sparkling clean bathrooms restocked and ready for every guest.</p>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Mirrors cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Sinks cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Vanity cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cupboard faces cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Skirtings dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Toilet cleaned inside and out</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Door handles &amp; key touch points disinfected</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Shower / bathtub and drains cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Towel rack dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Doors spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Door frames dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Soap dispensers &amp; toothbrush holders cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Window sills dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cobwebs removed</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Rubbish disposed</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Walls spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> All provided consumables refilled</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Floors vacuumed &amp; mopped</div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-kitchen">
+          <h3>Kitchen</h3>
+          <p class="panel-sub">A thoroughly sanitised kitchen your guests will love cooking in.</p>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Fridge exterior spot cleaned &amp; interior wiped</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Range hood cleaned and polished</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Splashback cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cooktop cleaned and polished</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Small appliances cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cupboard/drawer handles &amp; touch points disinfected</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Oven exterior cleaned &amp; basic interior wipe</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Dishwasher exterior cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Dishes put away and checked</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Microwave cleaned inside and out</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Sink cleaned and polished</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Light fixtures dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Walls spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Skirting boards cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Benchtops cleaned and sanitised</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cupboard faces cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Basic wipedown inside drawers &amp; cupboards</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Rubbish disposed &amp; bins wiped</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cobwebs removed</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> All consumables refilled</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Decor, cutlery &amp; utensils presented tidily</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Floors vacuumed &amp; mopped</div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-living">
+          <h3>Living Areas</h3>
+          <p class="panel-sub">Comfortable, welcoming living spaces ready for your guests to relax in.</p>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> General straighten up of cushions &amp; decor</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Mirrors cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Light fixtures dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Coffee tables &amp; TV units cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Wall hangings dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Furniture dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Walls spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Skirting boards dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Door handles &amp; key touch points disinfected</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Couch vacuumed including under cushions</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Doors spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Door frames dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Ceiling fans dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Window sills dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cobwebs removed</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Floors vacuumed &amp; mopped</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Heat pump filters cleaned seasonally</div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-laundry">
+          <h3>Laundry / Garage</h3>
+          <p class="panel-sub">Clean, functional utility spaces ready for use.</p>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Appliance exteriors cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Lint removed from dryer trap</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Laundry bench &amp; cupboard faces cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Laundry sink cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Walls spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Door handles &amp; key touch points disinfected</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Skirting boards dusted</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Doors spot cleaned</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cobwebs removed</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Floors vacuumed &amp; mopped</div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-outdoor">
+          <h3>Outdoor</h3>
+          <p class="panel-sub">A welcoming exterior that makes a great first impression for arriving guests.</p>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Outdoor furniture wiped down</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cobwebs removed from lockbox areas</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Cobwebs removed from front entrance</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Bins put out on designated days</div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-other">
+          <h3>Other</h3>
+          <p class="panel-sub">The finishing touches that make all the difference.</p>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Light dusting throughout the home</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> All floors vacuumed &amp; mopped</div>
+            <div class="checklist-item"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Mould removal in wet areas (excluding inside silicone)</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPLIES & QUALITY -->
+<section class="supplies">
+  <div class="section-inner">
+    <div class="supplies-grid">
+      <div class="supplies-list">
+        <div class="section-label">What We Bring</div>
+        <h2 class="section-title" style="margin-bottom:12px">We Supply Everything</h2>
+        <p style="font-size:15px;color:var(--gray);margin-bottom:28px;line-height:1.7">You don't need to provide a thing. Our team arrives fully equipped with everything needed to deliver a flawless clean.</p>
+        <div class="supply-item">
+          <div class="supply-icon">🧺</div>
+          <div>
+            <h4>Fresh Microfibre Cloths &amp; Mop Heads</h4>
+            <p>Laundered after every use — never cross-contaminated between properties.</p>
+          </div>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">✨</div>
+          <div>
+            <h4>Best Quality Cleaning Products</h4>
+            <p>Through hundreds of hours of on-the-ground testing, we've found the products that actually leave your space sparkling.</p>
+          </div>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">🧹</div>
+          <div>
+            <h4>Professional Vacuum Equipment</h4>
+            <p>Multi-layered vacuums with hygienic dust bags for a deep, thorough clean.</p>
+          </div>
+        </div>
+        <div class="supply-item">
+          <div class="supply-icon">🛏</div>
+          <div>
+            <h4>Linen Hire Available</h4>
+            <p>Professional linen hire services available — hotel-fresh sheets and towels for every guest.</p>
+          </div>
+        </div>
+      </div>
+      <div class="supplies-right">
+        <h3>Our Quality Assurance</h3>
+        <p>Every clean is backed by our rigorous quality systems so you can trust us with your most valuable asset.</p>
+        <div class="quality-points">
+          <div class="quality-point"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Rigorous staff screening including police vetting</div>
+          <div class="quality-point"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Comprehensive training for every team member</div>
+          <div class="quality-point"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Detailed customised checklists for your property</div>
+          <div class="quality-point"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Photo documentation available on request</div>
+          <div class="quality-point"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> Result-driven KPIs measuring quality standards</div>
+          <div class="quality-point"><span class="tick"><svg class="tick-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span> 100% re-clean guarantee if anything is missed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SEO FAQ SECTION -->
+<section class="seo-faq-section" id="faq">
+  <div class="seo-faq-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Airbnb Cleaning FAQs</h2>
+    
+    <details class="seo-faq-item">
+      <summary class="seo-faq-q">Do you clean to Airbnb's guest standards?</summary>
+      <p class="seo-faq-a">Yes. We specialise in Airbnb and Bookabach short-stay property turnovers. Our cleans are completed to five-star guest expectations — freshly made beds, spotless bathrooms, fully reset kitchens, and restocked amenities every time.</p>
+    </details>
+    <details class="seo-faq-item">
+      <summary class="seo-faq-q">Do you offer same-day Airbnb turnovers in Auckland?</summary>
+      <p class="seo-faq-a">In many cases, yes. We have same-day availability for Airbnb turnovers across Auckland, Waiheke Island, and other service areas. Contact us as early as possible — ideally as soon as your guest checks out — and we will do our best to accommodate.</p>
+    </details>
+    <details class="seo-faq-item">
+      <summary class="seo-faq-q">Do you service bach and holiday home cleaning on Waiheke Island?</summary>
+      <p class="seo-faq-a">Yes. Waiheke Island bach and holiday home cleaning is one of our specialities. We coordinate around ferry schedules and guest check-in times to ensure your island property is always guest-ready.</p>
+    </details>
+    <details class="seo-faq-item">
+      <summary class="seo-faq-q">Do you offer linen hire and restocking services?</summary>
+      <p class="seo-faq-a">Yes. We offer hotel-fresh linen hire — sheets and towels laundered and presented for every guest. Ask about this when you request your quote and we will include it in your cleaning package.</p>
+    </details>
+    <details class="seo-faq-item">
+      <summary class="seo-faq-q">How much does Airbnb cleaning cost in Auckland?</summary>
+      <p class="seo-faq-a">Prices start from $89 for a 1–2 bedroom property, $149 for 3 bedrooms, and $199+ for 4+ bedrooms. Larger properties, Waiheke Island baches, and deep cleans are quoted individually. Contact us for a free no-obligation quote.</p>
+    </details>
+    <details class="seo-faq-item">
+      <summary class="seo-faq-q">What areas do you cover for Airbnb cleaning?</summary>
+      <p class="seo-faq-a">We cover Auckland and surrounds (including Waiheke Island), Hamilton, Waikato, Tauranga, and Waihi. Use our postcode checker on the Service Areas page or call 022 487 1791 to confirm your location.</p>
+    </details>
+  </div>
+</section>
+<style>
+  .seo-faq-section { padding: 64px 24px; background: #f3f4f6; }
+  .seo-faq-inner { max-width: 800px; margin: 0 auto; }
+  .seo-faq-inner .section-label { font-size:13px;font-weight:600;color:#3AB5D9;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px }
+  .seo-faq-inner .section-title { font-size:clamp(22px,3vw,34px);font-weight:800;color:#101828;margin-bottom:32px }
+  .seo-faq-item { border:1px solid #e4e7ec;border-radius:12px;margin-bottom:10px;overflow:hidden;background:#fff }
+  .seo-faq-q { padding:17px 20px;font-weight:600;font-size:15px;cursor:pointer;list-style:none;color:#101828;display:flex;justify-content:space-between;align-items:center }
+  .seo-faq-q::after { content:'›';font-size:20px;color:#3AB5D9;transition:transform 0.2s;flex-shrink:0 }
+  details[open] .seo-faq-q::after { transform:rotate(90deg) }
+  .seo-faq-a { padding:0 20px 18px;font-size:14px;color:#475467;line-height:1.7;margin:0 }
+</style>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Ready for Guest-Ready Results?</h2>
+  <p>Book your Airbnb turnover clean today and give your guests the 5-star experience they deserve.</p>
+  <div class="cta-btns">
+    <a href="mailto:lca.services.nz@gmail.com" class="btn-white"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Get a Free Quote</a>
+    <a href="tel:0224871791" class="btn-outline-white"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+  </div>
+</section>
+
+<!-- OUR WORK -->
+<section class="our-work">
+  <div class="section-inner">
+    <div class="centered" style="margin-bottom:40px">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Our Work</h2>
+      <p class="section-sub">See some of the Airbnbs we service across New Zealand.</p>
+    </div>
+    <div class="work-grid">
+
+      <div class="work-item">
+        <img src="images/airbnb-1.jpg.jpg" alt="LCA Services Airbnb bedroom turnover clean Auckland NZ">
+        <div class="work-overlay"><span>Airbnb Turnover</span></div>
+      </div>
+
+      <div class="work-item">
+        <img src="images/airbnb-2.jpg.jpg" alt="Professional Airbnb master bedroom cleaning New Zealand">
+        <div class="work-overlay"><span>Bedroom Refresh</span></div>
+      </div>
+
+      <div class="work-item">
+        <img src="images/airbnb-3.jpg.jpg" alt="Airbnb kitchen cleaning service Auckland NZ">
+        <div class="work-overlay"><span>Kitchen Clean</span></div>
+      </div>
+
+      <div class="work-item">
+        <img src="images/airbnb-4.jpg.jpg" alt="Airbnb bathroom deep clean Auckland NZ">
+        <div class="work-overlay"><span>Bathroom Detail</span></div>
+      </div>
+
+      <div class="work-item">
+        <img src="images/airbnb-5.jpg.jpg" alt="Short-stay rental living room cleaning Auckland">
+        <div class="work-overlay"><span>Living Area</span></div>
+      </div>
+
+      <div class="work-item">
+        <img src="images/airbnb-6.jpg.jpg" alt="Professional bathroom cleaning for Airbnb and Bookabach hosts NZ">
+        <div class="work-overlay"><span>Bathroom Detail</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OTHER SERVICES -->
+<section class="other-services">
+  <div class="section-inner">
+    <div class="centered">
+      <div class="section-label">Explore More</div>
+      <h2 class="section-title">Our Other Services</h2>
+      <p class="section-sub" style="margin-bottom:32px">We cover all your cleaning needs across New Zealand.</p>
+    </div>
+    <div class="services-row">
+      <a href="#" class="service-pill"><span class="pill-icon"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg></span> End of Tenancy Cleaning <span class="arrow">→</span></a>
+      <a href="builders-clean.html" class="service-pill"><span class="pill-icon"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg></span> Builders Cleans <span class="arrow">→</span></a>
+      <a href="#" class="service-pill"><span class="pill-icon"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg></span> Commercial Cleaning <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></div>
+        <p>Professional cleaning services across New Zealand. Reliable, thorough, and always guaranteed.</p>
+        <address class="footer-contact" style="font-style:normal;display:flex;flex-direction:column;gap:8px">
+          <a href="tel:0224871791"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+          <a href="mailto:lca.services.nz@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> lca.services.nz@gmail.com</a>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Monday – Saturday, 8am – 5pm</span>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
+          <li><a href="#">End of Tenancy</a></li>
+          <li><a href="#">Builders Cleans</a></li>
+          <li><a href="#">Commercial Cleaning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="guarantee.html">Our Guarantee</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LCA Services. NZBN 9429053462077. All rights reserved.</span>
+      <div style="display:flex;gap:16px">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow = ''; }
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+
+  function switchTab(id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    document.getElementById('panel-' + id).classList.add('active');
+  }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Service",
+        "CleaningService"
+      ],
+      "@id": "https://www.lcaservices.nz/airbnb-cleaning.html#service",
+      "name": "Airbnb Cleaning",
+      "alternateName": [
+        "Bach Cleaning",
+        "Holiday Home Cleaning",
+        "Short-Stay Property Cleaning",
+        "Bookabach Cleaning",
+        "Vacation Rental Cleaning"
+      ],
+      "description": "Professional Airbnb and bach short-stay property turnover cleaning across Auckland, Waiheke Island, Hamilton, Tauranga, and Waihi, New Zealand. Same-day turnovers, linen hire, and photo documentation available.",
+      "provider": {
+        "@id": "https://www.lcaservices.nz/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Auckland"
+        },
+        {
+          "@type": "City",
+          "name": "Waiheke Island"
+        },
+        {
+          "@type": "City",
+          "name": "Hamilton"
+        },
+        {
+          "@type": "City",
+          "name": "Tauranga"
+        },
+        {
+          "@type": "City",
+          "name": "Waihi"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "NZD",
+        "price": "89",
+        "description": "Starting price for 1–2 bedroom Airbnb turnover clean in NZ"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you clean to Airbnb's guest standards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We specialise in Airbnb and Bookabach short-stay property turnovers. Our cleans are completed to five-star guest expectations — freshly made beds, spotless bathrooms, fully reset kitchens, and restocked amenities every time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer same-day Airbnb turnovers in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In many cases, yes. We have same-day availability for Airbnb turnovers across Auckland, Waiheke Island, and other service areas. Contact us as early as possible — ideally as soon as your guest checks out — and we will do our best to accommodate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you service bach and holiday home cleaning on Waiheke Island?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Waiheke Island bach and holiday home cleaning is one of our specialities. We coordinate around ferry schedules and guest check-in times to ensure your island property is always guest-ready."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer linen hire and restocking services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer hotel-fresh linen hire — sheets and towels laundered and presented for every guest. Ask about this when you request your quote and we will include it in your cleaning package."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Airbnb cleaning cost in Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prices start from $89 for a 1–2 bedroom property, $149 for 3 bedrooms, and $199+ for 4+ bedrooms. Larger properties, Waiheke Island baches, and deep cleans are quoted individually. Contact us for a free no-obligation quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you cover for Airbnb cleaning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover Auckland and surrounds (including Waiheke Island), Hamilton, Waikato, Tauranga, and Waihi. Use our postcode checker on the Service Areas page or call 022 487 1791 to confirm your location."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lcaservices.nz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Airbnb Cleaning",
+          "item": "https://www.lcaservices.nz/airbnb-cleaning.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

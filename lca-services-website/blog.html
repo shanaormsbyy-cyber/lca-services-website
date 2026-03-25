@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleaning Tips & Advice — NZ Cleaning Blog | LCA Services</title>
+  <meta name="description" content="Cleaning tips and advice from the LCA Services team — Airbnb hosting, bond cleaning, builders cleans & commercial cleaning across New Zealand." />
+  <link rel="canonical" href="https://www.lcaservices.nz/blog.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LCA Services" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:title" content="Cleaning Tips & Advice — NZ Cleaning Blog | LCA Services" />
+  <meta property="og:description" content="Cleaning tips and advice from the LCA Services team — Airbnb hosting, bond cleaning, builders cleans & commercial cleaning across New Zealand." />
+  <meta property="og:url" content="https://www.lcaservices.nz/blog.html" />
+  <meta property="og:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cleaning Tips & Advice — NZ Cleaning Blog | LCA Services" />
+  <meta name="twitter:description" content="Cleaning tips and advice from the LCA Services team — Airbnb hosting, bond cleaning, builders cleans & commercial cleaning across New Zealand." />
+  <meta name="twitter:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:   #101828;
+      --navy2:  #1d2939;
+      --teal:   #3AB5D9;
+      --teal-dark: #2a9cbd;
+      --gray:   #475467;
+      --gray2:  #667085;
+      --light:  #f9fafb;
+      --white:  #ffffff;
+      --border: #e4e7ec;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--navy); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    .topbar { background: var(--navy); color: rgba(255,255,255,0.75); font-size: 13px; padding: 8px 0; text-align: center; }
+    .topbar a { color: var(--white); font-weight: 600; }
+
+    nav { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-size: 22px; font-weight: 800; color: var(--navy); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+    .logo-sub { display: flex; flex-direction: column; font-size: 9px; font-weight: 700; color: var(--teal); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.5px; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a { display: flex; align-items: center; gap: 4px; padding: 8px 14px; font-size: 14px; font-weight: 500; color: var(--gray); border-radius: 6px; transition: all 0.15s; }
+    .nav-links > li > a:hover { color: var(--navy); background: var(--light); }
+    .chevron { font-size: 10px; transition: transform 0.2s; }
+    .dropdown { position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 8px 32px rgba(0,0,0,0.12); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: all 0.2s; z-index: 100; }
+    .nav-links > li:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-links > li:hover .chevron { transform: rotate(180deg); }
+    .dropdown a { display: block; padding: 10px 16px; font-size: 14px; color: var(--gray); transition: all 0.15s; }
+    .dropdown a:hover { background: var(--light); color: var(--teal); padding-left: 20px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: var(--teal); color: var(--white); }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #1a2640 100%); color: var(--white); padding: 64px 24px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 80%, rgba(58,181,217,0.15) 0%, transparent 60%); }
+    .hero-inner { max-width: 680px; margin: 0 auto; position: relative; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(58,181,217,0.15); border: 1px solid rgba(58,181,217,0.4); color: #7dd8ef; font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .hero p { font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.7; }
+
+    /* FILTER TABS */
+    .filter-bar { padding: 32px 24px 0; }
+    .filter-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap; }
+    .filter-btn { padding: 8px 18px; border-radius: 100px; border: 1.5px solid var(--border); background: var(--white); font-size: 13px; font-weight: 600; color: var(--gray); cursor: pointer; transition: all 0.15s; }
+    .filter-btn:hover { border-color: var(--teal); color: var(--teal); }
+    .filter-btn.active { background: var(--teal); color: var(--white); border-color: var(--teal); }
+
+    /* BLOG GRID */
+    .blog-section { padding: 40px 24px 80px; }
+    .blog-inner { max-width: 1200px; margin: 0 auto; }
+
+    /* Featured post */
+    .featured-post { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 20px; overflow: hidden; margin-bottom: 48px; transition: box-shadow 0.2s; }
+    .featured-post:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .featured-img { background: linear-gradient(135deg, var(--navy), #1a3a4a); min-height: 280px; display: flex; align-items: center; justify-content: center; font-size: 72px; position: relative; overflow: hidden; }
+    .featured-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(58,181,217,0.2), transparent); }
+    .featured-body { padding: 40px; background: var(--white); display: flex; flex-direction: column; justify-content: center; }
+    .post-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+    .featured-body h2 { font-size: clamp(20px, 2.5vw, 28px); font-weight: 800; color: var(--navy); line-height: 1.3; margin-bottom: 12px; }
+    .featured-body p { font-size: 15px; color: var(--gray); line-height: 1.7; margin-bottom: 24px; }
+    .post-meta { display: flex; align-items: center; gap: 16px; font-size: 13px; color: var(--gray2); margin-bottom: 20px; }
+    .read-more { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--teal); transition: gap 0.15s; }
+    .read-more:hover { gap: 10px; }
+    @media (max-width: 700px) { .featured-post { grid-template-columns: 1fr; } .featured-img { min-height: 180px; } }
+
+    /* Post grid */
+    .post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 900px) { .post-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .post-grid { grid-template-columns: 1fr; } }
+
+    .post-card { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; cursor: pointer; background: var(--white); }
+    .post-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.09); transform: translateY(-2px); }
+    .post-card-img { height: 180px; display: flex; align-items: center; justify-content: center; font-size: 52px; }
+    .post-card-body { padding: 20px; }
+    .post-card-body .post-tag { margin-bottom: 8px; }
+    .post-card-body h3 { font-size: 16px; font-weight: 700; color: var(--navy); line-height: 1.4; margin-bottom: 8px; }
+    .post-card-body p { font-size: 13px; color: var(--gray); line-height: 1.6; margin-bottom: 16px; }
+    .post-card-footer { display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: var(--gray2); padding-top: 14px; border-top: 1px solid var(--border); }
+    .post-card-footer .read-link { font-size: 13px; font-weight: 700; color: var(--teal); display: flex; align-items: center; gap: 4px; }
+
+    /* Newsletter */
+    .newsletter { background: var(--light); padding: 72px 24px; }
+    .newsletter-inner { max-width: 560px; margin: 0 auto; text-align: center; }
+    .newsletter h2 { font-size: clamp(22px, 3vw, 32px); font-weight: 800; color: var(--navy); margin-bottom: 12px; }
+    .newsletter p { font-size: 15px; color: var(--gray); margin-bottom: 28px; line-height: 1.7; }
+    .newsletter-form { display: flex; gap: 10px; }
+    .newsletter-form input { flex: 1; padding: 13px 16px; border: 1.5px solid var(--border); border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 14px; color: var(--navy); outline: none; transition: border-color 0.15s; }
+    .newsletter-form input:focus { border-color: var(--teal); }
+    .newsletter-form button { padding: 13px 24px; background: var(--teal); color: var(--white); border: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; white-space: nowrap; transition: background 0.2s; }
+    .newsletter-form button:hover { background: var(--teal-dark); }
+    @media (max-width: 480px) { .newsletter-form { flex-direction: column; } }
+
+    /* Footer */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 64px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 20px; margin-top: 16px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+    .footer-contact a { color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-contact a:hover { color: var(--white); }
+    .footer-col h4 { color: var(--white); font-size: 14px; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; }
+
+    /* Mobile menu */
+    .mobile-menu { display: none; position: fixed; inset: 0; background: var(--white); z-index: 2000; padding: 24px; overflow-y: auto; flex-direction: column; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+    .mobile-close { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+    .mobile-nav { display: flex; flex-direction: column; gap: 4px; }
+    .mobile-nav a { display: block; padding: 14px 16px; font-size: 16px; font-weight: 500; color: var(--gray); border-radius: 8px; transition: all 0.15s; }
+    .mobile-nav a:hover { background: var(--light); color: var(--teal); }
+    .mobile-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray2); padding: 12px 16px 4px; }
+    .mobile-cta { margin-top: 24px; }
+    .btn-teal { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: var(--white); padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; transition: background 0.2s; }
+
+    @media (max-width: 900px) { .nav-links, nav .btn { display: none; } .hamburger { display: flex; } }
+    @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; text-align: center; } }
+
+    /* ─── LOCATIONS MEGA-MENU ─── */
+    .locations-mega {
+      position: absolute; top: calc(100% + 8px); left: 0;
+      width: 700px; background: var(--white);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+      opacity: 0; visibility: hidden; transform: translateY(-8px);
+      transition: all 0.2s; z-index: 200;
+      padding: 20px 20px 16px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 16px;
+    }
+    .nav-links > li:hover .locations-mega { opacity: 1; visibility: visible; transform: translateY(0); }
+    .loc-city-block { display: flex; flex-direction: column; }
+    .loc-city-head {
+      font-size: 10px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--teal);
+      padding: 0 8px 8px; border-bottom: 1px solid var(--border); margin-bottom: 2px;
+    }
+    .loc-suburb { position: relative; }
+    .loc-suburb-trigger {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 7px 8px; font-size: 13px; color: var(--gray);
+      border-radius: 6px; cursor: pointer; transition: all 0.12s; user-select: none;
+    }
+    .loc-suburb:hover .loc-suburb-trigger { background: rgba(58,181,217,0.08); color: var(--navy); }
+    .loc-arrow { font-size: 12px; color: var(--gray2); transition: transform 0.18s; }
+    .loc-suburb:hover .loc-arrow { transform: rotate(90deg); color: var(--teal); }
+    .loc-fly-services { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+    .loc-suburb:hover .loc-fly-services { max-height: 220px; }
+    .loc-svc-link {
+      display: flex; align-items: center; gap: 7px;
+      padding: 7px 8px 7px 18px; font-size: 12px; color: var(--gray);
+      border-radius: 5px; transition: color 0.1s, background 0.1s;
+    }
+    .loc-svc-link:hover { color: var(--teal); background: var(--light); }
+    .loc-view-all {
+      display: block; font-size: 11px; font-weight: 600; color: var(--teal);
+      padding: 7px 8px 2px; margin-top: 2px; border-top: 1px solid var(--border);
+    }
+    .loc-view-all:hover { text-decoration: underline; }
+    .loc-sub-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; color: var(--gray2);
+      padding: 8px 8px 3px; margin-top: 4px;
+    }
+  
+    /* ── Inline SVG icons ── */
+    .svc-icon { display:inline-block; vertical-align:middle; margin-right:5px; flex-shrink:0; }
+    .faq-svg-icon { display:block; color:var(--teal); flex-shrink:0; transition:transform 0.2s; }
+    .faq-item.open .faq-svg-icon { transform:rotate(45deg); }
+    .tick-svg { flex-shrink:0; margin-top:1px; }
+    .dot-svg { flex-shrink:0; }
+    </style>
+</head>
+<body>
+
+<div class="topbar">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Call us for a free quote — <a href="tel:0224871791">022 487 1791</a> &nbsp;|&nbsp; Mon–Sat 8am–5pm
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Services <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="airbnb-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+          <a href="builders-clean.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+          <a href="commercial-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+        </div>
+      </li>
+            <li>
+        <a href="#">About <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+          <a href="team.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+          <a href="service-areas.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+          <a href="faq.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+          <a href="guarantee.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+          <a href="policy.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+        </div>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary nav-cta">Get a Free Quote</a>
+
+    <div class="hamburger" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></span>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <div class="mobile-section-title">Services</div>
+    <a href="airbnb-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+    <a href="end-of-tenancy-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+    <a href="builders-clean.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+    <a href="commercial-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+    <div class="mobile-section-title">About</div>
+    <a href="about.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+    <a href="team.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+    <a href="service-areas.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+    <a href="faq.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+    <a href="guarantee.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+    <a href="policy.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-cta">
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary" style="width:100%;justify-content:center" onclick="closeMenu()">Get a Free Quote</a>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">📝 LCA Services Blog</div>
+    <h1>Cleaning Tips &amp;<br>Advice from the Team</h1>
+    <p>Practical guides, hosting tips, and cleaning insights to help you get the most out of your property.</p>
+  </div>
+</section>
+
+<!-- FILTER -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn active">All Posts</button>
+    <button class="filter-btn">Airbnb Hosting</button>
+    <button class="filter-btn">End of Tenancy</button>
+    <button class="filter-btn">Builders Clean</button>
+    <button class="filter-btn">Commercial</button>
+    <button class="filter-btn">Cleaning Tips</button>
+  </div>
+</div>
+
+<!-- BLOG CONTENT -->
+<div class="blog-section">
+  <div class="blog-inner">
+
+    <!-- Featured Post -->
+    <a href="#" class="featured-post">
+      <div class="featured-img"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> </div>
+      <div class="featured-body">
+        <div class="post-tag"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Hosting</div>
+        <h2>How to Get Consistent 5-Star Reviews Through Cleanliness</h2>
+        <p>Guest reviews are the lifeblood of any Airbnb listing. We break down exactly what guests notice most — and how a professional turnover clean can protect your rating every single time.</p>
+        <div class="post-meta">
+          <span>📅 March 2025</span>
+          <span>⏱ 5 min read</span>
+        </div>
+        <span class="read-more">Read article →</span>
+      </div>
+    </a>
+
+    <!-- Post Grid -->
+    <div class="post-grid">
+
+      <a href="#" class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg,#f0f9ff,#cce8f5);"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> </div>
+        <div class="post-card-body">
+          <div class="post-tag"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy</div>
+          <h3>10 Things Landlords Check First During an Exit Inspection</h3>
+          <p>Know what property managers are looking for before they walk through the door — and make sure none of it costs you your bond.</p>
+          <div class="post-card-footer">
+            <span>February 2025 · 4 min</span>
+            <span class="read-link">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg,#f0f9ff,#cce8f5);"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> </div>
+        <div class="post-card-body">
+          <div class="post-tag"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Clean</div>
+          <h3>Why Your Builder's Clean Needs Three Phases — Not One</h3>
+          <p>Most people think a builders clean is a one-shot job. Here's why the best results always come from a three-phase approach.</p>
+          <div class="post-card-footer">
+            <span>February 2025 · 3 min</span>
+            <span class="read-link">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg,#f0f9ff,#cce8f5);">🧹</div>
+        <div class="post-card-body">
+          <div class="post-tag">🧹 Cleaning Tips</div>
+          <h3>The Products We Actually Use (And Why We Use Them)</h3>
+          <p>After hundreds of hours on the ground, these are the cleaning products that genuinely deliver results — and why most supermarket brands don't cut it.</p>
+          <div class="post-card-footer">
+            <span>January 2025 · 4 min</span>
+            <span class="read-link">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg,#f0f9ff,#cce8f5);"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> </div>
+        <div class="post-card-body">
+          <div class="post-tag"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial</div>
+          <h3>How a Clean Office Impacts Employee Productivity</h3>
+          <p>Research consistently shows that workplace cleanliness directly affects focus, morale, and sick days. Here's what the numbers say — and what to do about it.</p>
+          <div class="post-card-footer">
+            <span>January 2025 · 5 min</span>
+            <span class="read-link">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg,#f0f9ff,#cce8f5);">🛁</div>
+        <div class="post-card-body">
+          <div class="post-tag">🧹 Cleaning Tips</div>
+          <h3>How to Remove Mould from Bathroom Grout for Good</h3>
+          <p>Mould in grout is one of the most stubborn bathroom problems in New Zealand homes. Here's the method we use that actually works.</p>
+          <div class="post-card-footer">
+            <span>December 2024 · 3 min</span>
+            <span class="read-link">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg,#f0f9ff,#cce8f5);"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> </div>
+        <div class="post-card-body">
+          <div class="post-tag"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Hosting</div>
+          <h3>The Airbnb Hosting Checklist Every New Host Needs</h3>
+          <p>From your first listing to your first five-star review — the practical checklist we've built from working with Airbnb hosts across New Zealand.</p>
+          <div class="post-card-footer">
+            <span>December 2024 · 6 min</span>
+            <span class="read-link">Read →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="newsletter-inner">
+    <h2>Get cleaning tips in your inbox</h2>
+    <p>Practical advice for Airbnb hosts, landlords, and property managers — delivered occasionally, never spammy.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></div>
+        <p>Professional cleaning services across New Zealand. Reliable, thorough, and always guaranteed.</p>
+        <address class="footer-contact" style="font-style:normal;display:flex;flex-direction:column;gap:8px">
+          <a href="tel:0224871791"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+          <a href="mailto:lca.services.nz@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> lca.services.nz@gmail.com</a>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Monday – Saturday, 8am – 5pm</span>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
+          <li><a href="end-of-tenancy-cleaning.html">End of Tenancy</a></li>
+          <li><a href="builders-clean.html">Builders Cleans</a></li>
+          <li><a href="commercial-cleaning.html">Commercial Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul class="footer-links">
+          <li><a href="service-areas.html#auckland">Auckland</a></li>
+          <li><a href="service-areas.html#waiheke">Waiheke Island</a></li>
+          <li><a href="service-areas.html#waikato">Waikato</a></li>
+          <li><a href="service-areas.html#tauranga">Tauranga</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 LCA Services. All rights reserved.</span>
+      <span>Built for New Zealand's best cleaning team.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function handleNewsletter(e) {
+    e.preventDefault();
+    e.target.innerHTML = '<p style="color:var(--teal);font-weight:600;font-size:15px">✓ You\'re subscribed — thanks!</p>';
+  }
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow = ''; }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.lcaservices.nz/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.lcaservices.nz/blog.html"
+    }
+  ]
+}
+</script>
+</body>
+</html>

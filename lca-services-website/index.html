@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Cleaning Services New Zealand | LCA Services</title>
+  <meta name="description" content="LCA Services offers Airbnb, bond, builders & commercial cleaning across Auckland, Waiheke Island, Hamilton, Tauranga & Waihi. Get a free quote today." />
+  <link rel="canonical" href="https://www.lcaservices.nz/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LCA Services" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:title" content="Professional Cleaning Services New Zealand | LCA Services" />
+  <meta property="og:description" content="LCA Services offers Airbnb, bond, builders & commercial cleaning across Auckland, Waiheke Island, Hamilton, Tauranga & Waihi. Get a free quote today." />
+  <meta property="og:url" content="https://www.lcaservices.nz/" />
+  <meta property="og:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Professional Cleaning Services New Zealand | LCA Services" />
+  <meta name="twitter:description" content="LCA Services offers Airbnb, bond, builders & commercial cleaning across Auckland, Waiheke Island, Hamilton, Tauranga & Waihi. Get a free quote today." />
+  <meta name="twitter:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #101828;
+      --navy2:  #1d2939;
+      --purple: #3AB5D9;
+      --purple-dark: #2a9cbd;
+      --gray:   #475467;
+      --gray2:  #667085;
+      --light:  #f9fafb;
+      --white:  #ffffff;
+      --border: #e4e7ec;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--purple);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--purple-dark); transform: translateY(-1px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); }
+    .btn-white {
+      background: var(--white);
+      color: #3AB5D9;
+    }
+    .btn-white:hover { background: var(--light); }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      background: var(--navy);
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+      padding: 8px 0;
+      text-align: center;
+    }
+    .topbar a { color: var(--white); font-weight: 600; }
+    .topbar a:hover { text-decoration: underline; }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--navy);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .logo span { color: #3AB5D9; }
+    .logo-sub {
+      display: flex;
+      flex-direction: column;
+      font-size: 9px;
+      font-weight: 700;
+      color: #3AB5D9;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray);
+      border-radius: 6px;
+      transition: all 0.15s;
+    }
+    .nav-links > li > a:hover { color: var(--navy); background: var(--light); }
+    .nav-links > li > a .chevron {
+      font-size: 10px;
+      transition: transform 0.2s;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      min-width: 220px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: all 0.2s;
+      z-index: 100;
+    }
+    .nav-links > li:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .nav-links > li:hover .chevron { transform: rotate(180deg); }
+    .dropdown a {
+      display: block;
+      padding: 10px 16px;
+      font-size: 14px;
+      color: var(--gray);
+      transition: all 0.15s;
+    }
+    .dropdown a:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+    .dropdown a:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+    .dropdown a:hover { background: var(--light); color: #3AB5D9; padding-left: 20px; }
+
+    .nav-cta { margin-left: 8px; }
+
+    /* Mobile toggle */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(10,18,35,0.88) 0%, rgba(16,24,40,0.82) 50%, rgba(14,22,45,0.85) 100%),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+      color: var(--white);
+      padding: 100px 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(58,181,217,0.15) 0%, transparent 55%);
+    }
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(58,181,217,0.15);
+      border: 1px solid rgba(58,181,217,0.4);
+      color: #7dd8ef;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span { color: #7dd8ef; }
+    .hero p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .hero-locations {
+      margin-top: 48px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+    }
+    .hero-locations strong {
+      color: rgba(255,255,255,0.8);
+      font-weight: 600;
+    }
+    .location-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .location-tag {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(58,181,217,0.8);
+      box-shadow: 0 0 0 1px rgba(58,181,217,0.25), 0 0 20px rgba(58,181,217,0.5), 0 0 60px rgba(58,181,217,0.3), 0 0 120px rgba(58,181,217,0.15);
+      color: rgba(255,255,255,0.75);
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 13px;
+    }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--light);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+    }
+    .trust-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray);
+    }
+    .trust-item .icon { font-size: 18px; }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+    .section-sub {
+      font-size: 17px;
+      color: var(--gray);
+      max-width: 560px;
+      margin-bottom: 48px;
+    }
+    .centered { text-align: center; }
+    .centered .section-sub { margin-left: auto; margin-right: auto; }
+
+    /* ── SERVICES ── */
+    .services { background: var(--white); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: all 0.25s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--purple);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+    }
+    .service-card:hover {
+      border-color: var(--purple);
+      box-shadow: 0 8px 32px rgba(58,181,217,0.15);
+      transform: translateY(-4px);
+    }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(58,181,217,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .service-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: #3AB5D9;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .service-link:hover gap { gap: 8px; }
+
+    /* ── HOW IT WORKS ── */
+    .how { background: var(--light); }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .step {
+      text-align: center;
+      padding: 32px 24px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .step-num {
+      width: 48px;
+      height: 48px;
+      background: #3AB5D9;
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+      margin: 0 auto 20px;
+    }
+    .step h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .step p { font-size: 14px; color: var(--gray); }
+
+    /* ── WHY CHOOSE US ── */
+    .why { background: #f4f6f9; }
+    .why-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 48px;
+      gap: 24px;
+    }
+    .why-header-img {
+      width: 220px;
+      min-width: 220px;
+      height: 150px;
+      border-radius: 16px;
+      object-fit: cover;
+      background: linear-gradient(135deg, #1d2939, #2a4a6b);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .why-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 28px 24px;
+      background: var(--white);
+      border-radius: 16px;
+      border: 1px solid #e8eaf0;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .why-card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+      transform: translateY(-2px);
+    }
+    .why-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      background: linear-gradient(135deg, #56b4d3, #3AB5D9);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .why-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .why-card p { font-size: 13px; color: var(--gray); line-height: 1.6; }
+    @media (max-width: 700px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .why-header-img { display: none; }
+    }
+
+    /* ── GUARANTEE ── */
+    .guarantee {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .guarantee-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: start;
+    }
+    .guarantee-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 100px;
+      padding: 8px 18px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 28px;
+    }
+    .guarantee h2 {
+      font-size: clamp(32px, 3.5vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+    }
+    .guarantee h2 span { color: #3AB5D9; }
+    .guarantee-body p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 18px;
+      line-height: 1.75;
+    }
+    .guarantee-body .btn-teal {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #3AB5D9;
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      margin-top: 12px;
+      transition: background 0.2s;
+    }
+    .guarantee-body .btn-teal:hover { background: #2a9cbd; }
+    .promise-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .promise-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 18px 20px;
+      transition: background 0.2s;
+    }
+    .promise-item:hover { background: rgba(58,181,217,0.08); border-color: rgba(58,181,217,0.2); }
+    .promise-num {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      background: #3AB5D9;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--white);
+    }
+    .promise-item h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .promise-item p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.5;
+    }
+    .guarantee-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .guarantee-point .check { color: #3AB5D9; font-size: 18px; margin-top: 2px; }
+    .guarantee-point strong { display: block; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 3px; }
+    .guarantee-point span { font-size: 13px; color: rgba(255,255,255,0.6); }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: var(--light); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .review-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: box-shadow 0.2s;
+    }
+    .review-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.08); }
+    .stars { color: #f59e0b; font-size: 16px; margin-bottom: 14px; }
+    .review-text {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .reviewer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .reviewer-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--navy2);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .reviewer-name { font-weight: 700; font-size: 14px; color: var(--navy); }
+    .reviewer-loc { font-size: 12px; color: var(--gray2); }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: #3AB5D9;
+      padding: 72px 24px;
+      text-align: center;
+      color: var(--white);
+    }
+    .cta-banner h2 {
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .cta-banner p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.65);
+      padding: 64px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand .logo { color: var(--white); margin-bottom: 16px; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+    .footer-contact a { color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-contact a:hover { color: var(--white); }
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+    }
+    .footer-bottom a { color: rgba(255,255,255,0.5); transition: color 0.15s; }
+    .footer-bottom a:hover { color: var(--white); }
+
+    /* ── MOBILE NAV ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--white);
+      z-index: 2000;
+      padding: 24px;
+      overflow-y: auto;
+      flex-direction: column;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .mobile-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--navy);
+    }
+    .mobile-nav { display: flex; flex-direction: column; gap: 4px; }
+    .mobile-nav a {
+      display: block;
+      padding: 14px 16px;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--gray);
+      border-radius: 8px;
+      transition: all 0.15s;
+    }
+    .mobile-nav a:hover { background: var(--light); color: #3AB5D9; }
+    .mobile-nav .mobile-section-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gray2);
+      padding: 12px 16px 4px;
+    }
+    .mobile-cta { margin-top: 24px; }
+
+    /* ── GET STARTED WIDGET ── */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-layout {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      width: 100%;
+      max-width: 1100px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hero-inner {
+      max-width: 520px;
+      text-align: left;
+      flex: 1;
+      min-width: 280px;
+    }
+    .hero-inner .hero-btns { justify-content: flex-start; }
+    .hero-inner .hero-locations { text-align: left; }
+    .hero-inner .location-tags { justify-content: flex-start; }
+
+    .get-started-widget {
+      flex: 0 0 320px;
+      background: rgba(20, 30, 55, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(58,181,217,0.8);
+      border-radius: 20px;
+      padding: 28px 24px;
+      position: relative;
+      min-width: 300px;
+      box-shadow: 0 0 0 1px rgba(58,181,217,0.2), 0 0 20px rgba(58,181,217,0.55), 0 0 60px rgba(58,181,217,0.3), 0 0 120px rgba(58,181,217,0.15);
+    }
+    .widget-star-badge {
+      position: absolute;
+      top: -14px;
+      right: 16px;
+      background: rgba(30,40,65,0.95);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .widget-star-badge .star { color: #f59e0b; font-size: 15px; }
+    .get-started-widget h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .get-started-widget p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .service-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .service-row:last-child { margin-bottom: 0; }
+    .service-row:hover {
+      background: rgba(58,181,217,0.25);
+      border-color: rgba(58,181,217,0.6);
+      transform: translateX(3px);
+    }
+    .service-row-icon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      background: linear-gradient(135deg, #56b4d3, #3AB5D9);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .service-row-name {
+      flex: 1;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+    }
+    .service-row-arrow {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 13px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .guarantee-inner { grid-template-columns: 1fr; gap: 40px; }
+      .promise-section-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .hero-inner { text-align: center; }
+      .hero-inner .hero-btns { justify-content: center; }
+      .hero-inner .hero-locations { text-align: center; }
+      .hero-inner .location-tags { justify-content: center; }
+      .get-started-widget { width: 100%; max-width: 420px; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 60px 16px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .get-started-widget { min-width: unset; width: 100%; }
+    }
+
+    /* ─── LOCATIONS MEGA-MENU ─── */
+    .locations-mega {
+      position: absolute; top: calc(100% + 8px); left: 0;
+      width: 700px; background: var(--white);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+      opacity: 0; visibility: hidden; transform: translateY(-8px);
+      transition: all 0.2s; z-index: 200;
+      padding: 20px 20px 16px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 16px;
+    }
+    .nav-links > li:hover .locations-mega { opacity: 1; visibility: visible; transform: translateY(0); }
+    .loc-city-block { display: flex; flex-direction: column; }
+    .loc-city-head {
+      font-size: 10px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--teal);
+      padding: 0 8px 8px; border-bottom: 1px solid var(--border); margin-bottom: 2px;
+    }
+    .loc-suburb { position: relative; }
+    .loc-suburb-trigger {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 7px 8px; font-size: 13px; color: var(--gray);
+      border-radius: 6px; cursor: pointer; transition: all 0.12s; user-select: none;
+    }
+    .loc-suburb:hover .loc-suburb-trigger { background: rgba(58,181,217,0.08); color: var(--navy); }
+    .loc-arrow { font-size: 12px; color: var(--gray2); transition: transform 0.18s; }
+    .loc-suburb:hover .loc-arrow { transform: rotate(90deg); color: var(--teal); }
+    .loc-fly-services { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+    .loc-suburb:hover .loc-fly-services { max-height: 220px; }
+    .loc-svc-link {
+      display: flex; align-items: center; gap: 7px;
+      padding: 7px 8px 7px 18px; font-size: 12px; color: var(--gray);
+      border-radius: 5px; transition: color 0.1s, background 0.1s;
+    }
+    .loc-svc-link:hover { color: var(--teal); background: var(--light); }
+    .loc-view-all {
+      display: block; font-size: 11px; font-weight: 600; color: var(--teal);
+      padding: 7px 8px 2px; margin-top: 2px; border-top: 1px solid var(--border);
+    }
+    .loc-view-all:hover { text-decoration: underline; }
+    .loc-sub-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; color: var(--gray2);
+      padding: 8px 8px 3px; margin-top: 4px;
+    }
+  
+    /* ── Inline SVG icons ── */
+    .svc-icon { display:inline-block; vertical-align:middle; margin-right:5px; flex-shrink:0; }
+    .faq-svg-icon { display:block; color:var(--teal); flex-shrink:0; transition:transform 0.2s; }
+    .faq-item.open .faq-svg-icon { transform:rotate(45deg); }
+    .tick-svg { flex-shrink:0; margin-top:1px; }
+    .dot-svg { flex-shrink:0; }
+    </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Call us for a free quote — <a href="tel:0224871791">022 487 1791</a> &nbsp;|&nbsp; Mon–Sat 8am–5pm
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></a>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Services <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="airbnb-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+          <a href="builders-clean.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+          <a href="commercial-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+        </div>
+      </li>
+            <li>
+        <a href="#">About <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+          <a href="team.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+          <a href="service-areas.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+          <a href="faq.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+          <a href="guarantee.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+          <a href="policy.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+        </div>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary nav-cta">Get a Free Quote</a>
+
+    <div class="hamburger" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></span>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#" onclick="closeMenu()">Home</a>
+    <div class="mobile-section-title">Services</div>
+    <a href="airbnb-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+    <a href="end-of-tenancy-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+    <a href="builders-clean.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+    <a href="commercial-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+    <div class="mobile-section-title">About</div>
+    <a href="about.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+    <a href="team.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+    <a href="service-areas.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+    <a href="faq.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+    <a href="guarantee.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+    <a href="policy.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-cta">
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary" style="width:100%;justify-content:center" onclick="closeMenu()">Get a Free Quote</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-layout">
+
+    <!-- Left: text -->
+    <div class="hero-inner">
+      <div class="hero-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Trusted across New Zealand</div>
+      <h1>Your Space, Spotless.<br><span>Every Single Time.</span></h1>
+      <p>Professional cleaning services tailored to your property — from Airbnb turnovers to full commercial cleans. Reliable, thorough, and always on time.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:0224871791" class="btn btn-outline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+      </div>
+      <div class="hero-locations">
+        <strong>Serving</strong>
+        <div class="location-tags">
+          <span class="location-tag">Auckland</span>
+          <span class="location-tag">Waiheke Island</span>
+          <span class="location-tag">Waikato</span>
+          <span class="location-tag">Hamilton</span>
+          <span class="location-tag">Tauranga</span>
+          <span class="location-tag">Waihi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Get Started widget -->
+    <div class="get-started-widget">
+      <div class="widget-star-badge"><span class="star">★</span> 5-Star Rated</div>
+      <h3>Get Started</h3>
+      <p>Select a service to begin your journey to a sparkling clean space.</p>
+
+      <a href="airbnb-cleaning.html" class="service-row">
+        <div class="service-row-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <span class="service-row-name">Airbnb Cleaning</span>
+        <div class="service-row-arrow">→</div>
+      </a>
+      <a href="end-of-tenancy-cleaning.html" class="service-row">
+        <div class="service-row-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg></div>
+        <span class="service-row-name">End of Tenancy</span>
+        <div class="service-row-arrow">→</div>
+      </a>
+      <a href="builders-clean.html" class="service-row">
+        <div class="service-row-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg></div>
+        <span class="service-row-name">Builders Cleans</span>
+        <div class="service-row-arrow">→</div>
+      </a>
+      <a href="commercial-cleaning.html" class="service-row">
+        <div class="service-row-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg></div>
+        <span class="service-row-name">Commercial Cleaning</span>
+        <div class="service-row-arrow">→</div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span> Fully Insured</div>
+    <div class="trust-item"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span> Police Checked</div>
+    <div class="trust-item"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> 5-Star Rated</div>
+    <div class="trust-item"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg></span> 100% Re-Service Guarantee</div>
+    <div class="trust-item"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22 12 12"/><path d="M17 8c0 5-5 9-9 9-2.5 0-4.5-1-6-2.5C4 9 8 4 14 4c3 0 3 4 3 4z"/></svg></span> Premium Products</div>
+    <div class="trust-item"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span> Mon–Sat 8am–5pm</div>
+  </div>
+</div>
+
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="section-inner centered">
+    <div class="section-label">Simple Process</div>
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-sub">Getting started with LCA Services is easy. Three simple steps to a spotless space.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Tell Us About Your Space</h3>
+        <p>Fill out a quick quote form or give us a call. We'll ask about your property, service type, and preferred schedule.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>We Schedule Your Clean</h3>
+        <p>We'll confirm a time that works for you. Our trained team arrives on time, fully equipped and ready to go.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Relax &amp; Enjoy</h3>
+        <p>Sit back while we take care of everything. We won't leave until the job is done to the highest standard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why" id="why">
+  <div class="section-inner">
+    <div class="why-header">
+      <div>
+        <div class="section-label">Why LCA Services</div>
+        <h2 class="section-title" style="margin-bottom:0">Why Choose <span style="color:#3AB5D9">LCA?</span></h2>
+      </div>
+      
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <div>
+          <h4>Fully Police Checked &amp; Insured</h4>
+          <p>Every team member undergoes thorough background checks and we carry full public liability insurance for your complete peace of mind.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <div>
+          <h4>Flexibility &amp; Easy Communication</h4>
+          <p>Need to cancel or reschedule? You'll have a direct line to our team who can sort it straight away — no hassle, no stress.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+        <div>
+          <h4>Expertly Trained Cleaners</h4>
+          <p>Our team is trained to exacting standards through hands-on training and detailed systems — so every clean is consistently excellent.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg></div>
+        <div>
+          <h4>100% Re-Service Guarantee</h4>
+          <p>Let us know if anything was missed and we'll send someone back to fix it, completely free of charge. No questions asked.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+        <div>
+          <h4>We Supply Everything</h4>
+          <p>We bring all our own equipment and premium premium cleaning products — you don't need to supply a thing.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="white" stroke="white"/></svg></div>
+        <div>
+          <h4>5-Star Rated Service</h4>
+          <p>Consistently 5-star reviewed across our service areas. Our reputation is built on reliability, quality, and trust.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE + PROMISES -->
+<section class="guarantee">
+  <div class="guarantee-inner">
+
+    <!-- Left: Iron-Clad Guarantee -->
+    <div class="guarantee-body">
+      <div class="guarantee-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Iron-Clad Guarantee</div>
+      <h2>The Clean of Your<br><span>Dreams, Guaranteed.</span></h2>
+      <p>We're 100% committed to providing you with the best cleaning experience possible — and because of that, we stand by our iron-clad guarantee.</p>
+      <p>If anything was missed, no matter how big or small, let us know and we'll promptly send someone to fix it or give you a discount. No questions asked.</p>
+      <p>We hold ourselves to the highest standards possible. You can book with confidence knowing we always have your back.</p>
+      <a href="mailto:lca.services.nz@gmail.com" class="btn-teal">Get a Free Quote →</a>
+    </div>
+
+    <!-- Right: Service Promises -->
+    <div class="promise-list">
+      <div class="guarantee-badge" style="margin-bottom:16px;align-self:flex-start"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#3AB5D9" stroke="#3AB5D9"/></svg> Our Promise</div>
+      <div class="promise-item">
+        <div class="promise-num">1</div>
+        <div>
+          <h4>We Promise to Be Reliable</h4>
+          <p>You can count on us to arrive on time, fully prepared, and ready to deliver.</p>
+        </div>
+      </div>
+      <div class="promise-item">
+        <div class="promise-num">2</div>
+        <div>
+          <h4>We Promise Exceptional Quality</h4>
+          <p>Detailed cleaning systems ensure every visit meets a consistently high standard.</p>
+        </div>
+      </div>
+      <div class="promise-item">
+        <div class="promise-num">3</div>
+        <div>
+          <h4>We Promise to Respect Your Space</h4>
+          <p>Your property is treated with care and respect at all times — as if it were our own.</p>
+        </div>
+      </div>
+      <div class="promise-item">
+        <div class="promise-num">4</div>
+        <div>
+          <h4>We Promise to Stand Behind Our Work</h4>
+          <p>If something isn't right, we'll address it quickly and make it right. No hassle.</p>
+        </div>
+      </div>
+      <div class="promise-item">
+        <div class="promise-num">5</div>
+        <div>
+          <h4>We Promise Transparent Pricing</h4>
+          <p>Clear, straightforward quotes with no surprises — the price we give is the price you pay.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="section-inner">
+    <div class="centered">
+      <div class="section-label">Reviews</div>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="section-sub">Don't just take our word for it — here's what our customers have to say.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Absolutely incredible service. Our Airbnb property has never looked better — guests keep commenting on how clean it is. Booking them every week now."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">S</div>
+          <div>
+            <div class="reviewer-name">Sarah M.</div>
+            <div class="reviewer-loc">Auckland</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Used LCA for an end of tenancy clean and got my full bond back with no issues. The team was thorough, professional and left the place spotless."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">J</div>
+          <div>
+            <div class="reviewer-name">James T.</div>
+            <div class="reviewer-loc">Hamilton</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"The builders clean after our renovation was outstanding. Dust and debris completely gone — the house looked brand new. Highly recommend LCA Services."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">R</div>
+          <div>
+            <div class="reviewer-name">Rachel K.</div>
+            <div class="reviewer-loc">Tauranga</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Ready for a Spotless Space?</h2>
+  <p>Get in touch today for a free, no-obligation quote. We service Auckland, Waikato, Tauranga and beyond.</p>
+  <div class="cta-btns">
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-white"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Get a Free Quote</a>
+    <a href="tel:0224871791" class="btn btn-outline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></div>
+        <p>Professional cleaning services across New Zealand. Reliable, thorough, and always guaranteed.</p>
+        <address class="footer-contact" style="font-style:normal;display:flex;flex-direction:column;gap:8px">
+          <a href="tel:0224871791"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+          <a href="mailto:lca.services.nz@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> lca.services.nz@gmail.com</a>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Monday – Saturday, 8am – 5pm</span>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
+          <li><a href="end-of-tenancy-cleaning.html">End of Tenancy</a></li>
+          <li><a href="builders-clean.html">Builders Cleans</a></li>
+          <li><a href="commercial-cleaning.html">Commercial Cleaning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="guarantee.html">Our Guarantee</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LCA Services. NZBN 9429053462077. All rights reserved.</span>
+      <div style="display:flex;gap:16px">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function openMenu() {
+    document.getElementById('mobileMenu').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.lcaservices.nz/#organization",
+      "name": "LCA Services",
+      "url": "https://www.lcaservices.nz",
+      "logo": "https://www.lcaservices.nz/images/lca-logo.png",
+      "telephone": "+6422487179",
+      "email": "lca.services.nz@gmail.com"
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "CleaningService"
+      ],
+      "@id": "https://www.lcaservices.nz/#localbusiness",
+      "name": "LCA Services",
+      "description": "Professional Airbnb cleaning, end of tenancy cleaning, builders cleans, and commercial cleaning across Auckland, Waiheke Island, Hamilton, Tauranga, and Waihi, New Zealand.",
+      "url": "https://www.lcaservices.nz",
+      "telephone": "+6422487179",
+      "email": "lca.services.nz@gmail.com",
+      "image": "https://www.lcaservices.nz/images/og-lca.jpg",
+      "priceRange": "$",
+      "currenciesAccepted": "NZD",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Auckland"
+        },
+        {
+          "@type": "City",
+          "name": "Waiheke Island"
+        },
+        {
+          "@type": "City",
+          "name": "Hamilton"
+        },
+        {
+          "@type": "City",
+          "name": "Tauranga"
+        },
+        {
+          "@type": "City",
+          "name": "Waihi"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Waikato"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cleaning Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Airbnb Cleaning",
+              "url": "https://www.lcaservices.nz/airbnb-cleaning.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "End of Tenancy Cleaning",
+              "url": "https://www.lcaservices.nz/end-of-tenancy-cleaning.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Builders Clean",
+              "url": "https://www.lcaservices.nz/builders-clean.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Commercial Cleaning",
+              "url": "https://www.lcaservices.nz/commercial-cleaning.html"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.lcaservices.nz/#website",
+      "url": "https://www.lcaservices.nz",
+      "name": "LCA Services",
+      "publisher": {
+        "@id": "https://www.lcaservices.nz/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lcaservices.nz/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

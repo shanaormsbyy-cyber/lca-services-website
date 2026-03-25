@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleaning Services FAQ — Common Questions Answered | LCA Services NZ</title>
+  <meta name="description" content="Answers to common questions about Airbnb, bond cleaning, builders cleans & commercial cleaning by LCA Services across Auckland, Hamilton & Tauranga NZ." />
+  <link rel="canonical" href="https://www.lcaservices.nz/faq.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LCA Services" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta property="og:title" content="Cleaning Services FAQ — Common Questions Answered | LCA Services NZ" />
+  <meta property="og:description" content="Answers to common questions about Airbnb, bond cleaning, builders cleans & commercial cleaning by LCA Services across Auckland, Hamilton & Tauranga NZ." />
+  <meta property="og:url" content="https://www.lcaservices.nz/faq.html" />
+  <meta property="og:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cleaning Services FAQ — Common Questions Answered | LCA Services NZ" />
+  <meta name="twitter:description" content="Answers to common questions about Airbnb, bond cleaning, builders cleans & commercial cleaning by LCA Services across Auckland, Hamilton & Tauranga NZ." />
+  <meta name="twitter:image" content="https://www.lcaservices.nz/images/og-lca.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:   #101828;
+      --navy2:  #1d2939;
+      --teal:   #3AB5D9;
+      --teal-dark: #2a9cbd;
+      --gray:   #475467;
+      --gray2:  #667085;
+      --light:  #f9fafb;
+      --white:  #ffffff;
+      --border: #e4e7ec;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--navy); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    .topbar { background: var(--navy); color: rgba(255,255,255,0.75); font-size: 13px; padding: 8px 0; text-align: center; }
+    .topbar a { color: var(--white); font-weight: 600; }
+
+    nav { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-size: 22px; font-weight: 800; color: var(--navy); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
+    .logo-sub { display: flex; flex-direction: column; font-size: 9px; font-weight: 700; color: var(--teal); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.5px; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a { display: flex; align-items: center; gap: 4px; padding: 8px 14px; font-size: 14px; font-weight: 500; color: var(--gray); border-radius: 6px; transition: all 0.15s; }
+    .nav-links > li > a:hover { color: var(--navy); background: var(--light); }
+    .chevron { font-size: 10px; transition: transform 0.2s; }
+    .dropdown { position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 8px 32px rgba(0,0,0,0.12); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: all 0.2s; z-index: 100; }
+    .nav-links > li:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-links > li:hover .chevron { transform: rotate(180deg); }
+    .dropdown a { display: block; padding: 10px 16px; font-size: 14px; color: var(--gray); transition: all 0.15s; }
+    .dropdown a:hover { background: var(--light); color: var(--teal); padding-left: 20px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: var(--teal); color: var(--white); }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #1a2640 100%); color: var(--white); padding: 64px 24px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 80%, rgba(58,181,217,0.15) 0%, transparent 60%); }
+    .hero-inner { max-width: 680px; margin: 0 auto; position: relative; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(58,181,217,0.15); border: 1px solid rgba(58,181,217,0.4); color: #7dd8ef; font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .hero p { font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.7; }
+
+    /* FAQ LAYOUT */
+    .faq-section { padding: 72px 24px 80px; }
+    .faq-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: start; }
+    @media (max-width: 860px) { .faq-inner { grid-template-columns: 1fr; } }
+
+    /* Category nav */
+    .faq-nav { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 4px; }
+    .faq-nav-item { padding: 10px 14px; border-radius: 8px; font-size: 14px; font-weight: 600; color: var(--gray); cursor: pointer; transition: all 0.15s; border: none; background: none; text-align: left; }
+    .faq-nav-item:hover { background: var(--light); color: var(--navy); }
+    .faq-nav-item.active { background: rgba(58,181,217,0.1); color: var(--teal); }
+    @media (max-width: 860px) { .faq-nav { flex-direction: row; flex-wrap: wrap; position: static; } .faq-nav-item { flex: 1; min-width: 120px; text-align: center; } }
+
+    /* FAQ groups */
+    .faq-group { margin-bottom: 56px; }
+    .faq-group:last-child { margin-bottom: 0; }
+    .faq-group-title { font-size: 13px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid rgba(58,181,217,0.2); }
+
+    /* Accordion */
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; overflow: hidden; transition: box-shadow 0.2s; }
+    .faq-item.open { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; cursor: pointer; font-size: 15px; font-weight: 600; color: var(--navy); background: var(--white); border: none; width: 100%; text-align: left; transition: background 0.15s; }
+    .faq-q:hover { background: var(--light); }
+    .faq-item.open .faq-q { background: var(--light); color: var(--teal); }
+    .faq-icon { display:flex; align-items:center; flex-shrink:0; }
+    .faq-item.open .faq-icon .faq-svg-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 20px 20px; font-size: 14px; color: var(--gray); line-height: 1.7; background: var(--white); }
+    .faq-item.open .faq-a { display: block; }
+    .faq-a a { color: var(--teal); font-weight: 600; }
+
+    /* CTA */
+    .cta-section { background: linear-gradient(135deg, var(--navy), #1a2640); padding: 72px 24px; text-align: center; color: var(--white); }
+    .cta-section h2 { font-size: clamp(24px, 3vw, 36px); font-weight: 800; margin-bottom: 14px; }
+    .cta-section p { font-size: 16px; color: rgba(255,255,255,0.75); margin-bottom: 32px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-teal-lg { background: var(--teal); color: var(--white); display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; transition: background 0.2s; }
+    .btn-teal-lg:hover { background: var(--teal-dark); }
+    .btn-ghost { background: rgba(255,255,255,0.1); color: var(--white); border: 1px solid rgba(255,255,255,0.25); display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 15px; transition: background 0.2s; }
+    .btn-ghost:hover { background: rgba(255,255,255,0.18); }
+
+    /* Footer */
+    footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 64px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 20px; margin-top: 16px; }
+    .footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+    .footer-contact a { color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-contact a:hover { color: var(--white); }
+    .footer-col h4 { color: var(--white); font-size: 14px; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; }
+
+    /* Mobile menu */
+    .mobile-menu { display: none; position: fixed; inset: 0; background: var(--white); z-index: 2000; padding: 24px; overflow-y: auto; flex-direction: column; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+    .mobile-close { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+    .mobile-nav { display: flex; flex-direction: column; gap: 4px; }
+    .mobile-nav a { display: block; padding: 14px 16px; font-size: 16px; font-weight: 500; color: var(--gray); border-radius: 8px; transition: all 0.15s; }
+    .mobile-nav a:hover { background: var(--light); color: var(--teal); }
+    .mobile-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray2); padding: 12px 16px 4px; }
+    .mobile-cta { margin-top: 24px; }
+    .btn-teal { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: var(--white); padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 15px; transition: background 0.2s; }
+
+    @media (max-width: 900px) { .nav-links, nav .btn { display: none; } .hamburger { display: flex; } }
+    @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; text-align: center; } }
+
+    /* ─── LOCATIONS MEGA-MENU ─── */
+    .locations-mega {
+      position: absolute; top: calc(100% + 8px); left: 0;
+      width: 700px; background: var(--white);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+      opacity: 0; visibility: hidden; transform: translateY(-8px);
+      transition: all 0.2s; z-index: 200;
+      padding: 20px 20px 16px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 16px;
+    }
+    .nav-links > li:hover .locations-mega { opacity: 1; visibility: visible; transform: translateY(0); }
+    .loc-city-block { display: flex; flex-direction: column; }
+    .loc-city-head {
+      font-size: 10px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--teal);
+      padding: 0 8px 8px; border-bottom: 1px solid var(--border); margin-bottom: 2px;
+    }
+    .loc-suburb { position: relative; }
+    .loc-suburb-trigger {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 7px 8px; font-size: 13px; color: var(--gray);
+      border-radius: 6px; cursor: pointer; transition: all 0.12s; user-select: none;
+    }
+    .loc-suburb:hover .loc-suburb-trigger { background: rgba(58,181,217,0.08); color: var(--navy); }
+    .loc-arrow { font-size: 12px; color: var(--gray2); transition: transform 0.18s; }
+    .loc-suburb:hover .loc-arrow { transform: rotate(90deg); color: var(--teal); }
+    .loc-fly-services { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; }
+    .loc-suburb:hover .loc-fly-services { max-height: 220px; }
+    .loc-svc-link {
+      display: flex; align-items: center; gap: 7px;
+      padding: 7px 8px 7px 18px; font-size: 12px; color: var(--gray);
+      border-radius: 5px; transition: color 0.1s, background 0.1s;
+    }
+    .loc-svc-link:hover { color: var(--teal); background: var(--light); }
+    .loc-view-all {
+      display: block; font-size: 11px; font-weight: 600; color: var(--teal);
+      padding: 7px 8px 2px; margin-top: 2px; border-top: 1px solid var(--border);
+    }
+    .loc-view-all:hover { text-decoration: underline; }
+    .loc-sub-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; color: var(--gray2);
+      padding: 8px 8px 3px; margin-top: 4px;
+    }
+  
+    /* ── Inline SVG icons ── */
+    .svc-icon { display:inline-block; vertical-align:middle; margin-right:5px; flex-shrink:0; }
+    .faq-svg-icon { display:block; color:var(--teal); flex-shrink:0; transition:transform 0.2s; }
+    .faq-item.open .faq-svg-icon { transform:rotate(45deg); }
+    .tick-svg { flex-shrink:0; margin-top:1px; }
+    .dot-svg { flex-shrink:0; }
+    </style>
+</head>
+<body>
+
+<div class="topbar">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Call us for a free quote — <a href="tel:0224871791">022 487 1791</a> &nbsp;|&nbsp; Mon–Sat 8am–5pm
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Services <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="airbnb-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+          <a href="end-of-tenancy-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+          <a href="builders-clean.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+          <a href="commercial-cleaning.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+        </div>
+      </li>
+            <li>
+        <a href="#">About <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+          <a href="team.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+          <a href="service-areas.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+          <a href="faq.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+          <a href="guarantee.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+          <a href="policy.html"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+        </div>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary nav-cta">Get a Free Quote</a>
+
+    <div class="hamburger" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></span>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <div class="mobile-section-title">Services</div>
+    <a href="airbnb-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Airbnb Cleaning</a>
+    <a href="end-of-tenancy-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3"/></svg> End of Tenancy Cleaning</a>
+    <a href="builders-clean.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20V10l8-7 8 7v10"/><path d="M10 20v-5h4v5"/></svg> Builders Cleans</a>
+    <a href="commercial-cleaning.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="15" y2="11"/></svg> Commercial Cleaning</a>
+    <div class="mobile-section-title">About</div>
+    <a href="about.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg> About Us</a>
+    <a href="team.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Our Team</a>
+    <a href="service-areas.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Service Areas</a>
+    <a href="faq.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> FAQs</a>
+    <a href="guarantee.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Our Guarantee</a>
+    <a href="policy.html" onclick="closeMenu()"><svg class="svc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Privacy Policy</a>
+    <a href="blog.html" onclick="closeMenu()">Blog</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+  <div class="mobile-cta">
+    <a href="mailto:lca.services.nz@gmail.com" class="btn btn-primary" style="width:100%;justify-content:center" onclick="closeMenu()">Get a Free Quote</a>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">❓ Frequently Asked Questions</div>
+    <h1>Got Questions?<br>We've Got Answers.</h1>
+    <p>Everything you need to know about booking, pricing, and what to expect from LCA Services.</p>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<div class="faq-section">
+  <div class="faq-inner">
+
+    <!-- Sidebar nav -->
+    <div class="faq-nav">
+      <button class="faq-nav-item active" onclick="scrollTo('general')">General</button>
+      <button class="faq-nav-item" onclick="scrollTo('airbnb')">Airbnb</button>
+      <button class="faq-nav-item" onclick="scrollTo('tenancy')">End of Tenancy</button>
+      <button class="faq-nav-item" onclick="scrollTo('builders')">Builders Clean</button>
+      <button class="faq-nav-item" onclick="scrollTo('commercial')">Commercial</button>
+      <button class="faq-nav-item" onclick="scrollTo('pricing')">Pricing</button>
+    </div>
+
+    <!-- FAQ groups -->
+    <div>
+
+      <div class="faq-group" id="general">
+        <div class="faq-group-title">General</div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you supply your own cleaning products and equipment? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes — we arrive fully equipped with everything needed. You don't need to provide a single thing. We bring our own professional-grade products, vacuums, mop heads, and microfibre cloths. Our cloths are laundered after every job so they're never cross-contaminated between properties.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Are your staff police checked and insured? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Absolutely. All LCA Services team members are police vetted and fully insured. We take the trust our clients place in us very seriously — every person on our team is screened before working on any property.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">What areas do you cover? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">We operate across Auckland, Waiheke Island, Waikato, Hamilton, Tauranga, Waihi, and surrounding areas. Not sure if we cover your location? Give us a call on <a href="tel:0224871791">022 487 1791</a> and we'll let you know.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">How do I book a clean? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">The easiest way is to fill in our <a href="contact.html">free quote form</a> and we'll get back to you within a few hours. You can also call us on <a href="tel:0224871791">022 487 1791</a> or email <a href="mailto:lca.services.nz@gmail.com">lca.services.nz@gmail.com</a>.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you offer a guarantee? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes. If anything is missed or you're not satisfied with the result, we'll come back and re-clean the relevant areas at no additional charge. Your satisfaction is our priority.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do I need to be home during the clean? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Not at all. Many of our clients provide key or access code instructions and we take care of everything while they're out. We treat every property with the utmost respect and discretion.</div>
+        </div>
+      </div>
+
+      <div class="faq-group" id="airbnb">
+        <div class="faq-group-title">Airbnb Cleaning</div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Can you work to my Airbnb check-in and check-out schedule? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes — this is something we specialise in. We understand the tight turnarounds between Airbnb bookings and can work to your specific check-out and check-in times to ensure the property is always guest-ready on time.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you offer linen hire? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes, we offer a linen hire service — hotel-fresh sheets and towels laundered and presented for every guest. Ask us about this when you get in touch for a quote.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Can you do same-day turnovers? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">In many cases, yes. We have same-day availability for Airbnb turnovers depending on our schedule and your location. Contact us as early as possible and we'll do our best to accommodate you.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Can you photograph the property after each clean? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes — photo documentation is available on request. This gives you a record of the property's condition after every clean, which can be helpful for Airbnb host documentation.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you handle mould removal? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes, we treat mould in wet areas as part of our Airbnb cleans where applicable. Note that mould inside silicone sealant is excluded as this requires re-sealing rather than cleaning.</div>
+        </div>
+      </div>
+
+      <div class="faq-group" id="tenancy">
+        <div class="faq-group-title">End of Tenancy Cleaning</div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Will your clean help me get my bond back? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Our end of tenancy cleans are designed specifically to meet the standard expected by landlords and property managers under the NZ Residential Tenancies Act. We cover all the areas that typically cause bond deductions — oven, rangehood, bathroom grout, skirting boards, windows, and more.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Is carpet steam cleaning included? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Standard carpet vacuuming is included in every end of tenancy clean. Professional carpet steam cleaning is available as an add-on — ask us about this when requesting your quote.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Does the oven cleaning come as standard? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes — full oven deep cleaning (interior, racks, trays, and glass) is included as standard in our end of tenancy clean. The oven is one of the most common areas flagged during exit inspections, so we make sure it's done thoroughly every time.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">How far in advance should I book? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">We recommend booking at least 1–2 weeks before your move-out date to secure your preferred time. We do have last-minute availability in some cases — contact us and we'll see what we can do.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you clean gardens and lawns? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">We cover basic outdoor tasks including sweeping paths, wiping outdoor furniture, and general tidying. Lawn mowing is available as an add-on service — let us know when you request your quote.</div>
+        </div>
+      </div>
+
+      <div class="faq-group" id="builders">
+        <div class="faq-group-title">Builders Clean</div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">What's the difference between a rough clean and a final clean? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">A rough clean covers large debris removal, bulk sweeping, and clearing construction waste. The main clean deep scrubs all surfaces, floors, and fixtures. The final clean is a detail pass — fine dust removal, streak-free glass polishing, and a full walk-through before handover. We offer all three phases.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you remove paint splatter from windows? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes — paint splatter and overspray removal from glass is included in our builders clean. We use appropriate scrapers and techniques to remove splatter without scratching the glass surface.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Can you handle large new builds? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes. We work with builders, developers, and homeowners on projects of all sizes — from single homes to multi-unit developments. Contact us with details of your project and we'll put together a tailored quote.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you do exterior pressure washing? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes — exterior pressure washing of paths, driveways, patios, and external walls is available as part of our builders clean service. Let us know when requesting your quote.</div>
+        </div>
+      </div>
+
+      <div class="faq-group" id="commercial">
+        <div class="faq-group-title">Commercial Cleaning</div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Can you clean outside of business hours? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes — we offer flexible scheduling including early mornings, evenings, and weekends to minimise disruption to your business operations. We'll work around whatever schedule suits you.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Do you offer regular ongoing contracts? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Absolutely. We offer daily, weekly, fortnightly, and monthly cleaning contracts tailored to your premises and budget. Ongoing clients benefit from consistent teams who know your space inside out.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">What types of commercial premises do you clean? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">We clean offices, retail stores, medical and professional suites, hospitality venues, warehouses, and more. If you're unsure whether we cover your type of premises, just get in touch.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">Are your products safe for office environments? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Yes. We use high-quality, commercially appropriate cleaning products that are safe for use around staff, equipment, and sensitive surfaces. We're happy to discuss any specific product requirements your business may have.</div>
+        </div>
+      </div>
+
+      <div class="faq-group" id="pricing">
+        <div class="faq-group-title">Pricing & Bookings</div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">How do I get a quote? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Fill in our <a href="contact.html">online quote form</a> with your details and we'll get back to you with a free, no-obligation quote — usually within a few hours. You can also call us on <a href="tel:0224871791">022 487 1791</a>.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">How is pricing calculated? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">Pricing is based on the size of the property, the service type, the current condition, and any extras required. We always provide a clear, itemised quote upfront — no hidden fees or surprises.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">What payment methods do you accept? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">We accept bank transfer and most major payment methods. Payment details will be confirmed when you book. For ongoing commercial contracts, invoicing arrangements can be discussed.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggle(this)">What is your cancellation policy? <span class="faq-icon"><svg class="faq-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-a">We ask for at least 24 hours' notice for cancellations or rescheduling. Last-minute cancellations may incur a fee. Please get in touch as early as possible if your plans change.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Still have a question?</h2>
+  <p>We're happy to chat — give us a call or send us a message and we'll get back to you quickly.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-teal-lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Get a Free Quote</a>
+    <a href="tel:0224871791" class="btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LCA <span class="logo-sub"><span>cleaning</span><span>services</span></span></div>
+        <p>Professional cleaning services across New Zealand. Reliable, thorough, and always guaranteed.</p>
+        <address class="footer-contact" style="font-style:normal;display:flex;flex-direction:column;gap:8px">
+          <a href="tel:0224871791"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.64 19.79 19.79 0 010 .998a2 2 0 011.72-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 022 487 1791</a>
+          <a href="mailto:lca.services.nz@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> lca.services.nz@gmail.com</a>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Monday – Saturday, 8am – 5pm</span>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
+          <li><a href="end-of-tenancy-cleaning.html">End of Tenancy</a></li>
+          <li><a href="builders-clean.html">Builders Cleans</a></li>
+          <li><a href="commercial-cleaning.html">Commercial Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul class="footer-links">
+          <li><a href="service-areas.html#auckland">Auckland</a></li>
+          <li><a href="service-areas.html#waiheke">Waiheke Island</a></li>
+          <li><a href="service-areas.html#waikato">Waikato</a></li>
+          <li><a href="service-areas.html#tauranga">Tauranga</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 LCA Services. All rights reserved.</span>
+      <span>Built for New Zealand's best cleaning team.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggle(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+  function scrollTo(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.querySelectorAll('.faq-nav-item').forEach(b => b.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+  }
+  function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow = ''; }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What cleaning services does LCA Services offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LCA Services offers Airbnb and Bookabach cleaning, end of tenancy bond cleans, post-construction builders cleans, and commercial office cleaning across Auckland, Waiheke Island, Hamilton, Waikato, Tauranga, and Waihi, New Zealand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you cover for cleaning services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We operate across Auckland (including Waiheke Island), Hamilton and the Waikato region, Tauranga, and Waihi. Use our postcode checker at lcaservices.nz/service-areas.html or call 022 487 1791 to confirm your area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you supply your own cleaning products and equipment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we arrive fully equipped with professional-grade products, vacuums, mop heads, and microfibre cloths. Our cloths are laundered after every job and never cross-contaminated between properties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your staff police checked and insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All LCA Services team members are police vetted and our business is fully insured. Every person on our team is screened before working on any property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work to my Airbnb check-in and check-out schedule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Airbnb and Bookabach turnaround scheduling is something we specialise in. We can work to your specific check-out and check-in times to ensure the property is always guest-ready on time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee bond back on end of tenancy cleans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our bond cleans are completed to the standard required by NZ property managers and landlords. If anything is missed on inspection, we will return and re-clean at no additional charge within 72 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a quote for cleaning services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fill in our free quote form at lcaservices.nz/contact.html or call 022 487 1791. You can also email lca.services.nz@gmail.com. We respond within a few hours during business hours (Monday–Saturday, 8am–5pm)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer linen hire for Airbnb properties?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer a hotel-fresh linen hire service — sheets and towels laundered and presented for every guest. Ask about linen hire when requesting your Airbnb cleaning quote."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lcaservices.nz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://www.lcaservices.nz/faq.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

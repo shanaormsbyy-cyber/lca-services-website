@@ -1,0 +1,104 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+
+  - name: "pages"
+    label: "Pages"
+    files:
+
+      - name: "home"
+        label: "Home Page"
+        file: "_data/home.json"
+        fields:
+          - { label: "Hero Heading Line 1", name: "hero_heading_1", widget: "string" }
+          - { label: "Hero Heading Line 2", name: "hero_heading_2", widget: "string" }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "text" }
+
+      - name: "about"
+        label: "About Page"
+        file: "_data/about.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body Text", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "services"
+    label: "Services"
+    files:
+
+      - name: "airbnb"
+        label: "Airbnb Cleaning"
+        file: "_data/airbnb.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "heading", widget: "string" }
+          - { label: "Hero Subtext", name: "subtext", widget: "text" }
+          - label: "What's Included"
+            name: "included"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+
+      - name: "end_of_tenancy"
+        label: "End of Tenancy Cleaning"
+        file: "_data/end-of-tenancy.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "heading", widget: "string" }
+          - { label: "Hero Subtext", name: "subtext", widget: "text" }
+          - label: "What's Included"
+            name: "included"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+
+      - name: "builders"
+        label: "Builders Clean"
+        file: "_data/builders.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "heading", widget: "string" }
+          - { label: "Hero Subtext", name: "subtext", widget: "text" }
+          - label: "What's Included"
+            name: "included"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+
+      - name: "commercial"
+        label: "Commercial Cleaning"
+        file: "_data/commercial.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "heading", widget: "string" }
+          - { label: "Hero Subtext", name: "subtext", widget: "text" }
+          - label: "What's Included"
+            name: "included"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Business Name", name: "business_name", widget: "string" }
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Operating Hours", name: "hours", widget: "text" }

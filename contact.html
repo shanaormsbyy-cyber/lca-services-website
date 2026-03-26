@@ -359,7 +359,8 @@
         <p>Fill in the details below and we'll get back to you with a free, no-obligation quote — usually within a few hours.</p>
       </div>
 
-      <form id="quoteForm" onsubmit="handleSubmit(event)" novalidate>
+      <form id="quoteForm" name="quote-request" netlify data-netlify="true" onsubmit="handleSubmit(event)" novalidate>
+        <input type="hidden" name="form-name" value="quote-request">
 
         <!-- Service Selection -->
         <div class="form-group">
@@ -567,26 +568,24 @@
       return;
     }
 
-    // Collect form data for mailto
-    const service = form.querySelector('input[name="service"]:checked')?.value || '';
-    const firstName = form.firstName.value;
-    const lastName = form.lastName.value;
-    const email = form.email.value;
-    const phone = form.phone.value;
-    const address = form.address.value;
-    const bedrooms = form.bedrooms.value;
-    const bathrooms = form.bathrooms.value;
-    const date = form.preferredDate.value;
-    const frequency = form.frequency.value;
-    const message = form.message.value;
+    const btn = form.querySelector('.submit-btn');
+    btn.disabled = true;
+    btn.querySelector('span').textContent = 'Sending...';
 
-    const body = `New quote request from the LCA Services website:\n\nService: ${service}\nName: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}\nBedrooms: ${bedrooms}\nBathrooms: ${bathrooms}\nPreferred Date: ${date}\nFrequency: ${frequency}\n\nAdditional Details:\n${message}`;
-
-    window.location.href = `mailto:contact@lcacleaning.com?subject=Quote Request — ${service}&body=${encodeURIComponent(body)}`;
-
-    // Show success state
-    document.getElementById('formContent').style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(() => {
+      document.getElementById('formContent').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btn.querySelector('span').textContent = 'Send My Quote Request';
+      alert('Something went wrong. Please try again or call us on 021 373 603.');
+    });
   }
 
   function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }

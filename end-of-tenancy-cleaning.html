@@ -810,6 +810,19 @@
     event.currentTarget.classList.add('active');
     document.getElementById('panel-' + id).classList.add('active');
   }
+  document.querySelectorAll('.tab-panel').forEach(panel => {
+    const count = panel.querySelectorAll('.checklist-item').length;
+    if (!count) return;
+    const h3 = panel.querySelector('h3');
+    if (!h3) return;
+    h3.style.display = 'flex';
+    h3.style.alignItems = 'center';
+    h3.style.justifyContent = 'space-between';
+    const badge = document.createElement('span');
+    badge.textContent = count + ' items';
+    badge.style.cssText = 'font-size:12px;font-weight:600;background:#f0f9ff;color:#3AB5D9;border:1px solid #bae6fd;border-radius:20px;padding:3px 10px;margin-left:12px;white-space:nowrap;flex-shrink:0';
+    h3.appendChild(badge);
+  });
   function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
   function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow = ''; }
 </script>

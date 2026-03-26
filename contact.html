@@ -359,8 +359,10 @@
         <p>Fill in the details below and we'll get back to you with a free, no-obligation quote — usually within a few hours.</p>
       </div>
 
-      <form id="quoteForm" name="quote-request" netlify data-netlify="true" onsubmit="handleSubmit(event)" novalidate>
-        <input type="hidden" name="form-name" value="quote-request">
+      <form id="quoteForm" onsubmit="handleSubmit(event)" novalidate>
+        <input type="hidden" name="access_key" value="d30bee15-61c1-4567-9ff8-f45f6c6463cd">
+        <input type="hidden" name="subject" value="New Quote Request — LCA Services">
+        <input type="hidden" name="from_name" value="LCA Services Website">
 
         <!-- Service Selection -->
         <div class="form-group">
@@ -572,14 +574,19 @@
     btn.disabled = true;
     btn.querySelector('span').textContent = 'Sending...';
 
-    fetch('/', {
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(form)).toString()
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(form)))
     })
-    .then(() => {
-      document.getElementById('formContent').style.display = 'none';
-      document.getElementById('successMsg').style.display = 'block';
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        document.getElementById('formContent').style.display = 'none';
+        document.getElementById('successMsg').style.display = 'block';
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
     })
     .catch(() => {
       btn.disabled = false;

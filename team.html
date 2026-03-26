@@ -92,7 +92,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 24px;
-      height: 68px;
+      height: 82px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -177,6 +177,7 @@
     .dropdown a:hover { background: var(--light); color: #3AB5D9; padding-left: 20px; }
 
     .nav-cta { margin-left: 8px; }
+    .nav-cta.btn { padding: 9px 18px; font-size: 13px; }
 
     /* Mobile toggle */
     .hamburger {
@@ -968,6 +969,18 @@
     .page-cta-box { background: var(--navy); border-radius: 16px; padding: 40px; text-align: center; margin-top: 48px; }
     .page-cta-box h3 { color: var(--white); font-size: 22px; font-weight: 700; margin-bottom: 10px; }
     .page-cta-box p { color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 24px; }
+    .action-shot { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; margin: 48px 0; background: var(--light); border-radius: 20px; overflow: hidden; border: 1px solid var(--border); }
+    .action-shot-img { height: 420px; overflow: hidden; }
+    .action-shot-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .action-shot-body { padding: 40px 40px 40px 0; }
+    .action-shot-body .section-label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--teal,#3AB5D9); margin-bottom: 12px; }
+    .action-shot-body h3 { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 14px; line-height: 1.3; }
+    .action-shot-body p { font-size: 14px; color: var(--gray); line-height: 1.75; margin-bottom: 12px; }
+    @media (max-width: 700px) {
+      .action-shot { grid-template-columns: 1fr; }
+      .action-shot-img { height: 280px; }
+      .action-shot-body { padding: 24px; }
+    }
   </style>
 </head>
 <body>
@@ -1083,6 +1096,18 @@
         <div class="value-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3AB5D9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 12 12"/><path d="M17 8c0 5-5 9-9 9-2.5 0-4.5-1-6-2.5C4 9 8 4 14 4c3 0 3 4 3 4z"/></svg></div>
         <h3>Premium Products</h3>
         <p>Professional-grade products that deliver a deeper, longer-lasting clean.</p>
+      </div>
+    </div>
+
+    <div class="action-shot">
+      <div class="action-shot-img">
+        <img src="/images/uploads/team-action-stairs.jpg" alt="LCA Services cleaner working on staircase" loading="lazy" />
+      </div>
+      <div class="action-shot-body">
+        <div class="section-label">The Team in Action</div>
+        <h3>Detailed work, every single time.</h3>
+        <p>Our team brings the same level of care and attention to every job — whether it's a full builders clean or a thorough end of tenancy. No cutting corners, no rushing.</p>
+        <p>We carry professional-grade equipment and products to every job, so the results speak for themselves.</p>
       </div>
     </div>
 

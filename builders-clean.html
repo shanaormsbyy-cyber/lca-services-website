@@ -45,7 +45,7 @@
 
     /* ── NAV ── */
     nav { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
-    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .logo { font-size: 22px; font-weight: 800; color: var(--navy); white-space: nowrap; display: flex; align-items: center; gap: 4px; }
     .logo-sub { display: flex; flex-direction: column; font-size: 9px; font-weight: 700; color: var(--teal); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.5px; }
     .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
@@ -661,7 +661,64 @@
   .seo-faq-q::after { content:'›';font-size:20px;color:#3AB5D9;transition:transform 0.2s;flex-shrink:0 }
   details[open] .seo-faq-q::after { transform:rotate(90deg) }
   .seo-faq-a { padding:0 20px 18px;font-size:14px;color:#475467;line-height:1.7;margin:0 }
+  /* ── SERVICE PRICING ── */
+  .svc-pricing { background: var(--light); padding: 80px 24px; }
+  .svc-pricing .section-inner { max-width: 720px; }
+  .svc-pricing-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 40px; }
+  .svc-ptable { width: 100%; border-collapse: collapse; margin-top: 28px; }
+  .svc-ptable th { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray2); padding: 0 0 12px; border-bottom: 2px solid var(--border); text-align: left; }
+  .svc-ptable th:not(:first-child) { text-align: right; }
+  .svc-ptable td { padding: 15px 0; border-bottom: 1px solid var(--light); font-size: 15px; }
+  .svc-ptable td:first-child { font-weight: 600; color: var(--navy); }
+  .svc-ptable td:not(:first-child) { text-align: right; color: var(--gray); font-weight: 500; }
+  .svc-ptable .price-main { color: var(--navy); font-weight: 700; font-size: 16px; }
+  .svc-ptable .price-enquire a { color: #3AB5D9; font-weight: 700; text-decoration: underline; }
+  .svc-ptable tr:last-child td { border-bottom: none; }
+  .svc-pricing-note { font-size: 12px; color: var(--gray2); margin-top: 14px; line-height: 1.6; }
+  .svc-pricing-note.red { color: #f04438; font-weight: 600; background: #fff8f8; border: 1px solid #fde0de; border-radius: 6px; padding: 8px 12px; margin-top: 16px; }
+  .svc-pricing-cta { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 24px; margin-top: 24px; background: #3AB5D9; color: #fff; border-radius: 8px; font-weight: 700; font-size: 15px; transition: background 0.2s; text-decoration: none; }
+  .svc-pricing-cta:hover { background: #2a9cbd; }
 </style>
+
+<!-- PRICING -->
+<section class="svc-pricing">
+  <div class="section-inner">
+    <div class="section-label">Transparent Pricing</div>
+    <h2 class="section-title">Builders Clean Pricing</h2>
+    <p class="section-sub">Prices starting from — final quote based on property size, stage of build, and scope of work.</p>
+    <div class="svc-pricing-card">
+      <table class="svc-ptable">
+        <thead>
+          <tr>
+            <th>Property Size</th>
+            <th>Starting From</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1–2 Bedroom</td>
+            <td class="price-main">$400</td>
+          </tr>
+          <tr>
+            <td>3 Bedroom</td>
+            <td class="price-main">$600</td>
+          </tr>
+          <tr>
+            <td>4 Bedroom</td>
+            <td class="price-main">$850</td>
+          </tr>
+          <tr>
+            <td>5+ Bedroom / Large Commercial</td>
+            <td class="price-enquire"><a href="contact.html">Enquire</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="svc-pricing-note red"><strong>Please note:</strong> All prices exclude GST.</p>
+      <p class="svc-pricing-note">Prices are a guide only. Window cleaning is an optional add-on and carries an additional surcharge. Large builds, multi-stage cleans, and commercial projects will be quoted individually — <a href="contact.html" style="color:#3AB5D9;font-weight:600">contact us</a> for a tailored price.</p>
+      <a href="contact.html" class="svc-pricing-cta">Get a Free Quote</a>
+    </div>
+  </div>
+</section>
 
 <!-- CTA BANNER -->
 <section class="cta-banner">
@@ -684,23 +741,23 @@
     <div class="work-grid">
 
       <div class="work-item">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="New build interior ready for handover" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+        <img src="/images/uploads/buildersclean-sparkling.jpg" alt="New build interior ready for handover" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
         <div class="work-overlay"><span>New Build — Handover Ready</span></div>
       </div>
 
       <div class="work-item">
-        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="New build kitchen cleaned" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
-        <div class="work-overlay"><span>Kitchen — Detail Clean</span></div>
+        <img src="/images/uploads/buildersclean-commercialbuilding.jpg" alt="Commercial builders clean" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+        <div class="work-overlay"><span>Commercial Build — Full Clean</span></div>
       </div>
 
       <div class="work-item">
-        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="New build bathroom cleaned" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+        <img src="/images/uploads/buildersclean-bathroom.png" alt="New build bathroom cleaned" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
         <div class="work-overlay"><span>Bathroom — Spotless Finish</span></div>
       </div>
 
       <div class="work-item">
-        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80" alt="New build kitchen joinery and benchtops cleaned" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
-        <div class="work-overlay"><span>Joinery &amp; Benchtops</span></div>
+        <img src="/images/uploads/buildersclean-floors.png" alt="Builders clean floor detail" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+        <div class="work-overlay"><span>Floors — Detailed Clean</span></div>
       </div>
 
       <div class="work-item">
@@ -709,7 +766,7 @@
       </div>
 
       <div class="work-item">
-        <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?w=800&q=80" alt="Clean windows in new build" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+        <img src="/images/uploads/buildersclean-windows.jpg" alt="Clean windows in new build" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
         <div class="work-overlay"><span>Windows — Streak-Free Polish</span></div>
       </div>
 

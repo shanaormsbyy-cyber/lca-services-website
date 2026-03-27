@@ -415,61 +415,43 @@
           </div>
         </div>
 
-        <!-- Property Details -->
+        <!-- Property Details (common) -->
         <div class="form-group">
           <div class="form-section-label">Property details</div>
           <label class="field-label" for="address">Property address <span>*</span></label>
           <input type="text" id="address" name="address" placeholder="123 Example Street, Auckland" required>
         </div>
 
-        <div class="form-group">
-          <div class="form-row">
-            <div>
-              <label class="field-label" for="bedrooms">Bedrooms</label>
-              <select id="bedrooms" name="bedrooms">
-                <option value="">Select...</option>
-                <option>Studio</option>
-                <option>1 bedroom</option>
-                <option>2 bedrooms</option>
-                <option>3 bedrooms</option>
-                <option>4 bedrooms</option>
-                <option>5+ bedrooms</option>
-              </select>
-            </div>
-            <div>
-              <label class="field-label" for="bathrooms">Bathrooms</label>
-              <select id="bathrooms" name="bathrooms">
-                <option value="">Select...</option>
-                <option>1 bathroom</option>
-                <option>2 bathrooms</option>
-                <option>3 bathrooms</option>
-                <option>4+ bathrooms</option>
-              </select>
-            </div>
-          </div>
+        <!-- ── SERVICE-SPECIFIC QUESTIONS ─────────────────────────────────
+             Each block shows only when its service type is selected.
+             Add your questions inside each <div class="service-questions"> below.
+        ──────────────────────────────────────────────────────────────────── -->
+
+        <!-- AIRBNB CLEANING -->
+        <div id="questions-airbnb" class="service-questions">
+          <div class="form-section-label">Airbnb property details</div>
+          <!-- ADD YOUR AIRBNB QUESTIONS HERE -->
         </div>
 
-        <div class="form-group">
-          <div class="form-row">
-            <div>
-              <label class="field-label" for="preferredDate">Preferred date</label>
-              <input type="date" id="preferredDate" name="preferredDate">
-            </div>
-            <div>
-              <label class="field-label" for="frequency">Frequency</label>
-              <select id="frequency" name="frequency">
-                <option value="">Select...</option>
-                <option>One-off clean</option>
-                <option>Weekly</option>
-                <option>Fortnightly</option>
-                <option>Monthly</option>
-                <option>Ongoing (flexible)</option>
-              </select>
-            </div>
-          </div>
+        <!-- END OF TENANCY -->
+        <div id="questions-tenancy" class="service-questions" style="display:none">
+          <div class="form-section-label">Tenancy details</div>
+          <!-- ADD YOUR END OF TENANCY QUESTIONS HERE -->
         </div>
 
-        <!-- Extra Info -->
+        <!-- BUILDERS CLEAN -->
+        <div id="questions-builders" class="service-questions" style="display:none">
+          <div class="form-section-label">Build details</div>
+          <!-- ADD YOUR BUILDERS CLEAN QUESTIONS HERE -->
+        </div>
+
+        <!-- COMMERCIAL CLEANING -->
+        <div id="questions-commercial" class="service-questions" style="display:none">
+          <div class="form-section-label">Commercial details</div>
+          <!-- ADD YOUR COMMERCIAL CLEANING QUESTIONS HERE -->
+        </div>
+
+        <!-- Extra Info (common) -->
         <div class="form-group">
           <div class="form-section-label">Anything else?</div>
           <label class="field-label" for="message">Additional details</label>
@@ -594,6 +576,21 @@
       alert('Something went wrong. Please try again or call us on 021 373 603.');
     });
   }
+
+  // Switch service-specific question blocks
+  const serviceQuestionMap = {
+    'Airbnb Cleaning':    'questions-airbnb',
+    'End of Tenancy':     'questions-tenancy',
+    'Builders Clean':     'questions-builders',
+    'Commercial Cleaning':'questions-commercial'
+  };
+  document.querySelectorAll('input[name="service"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      document.querySelectorAll('.service-questions').forEach(el => el.style.display = 'none');
+      const target = document.getElementById(serviceQuestionMap[this.value]);
+      if (target) target.style.display = 'block';
+    });
+  });
 
   function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
   function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow = ''; }

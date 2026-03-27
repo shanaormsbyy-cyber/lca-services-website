@@ -430,25 +430,320 @@
         <!-- AIRBNB CLEANING -->
         <div id="questions-airbnb" class="service-questions">
           <div class="form-section-label">Airbnb property details</div>
-          <!-- ADD YOUR AIRBNB QUESTIONS HERE -->
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="ab-bedrooms">Bedrooms</label>
+                <select id="ab-bedrooms" name="ab_bedrooms">
+                  <option value="">Select...</option>
+                  <option>Studio</option>
+                  <option>1 bedroom</option>
+                  <option>2 bedrooms</option>
+                  <option>3 bedrooms</option>
+                  <option>4 bedrooms</option>
+                  <option>5+ bedrooms</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="ab-bathrooms">Bathrooms</label>
+                <select id="ab-bathrooms" name="ab_bathrooms">
+                  <option value="">Select...</option>
+                  <option>1 bathroom</option>
+                  <option>2 bathrooms</option>
+                  <option>3 bathrooms</option>
+                  <option>4+ bathrooms</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="ab-frequency">Cleaning frequency</label>
+                <select id="ab-frequency" name="ab_frequency">
+                  <option value="">Select...</option>
+                  <option>After every guest (turnover clean)</option>
+                  <option>Weekly</option>
+                  <option>Fortnightly</option>
+                  <option>One-off clean</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="ab-date">Next required date</label>
+                <input type="date" id="ab-date" name="ab_date">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="ab-linen">Do you require linen hire?</label>
+                <select id="ab-linen" name="ab_linen_hire">
+                  <option value="">Select...</option>
+                  <option>Yes — please include linen hire</option>
+                  <option>No — I supply my own linen</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="ab-linen-sets">Number of linen sets needed</label>
+                <select id="ab-linen-sets" name="ab_linen_sets">
+                  <option value="">Select...</option>
+                  <option>1 set</option>
+                  <option>2 sets</option>
+                  <option>3 sets</option>
+                  <option>4 sets</option>
+                  <option>5+ sets</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="field-label" for="ab-access">Access instructions / key location</label>
+            <input type="text" id="ab-access" name="ab_access" placeholder="e.g. lockbox code, key under mat, meet on site...">
+          </div>
         </div>
 
         <!-- END OF TENANCY -->
         <div id="questions-tenancy" class="service-questions" style="display:none">
           <div class="form-section-label">Tenancy details</div>
-          <!-- ADD YOUR END OF TENANCY QUESTIONS HERE -->
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="eot-bedrooms">Bedrooms</label>
+                <select id="eot-bedrooms" name="eot_bedrooms">
+                  <option value="">Select...</option>
+                  <option>Studio</option>
+                  <option>1 bedroom</option>
+                  <option>2 bedrooms</option>
+                  <option>3 bedrooms</option>
+                  <option>4 bedrooms</option>
+                  <option>5+ bedrooms</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="eot-bathrooms">Bathrooms</label>
+                <select id="eot-bathrooms" name="eot_bathrooms">
+                  <option value="">Select...</option>
+                  <option>1 bathroom</option>
+                  <option>2 bathrooms</option>
+                  <option>3 bathrooms</option>
+                  <option>4+ bathrooms</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="eot-moveout">Move-out date</label>
+                <input type="date" id="eot-moveout" name="eot_moveout_date">
+              </div>
+              <div>
+                <label class="field-label" for="eot-furnished">Is the property furnished?</label>
+                <select id="eot-furnished" name="eot_furnished">
+                  <option value="">Select...</option>
+                  <option>Unfurnished</option>
+                  <option>Furnished</option>
+                  <option>Partially furnished</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="eot-oven">Oven clean required?</label>
+                <select id="eot-oven" name="eot_oven_clean">
+                  <option value="">Select...</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="eot-carpet">Carpet clean required?</label>
+                <select id="eot-carpet" name="eot_carpet_clean">
+                  <option value="">Select...</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Not sure — needs assessment</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="field-label" for="eot-issues">Any known problem areas?</label>
+            <input type="text" id="eot-issues" name="eot_issues" placeholder="e.g. mould in bathroom, staining on carpet, marks on walls...">
+          </div>
+          <div class="form-group">
+            <label class="field-label" for="eot-receipt">Do you need a receipt/invoice for your property manager?</label>
+            <select id="eot-receipt" name="eot_receipt_needed">
+              <option value="">Select...</option>
+              <option>Yes — for bond/property manager</option>
+              <option>No</option>
+            </select>
+          </div>
         </div>
 
         <!-- BUILDERS CLEAN -->
         <div id="questions-builders" class="service-questions" style="display:none">
           <div class="form-section-label">Build details</div>
-          <!-- ADD YOUR BUILDERS CLEAN QUESTIONS HERE -->
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="bc-type">Type of clean</label>
+                <select id="bc-type" name="bc_clean_type">
+                  <option value="">Select...</option>
+                  <option>New Build — Rough Clean</option>
+                  <option>New Build — Final Clean</option>
+                  <option>New Build — Sparkle/Handover Clean</option>
+                  <option>Renovation Clean</option>
+                  <option>Post-Construction Clean</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="bc-property">Property type</label>
+                <select id="bc-property" name="bc_property_type">
+                  <option value="">Select...</option>
+                  <option>House</option>
+                  <option>Apartment / Unit</option>
+                  <option>Commercial building</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="bc-size">Approximate size</label>
+                <select id="bc-size" name="bc_size">
+                  <option value="">Select...</option>
+                  <option>Under 100m²</option>
+                  <option>100–150m²</option>
+                  <option>150–200m²</option>
+                  <option>200–300m²</option>
+                  <option>300m²+</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="bc-completion">Estimated completion date</label>
+                <input type="date" id="bc-completion" name="bc_completion_date">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="bc-bedrooms">Bedrooms</label>
+                <select id="bc-bedrooms" name="bc_bedrooms">
+                  <option value="">Select...</option>
+                  <option>Studio / 1 bedroom</option>
+                  <option>2 bedrooms</option>
+                  <option>3 bedrooms</option>
+                  <option>4 bedrooms</option>
+                  <option>5+ bedrooms</option>
+                  <option>N/A — commercial</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="bc-bathrooms">Bathrooms</label>
+                <select id="bc-bathrooms" name="bc_bathrooms">
+                  <option value="">Select...</option>
+                  <option>1 bathroom</option>
+                  <option>2 bathrooms</option>
+                  <option>3 bathrooms</option>
+                  <option>4+ bathrooms</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="field-label" for="bc-plans">Upload floor plans or scope of work <span style="font-weight:400;color:var(--gray2)">(optional — PDF, JPG, PNG)</span></label>
+            <input type="file" id="bc-plans" name="bc_plans" accept=".pdf,.jpg,.jpeg,.png" style="padding:10px 12px;background:var(--light);border:1px solid var(--border);border-radius:8px;width:100%;font-size:14px;cursor:pointer;">
+          </div>
         </div>
 
         <!-- COMMERCIAL CLEANING -->
         <div id="questions-commercial" class="service-questions" style="display:none">
           <div class="form-section-label">Commercial details</div>
-          <!-- ADD YOUR COMMERCIAL CLEANING QUESTIONS HERE -->
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="cc-type">Type of premises</label>
+                <select id="cc-type" name="cc_premises_type">
+                  <option value="">Select...</option>
+                  <option>Office</option>
+                  <option>Retail / Shop</option>
+                  <option>Medical / Dental</option>
+                  <option>Restaurant / Café</option>
+                  <option>Warehouse / Industrial</option>
+                  <option>School / Education</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="cc-size">Approximate size</label>
+                <select id="cc-size" name="cc_size">
+                  <option value="">Select...</option>
+                  <option>Under 100m²</option>
+                  <option>100–250m²</option>
+                  <option>250–500m²</option>
+                  <option>500m²+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="cc-frequency">Cleaning frequency</label>
+                <select id="cc-frequency" name="cc_frequency">
+                  <option value="">Select...</option>
+                  <option>Daily</option>
+                  <option>3× per week</option>
+                  <option>Weekly</option>
+                  <option>Fortnightly</option>
+                  <option>Monthly</option>
+                  <option>One-off clean</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="cc-time">Preferred cleaning time</label>
+                <select id="cc-time" name="cc_cleaning_time">
+                  <option value="">Select...</option>
+                  <option>During business hours</option>
+                  <option>After hours</option>
+                  <option>Early morning (before open)</option>
+                  <option>Weekends</option>
+                  <option>Flexible</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label class="field-label" for="cc-consumables">Consumables required?</label>
+                <select id="cc-consumables" name="cc_consumables">
+                  <option value="">Select...</option>
+                  <option>Yes — supply toilet paper, soap, etc.</option>
+                  <option>No — we supply our own</option>
+                </select>
+              </div>
+              <div>
+                <label class="field-label" for="cc-current">Do you have a current cleaner?</label>
+                <select id="cc-current" name="cc_current_cleaner">
+                  <option value="">Select...</option>
+                  <option>Yes — looking to switch</option>
+                  <option>No — first time using a cleaner</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="field-label" for="cc-access">Any secure or restricted areas we should know about?</label>
+            <input type="text" id="cc-access" name="cc_restricted_areas" placeholder="e.g. server room, reception only after hours, alarm codes...">
+          </div>
         </div>
 
         <!-- Extra Info (common) -->
@@ -558,8 +853,8 @@
 
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
     })
     .then(response => response.json())
     .then(data => {

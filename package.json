@@ -1,0 +1,10 @@
+{
+  "name": "lca-services-website",
+  "private": true,
+  "scripts": {
+    "start": "serve . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}

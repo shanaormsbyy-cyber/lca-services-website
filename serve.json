@@ -1,0 +1,6 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+    { "source": "/locations.html", "destination": "/service-areas.html", "type": 301 }
+  ]
+}
